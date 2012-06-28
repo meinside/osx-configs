@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 12.06.26.
+# updated on 12.06.28.
 #
 # ... by meinside@gmail.com
 
@@ -49,10 +49,6 @@ alias npm="sudo npm"
 # for java
 export JAVA_JVM_VERSION="1.6"
 export CLASSPATH=.
-
-# for google android (http://developer.android.com/sdk)
-export PATH=$PATH:/Volumes/Data/files/dev/android-sdks/tools
-export PATH=$PATH:/Volumes/Data/files/dev/android-sdks/platform-tools
 
 # for node
 export NODE_PATH=/usr/local/lib/node_modules
