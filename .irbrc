@@ -2,7 +2,7 @@
 #
 # meinside@gmail.com
 #
-# last update: 12.06.18.
+# last update: 12.07.06.
 
 require "rubygems"
 
@@ -32,6 +32,10 @@ IRB.conf[:AUTO_INDENT] = true
 # define ri helper function
 def ri(*names)
 	system(%{ri #{names.map{|name| name.to_s}.join(" ")}})
+end
+
+def clear
+	system 'clear'
 end
 
 # custom libraries
