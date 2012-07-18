@@ -1,4 +1,4 @@
-# Config/Profile files for Raspberry Pi #
+# Config/Profile files for OSX #
 by Sungjin Han <meinside@gmail.com>
 
 ----
