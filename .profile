@@ -52,6 +52,7 @@ export CLASSPATH=.
 
 # for node
 export NODE_PATH=/usr/local/lib/node_modules
+export PATH="$PATH:/usr/local/share/npm/bin"
 
 # for RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
