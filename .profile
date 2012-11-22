@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 12.10.31.
+# updated on 12.11.22.
 #
 # ... by meinside@gmail.com
 
@@ -33,6 +33,11 @@ alias ctags='ctags -R --totals=yes'
 alias ngrep="sudo ngrep -q -W byline"
 alias npm="sudo npm"
 alias webrick="sudo ruby -rwebrick -e 'WEBrick::HTTPServer.new(DocumentRoot: \".\").start'"
+
+# load extra aliases if exist
+if [ -f ~/.other_aliases ]; then
+	. ~/.other_aliases
+fi
 
 # for Xcode
 #defaults write com.apple.xcode PBXCustomTemplateMacroDefinitions '{ORGANIZATIONNAME = "some_organization_name" ; }'
