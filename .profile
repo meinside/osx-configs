@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 12.11.22.
+# updated on 12.12.26.
 #
 # ... by meinside@gmail.com
 
@@ -32,6 +32,8 @@ alias ctags='ctags -R --totals=yes'
 # custom aliases
 alias ngrep="sudo ngrep -q -W byline"
 alias npm="sudo npm"
+alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
 alias webrick="sudo ruby -rwebrick -e 'WEBrick::HTTPServer.new(DocumentRoot: \".\").start'"
 
 # load extra aliases if exist
