@@ -86,3 +86,6 @@ node
 rails
 public_html
 
+# gem files
+.bundler/
+
