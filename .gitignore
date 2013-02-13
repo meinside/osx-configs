@@ -78,6 +78,8 @@ Google Drive
 .vim
 .viminfo
 .other_aliases
+.RData
+.Rhistory
 
 # src dirs
 srcs
