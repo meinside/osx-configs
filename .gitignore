@@ -80,6 +80,7 @@ Google Drive
 .other_aliases
 .RData
 .Rhistory
+.rstudio-desktop
 
 # src dirs
 srcs
