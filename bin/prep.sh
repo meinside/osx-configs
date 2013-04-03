@@ -37,13 +37,7 @@ rm -rf $TMP_DIR
 # install RVM for single user
 echo
 echo -e "\033[33m>>> installing RVM...\033[0m\n"
-curl -L https://get.rvm.io | bash -s stable
-if [ -f ~/.rvm/scripts/rvm ]; then
-	echo ">>> loading ~/.rvm/scripts/rvm"
-	source ~/.rvm/scripts/rvm
-	echo ">>> setting rvm autolibs enabled"
-	rvm autolibs enable
-fi
+curl -L https://get.rvm.io | bash -s stable --autolibs=enable
 
 # re-login for loading configs
 echo
