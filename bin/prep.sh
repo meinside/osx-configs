@@ -5,7 +5,7 @@
 # for setting up various things automatically in OSX
 # (https://raw.github.com/meinside/osxconfigs/master/bin/prep.sh)
 # 
-# last update: 2013.03.05.
+# last update: 2013.04.03.
 # 
 # by meinside@gmail.com
 
@@ -26,10 +26,6 @@ if ! which brew > /dev/null; then
 	exit 0
 fi
 
-# install essential packages through brew
-echo -e "\033[33m>>> installing essential packages...\033[0m\n"
-brew install bash curl git autoconf automake apple-gcc42 libtool pkg-config openssl readline libyaml sqlite libxml2 libxslt libksba
-
 # clone config files
 echo
 echo -e "\033[33m>>> cloning config files...\033[0m\n"
@@ -43,6 +39,10 @@ rm -rf $TMP_DIR
 echo
 echo -e "\033[33m>>> installing RVM...\033[0m\n"
 curl -L https://get.rvm.io | bash -s stable
+if [ -f ~/.rvm/scripts/rvm ]; then
+	source ~/.rvm/scripts/rvm
+	rvm autolibs enable
+fi
 
 # re-login for loading configs
 echo
