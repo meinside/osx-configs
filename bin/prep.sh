@@ -27,7 +27,6 @@ if ! which brew > /dev/null; then
 fi
 
 # clone config files
-echo
 echo -e "\033[33m>>> cloning config files...\033[0m\n"
 rm -rf $TMP_DIR
 git clone $REPOSITORY $TMP_DIR
@@ -40,7 +39,9 @@ echo
 echo -e "\033[33m>>> installing RVM...\033[0m\n"
 curl -L https://get.rvm.io | bash -s stable
 if [ -f ~/.rvm/scripts/rvm ]; then
+	echo ">>> loading ~/.rvm/scripts/rvm"
 	source ~/.rvm/scripts/rvm
+	echo ">>> setting rvm autolibs enabled"
 	rvm autolibs enable
 fi
 
