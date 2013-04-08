@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 13.04.03.
+# last update: 13.04.08.
 
 # binary files
 *.o
@@ -31,7 +31,7 @@ xcuserdata
 .svn
 .cvs
 
-# osx files/dirs
+# OSX files/dirs
 .DS_Store
 .Trash
 .CFUserTextEncoding
@@ -46,8 +46,27 @@ Pictures
 Public
 Sites
 
+# ruby
+.gem
+.rvm
+.bundler/
+.irb-history
+.irb_history
+
+# node.js
+.npm
+node_modules
+
+# other src dirs
+srcs
+ruby
+node
+rails
+public_html
+
 # private files
 .gitconfig
+.other_aliases
 
 # other files/dirs
 Dropbox
@@ -61,37 +80,21 @@ Google Drive
 .eclipse/
 .filezilla/
 .gdb_history
-.gem
 .heroku
-.irb-history
-.irb_history
 .itmstransporter/
 .lesshst
 .m2/
 .mplayer/
 .mysql_history
 .netrc
-.npm
 .org.eclipse.epp.usagedata.recording.userId
 .putty/
-.rvm
 .sqlite_history
 .ssh
 .subversion
 .vim
 .viminfo
-.other_aliases
 .RData
 .Rhistory
 .rstudio-desktop
-
-# src dirs
-srcs
-ruby
-node
-rails
-public_html
-
-# gem files
-.bundler/
 
