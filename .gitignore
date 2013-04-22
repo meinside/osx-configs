@@ -46,6 +46,10 @@ Pictures
 Public
 Sites
 
+# X11 files/dirs
+.Xauthority
+.fontconfig/
+
 # ruby
 .gem
 .rvm
@@ -74,6 +78,7 @@ Google Drive
 .android/
 .bash_history
 .bashrc
+.cache/
 .cups/
 .dropbox/
 .dvdcss/
@@ -97,4 +102,9 @@ Google Drive
 .RData
 .Rhistory
 .rstudio-desktop
+.wireshark-etc/
+.wireshark/
+
+# temporary files/dirs
+tmp/
 
