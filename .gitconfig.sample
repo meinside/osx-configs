@@ -16,6 +16,8 @@
 [user]
 	name = Sungjin Han
 	email = meinside@gmail.com
+[github]
+	user = meinside
 [color]
 	ui = auto
 [push]

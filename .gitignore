@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 13.04.08.
+# last update: 13.07.03.
 
 # binary files
 *.o
@@ -72,6 +72,7 @@ public_html
 .gitconfig
 .other_aliases
 .conf/*.yml
+.gist-vim
 
 # other files/dirs
 Dropbox
