@@ -5,21 +5,40 @@ by Sungjin Han <meinside@gmail.com>
 
 ## DESCRIPTION ##
 
-My personal config/profile files for OSX
+My personal config/profile files for OSX, mostly for developers.
 
 ----
 
-## Install useful package managers ##
-
-* Brew (http://mxcl.github.com/homebrew/) 
- * ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
-* RVM (https://rvm.io/rvm/install/)
- * curl -L https://get.rvm.io | bash -s stable
-
 ## Other things ##
 
-* reorder paths in /etc/paths
- * sudo vi /etc/paths
- * => put /usr/local/bin on the top for brew
+### Prep script ###
+
+Run **bin/prep.sh** and it will clone files and install several things automatically.
+
+```
+$ cd ~
+$ wget https://raw.github.com/meinside/osxconfigs/master/bin/prep.sh ./prep.sh
+$ chmod +x ./prep.sh
+$ ./prep.sh
+$ rm ./prep.sh
+```
+
+=> will install **Homebrew**, **RVM** and **Ruby**
+
+### Paths ###
+
+Reorder paths in **/etc/paths** for convenience:
+
+``$ sudo vi /etc/paths``
+
+=> put **/usr/local/bin** on the top for homebrew
+
+```
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+```
 
 ----
