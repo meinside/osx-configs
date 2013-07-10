@@ -31,5 +31,4 @@ curl -L https://get.rvm.io | bash -s stable --autolibs=homebrew --ruby
 # re-login for loading configs
 echo
 echo -e "\033[31m*** logout, and login again for reloading configs ***\033[0m"
-echo "$ exit"
 echo
