@@ -2,9 +2,12 @@
 
 # cherry-picked
 # from: https://gist.github.com/erikh/2260182
+#
+# last update: 2013.07.11.
 
 echo "Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
-defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
+defaults write NSGlobalDomain AppleKeyboardUIMode -int 0
+#defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 
 echo "Enable subpixel font rendering on non-Apple LCDs"
 defaults write NSGlobalDomain AppleFontSmoothing -int 2
@@ -12,8 +15,8 @@ defaults write NSGlobalDomain AppleFontSmoothing -int 2
 echo "Enable the 2D Dock"
 defaults write com.apple.dock no-glass -bool true
 
-# Automatically hide and show the Dock
-# defaults write com.apple.dock autohide -bool true
+echo "Automatically hide and show the Dock"
+defaults write com.apple.dock autohide -bool true
 
 echo "Make Dock icons of hidden applications translucent"
 defaults write com.apple.dock showhidden -bool true
@@ -108,7 +111,7 @@ defaults write com.apple.finder OpenWindowForNewRemovableDisk -bool true
 echo "Display full POSIX path as Finder window title"
 defaults write com.apple.finder _FXShowPosixPathInTitle -bool true
 
-# Increase window resize speed for Cocoa applications
+echo "Increase window resize speed for Cocoa applications"
 defaults write NSGlobalDomain NSWindowResizeTime -float 0.001
 
 echo "Avoid creating .DS_Store files on network volumes"
