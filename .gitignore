@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 13.07.22.
+# last update: 13.08.13.
 
 # binary files
 *.o
@@ -69,8 +69,8 @@ public_html
 # private files
 .gitconfig
 .other_aliases
-.conf/*.yml
 .gist-vim
+.rtmux.conf
 
 # history files
 .*history
