@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 13.02.27.
+# updated on 13.09.05.
 #
 # ... by meinside@gmail.com
 
@@ -21,6 +21,9 @@ export LC_ALL="ko_KR.UTF-8"
 #export LC_ALL="en.UTF-8"
 export TERM="xterm-color"
 export CLICOLOR=true
+export HISTCONTROL=erasedups
+export HISTSIZE=10000
+shopt -s histappend
 
 # common aliases
 alias ls="ls -G"
