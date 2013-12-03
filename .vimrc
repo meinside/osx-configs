@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 13.10.22.
+" last update: 13.12.03.
 "
 "
 "
@@ -39,16 +39,30 @@ if filereadable(vundle_readme)
 	"  " required! 
 	Bundle 'gmarik/vundle'
 
+	""""""""
 	" add bundles here
+	"
 	Bundle 'surround.vim'
 	Bundle 'matchit.zip'
 	Bundle 'ragtag.vim'
 	Bundle 'snippetsEmu'
 	Bundle 'fugitive.vim'
+
+	" For uploading Gist
 	Bundle 'mattn/webapi-vim'
 	Bundle 'mattn/gist-vim'
+
+	" CoffeeScript
 	Bundle 'kchmck/vim-coffee-script'
+
+	" Clojure
 	Bundle 'guns/vim-clojure-static'
+
+	" HAML
+	Bundle 'tpope/vim-haml'
+
+	"
+	""""""""
 
 	filetype plugin indent on     " required!
 
