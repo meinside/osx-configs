@@ -1,13 +1,14 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 13.09.05.
+# updated on 13.12.05.
 #
 # ... by meinside@gmail.com
 
-# for prompt and terminal's title
-export PS1='\[\033[01;36m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}: ${PWD}\007"'
+# for prompt
+source ~/.bash/colors
+source ~/.bash/git-prompt
+export PS1="\[$bldcyn\]\u@\h\[$txtrst\]:\[$bldblu\]\w\[$txtgrn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
 
 # other configurations
 umask 027
