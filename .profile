@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 13.12.05.
+# updated on 13.12.06.
 #
 # ... by meinside@gmail.com
 
@@ -9,7 +9,7 @@
 source ~/.bash/colors
 source ~/.bash/git-prompt
 export PS1="\[$bldcyn\]\u@\h\[$txtrst\]:\[$bldblu\]\w\[$txtgrn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007";'$PROMPT_COMMAND
+export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"; find_git_branch; find_git_dirty'
 
 # other configurations
 umask 027
