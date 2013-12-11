@@ -3,7 +3,7 @@
 # prep.sh
 # 
 # for setting up various things automatically in OSX
-# (https://raw.github.com/meinside/osxconfigs/master/bin/prep.sh)
+# (https://raw.github.com/meinside/osx-configs/master/bin/prep.sh)
 # 
 # last update: 2013.12.11.
 # 
