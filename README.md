@@ -17,7 +17,7 @@ Run **bin/prep.sh** and it will clone files and install several things automatic
 
 ```
 $ cd ~
-$ wget "https://raw.github.com/meinside/osxconfigs/master/bin/prep.sh"
+$ wget "https://raw.github.com/meinside/osx-configs/master/bin/prep.sh"
 $ chmod +x ./prep.sh
 $ ./prep.sh
 $ rm ./prep.sh
