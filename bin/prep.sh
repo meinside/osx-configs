@@ -5,12 +5,12 @@
 # for setting up various things automatically in OSX
 # (https://raw.github.com/meinside/osxconfigs/master/bin/prep.sh)
 # 
-# last update: 2013.07.11.
+# last update: 2013.12.11.
 # 
 # by meinside@gmail.com
 
-#REPOSITORY="git@github.com:meinside/osxconfigs.git"
-REPOSITORY="git://github.com/meinside/osxconfigs.git"
+#REPOSITORY="git@github.com:meinside/osx-configs.git"
+REPOSITORY="git://github.com/meinside/osx-configs.git"
 TMP_DIR="$HOME/configs.tmp"
 
 echo -e "\033[32mThis script will setup various things for OSX\033[0m"
