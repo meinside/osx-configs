@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 13.12.06.
+# updated on 14.01.03.
 #
 # ... by meinside@gmail.com
 
@@ -69,6 +69,7 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 
 # for RVM
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # custom paths
 if [ -d "$HOME/ruby" ] ; then
