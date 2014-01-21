@@ -1,11 +1,11 @@
-# Config/Profile files for OSX #
+# My dotfiles for OSX #
 by Sungjin Han <meinside@gmail.com>
 
 ----
 
 ## DESCRIPTION ##
 
-My personal config/profile files for OSX, mostly for developers.
+My personal dotfiles for OSX, mostly for development.
 
 ----
 
