@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.01.21.
+# last update: 2014.01.27.
 
 # for bash
 install curl
@@ -11,6 +11,7 @@ install ngrep
 install pstree
 install tmux
 install wget
+install htop
 
 # for development
 install git
