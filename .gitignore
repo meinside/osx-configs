@@ -103,6 +103,7 @@ Google Drive
 .rstudio-desktop
 .wireshark-etc/
 .wireshark/
+.htoprc
 
 # temporary files/dirs
 tmp/
