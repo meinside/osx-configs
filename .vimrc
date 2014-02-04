@@ -98,6 +98,8 @@ set fencs=ucs-bom,utf-8,korea
 set termencoding=utf-8
 colo evening
 
+" put an underline under the cursor
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>	" \c will toggle this cursor line
 augroup CursorLine
 	au!
 	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
