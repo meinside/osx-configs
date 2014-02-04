@@ -98,7 +98,11 @@ set fencs=ucs-bom,utf-8,korea
 set termencoding=utf-8
 colo evening
 
-set cursorline	" show an underline under the cursor
+augroup CursorLine
+	au!
+	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
+	au WinLeave * setlocal nocursorline
+augroup END
 
 " custom key mappings, 11.04.15,
 nmap <F2> :30vsplit . <CR>
