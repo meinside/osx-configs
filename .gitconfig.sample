@@ -1,7 +1,7 @@
 # sample .gitconfig file
 # (copy as .gitconfig and customize it)
 #
-# last update: 2013.07.03.
+# last update: 2014.02.04.
 
 [alias]
 	co = checkout
@@ -22,4 +22,6 @@
 	ui = auto
 [push]
 	default = simple
+[branch]
+#	autosetuprebase = always	# or `git pull --rebase`
 
