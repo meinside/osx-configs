@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 13.12.03.
+" last update: 14.02.04.
 "
 "
 "
@@ -97,6 +97,8 @@ set sts=4
 set fencs=ucs-bom,utf-8,korea
 set termencoding=utf-8
 colo evening
+
+set cursorline	" show an underline under the cursor
 
 " custom key mappings, 11.04.15,
 nmap <F2> :30vsplit . <CR>
