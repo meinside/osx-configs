@@ -38,6 +38,8 @@
 	ui = auto
 [push]
 	default = simple
+[merge]
+	tool = vimdiff
 [branch]
 #	autosetuprebase = always	# or `git pull --rebase`
 
