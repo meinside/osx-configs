@@ -1,11 +1,9 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.01.27.
+# last update: 2014.02.06.
 
 # for bash
-install curl
-install lsof
 install mobile-shell
 install ngrep
 install pstree
