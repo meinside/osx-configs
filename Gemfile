@@ -10,5 +10,5 @@ gem 'rspec'
 gem 'rtmux'
 
 # my gems from github
-gem 'meinside-ruby', git: 'git@github.com:meinside/meinside-ruby.git'	# my ruby scripts and libraries
+gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libraries
 

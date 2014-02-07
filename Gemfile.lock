@@ -1,5 +1,5 @@
 GIT
-  remote: git@github.com:meinside/meinside-ruby.git
+  remote: git://github.com/meinside/meinside-ruby.git
   revision: cb91f5e4bf17fcaf9894bcb0e91be56f1c68c75c
   specs:
     meinside-ruby (0.0.1)
