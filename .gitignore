@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 13.12.16.
+# last update: 2014.02.07.
 
 # binary files
 *.o
@@ -81,6 +81,7 @@ Dropbox
 Google Drive
 .android/
 .bashrc
+.bro
 .cache/
 .cups/
 .dropbox/
