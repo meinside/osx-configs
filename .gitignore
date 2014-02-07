@@ -55,6 +55,7 @@ Applications
 .gem
 .rvm
 .bundler/
+Gemfile.lock
 
 # node.js
 .npm
