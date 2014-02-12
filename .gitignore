@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.02.07.
+# last update: 2014.02.12.
 
 # binary files
 *.o
@@ -88,6 +88,7 @@ Google Drive
 .dropbox/
 .dvdcss/
 .eclipse/
+.electrum/
 .filezilla/
 .heroku
 .itmstransporter/
