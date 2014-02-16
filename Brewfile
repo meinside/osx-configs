@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.02.06.
+# last update: 2014.02.16.
 
 # for bash
 install mobile-shell
@@ -15,6 +15,7 @@ install htop
 install git
 install leiningen
 install node
+install phantomjs
 
 # for building binaries
 install libmagic
