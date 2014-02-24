@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.02.21.
+# last update: 2014.02.24.
 
 # binary files
 *.o
@@ -54,8 +54,8 @@ Applications
 # ruby
 .gem
 .rvm
-.bundler/
-#Gemfile.lock
+.bundle
+.bundler
 
 # node.js
 .npm
