@@ -16,7 +16,7 @@ install git
 install leiningen
 install node
 install phantomjs
-install casperjs
+install casperjs --devel
 
 # for building binaries
 install libmagic
