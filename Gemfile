@@ -1,4 +1,4 @@
-# last update: 2014.02.06.
+# last update: 2014.02.25.
 
 source 'http://rubygems.org'
 
@@ -8,7 +8,11 @@ gem 'rspec'
 
 # my gems
 gem 'rtmux'
-
-# my gems from github
 gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libraries
+
+# gems for development/test
+# for trello
+gem 'ruby-trello'
+# for watir
+gem 'watir-webdriver'
 
