@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.02.27.
+# last update: 2014.03.03.
 
 # for bash
 install mobile-shell
@@ -12,7 +12,7 @@ install wget
 install htop
 
 # for development
-install git
+install git --with-pcre
 install leiningen
 install node
 install phantomjs
