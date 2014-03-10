@@ -1,0 +1,30 @@
+'exception-reporting':
+  'userId': 'df2e68a8-085d-f5e9-91b3-68db193b9e89'
+'release-notes':
+  'viewedVersion': '0.69.0'
+'welcome':
+  'showOnStartup': false
+'metrics':
+  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
+'core':
+  'themes': [
+    'atom-dark-ui'
+    'atom-dark-syntax'
+  ]
+  'ignoredNames': [
+    '.git'
+    '.svn'
+    '.DS_Store'
+    '*.swp'
+  ]
+  'projectHome': '/Users/meinside/srcs'
+  'audioBeep': false
+'editor':
+  'fontSize': 13
+'markdown-preview':
+  'grammars': [
+    'source.gfm'
+    'source.litcoffee'
+    'text.plain'
+    'text.plain.null-grammar'
+  ]
