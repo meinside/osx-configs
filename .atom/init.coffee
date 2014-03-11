@@ -1,4 +1,6 @@
-# Your init script
+# My Atom init script
+#
+# last update: 2014.03.11.
 #
 # Atom will evaluate this file each time a new window is opened. It is run
 # after packages are loaded/activated and after the previous editor state
