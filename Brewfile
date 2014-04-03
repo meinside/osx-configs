@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.03.03.
+# last update: 2014.04.03.
 
 # for bash
 install mobile-shell
@@ -17,6 +17,7 @@ install leiningen
 install node
 install phantomjs
 install casperjs --devel
+install imagemagick
 
 # for building other things (like rubygems)
 install libmagic
