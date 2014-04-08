@@ -1,7 +1,7 @@
 # .profile
 #
 # created on 07.04.01.
-# updated on 14.02.07.
+# updated on 14.04.08.
 #
 # ... by meinside@gmail.com
 
@@ -63,7 +63,7 @@ export JAVA_JVM_VERSION="1.6"
 export CLASSPATH=.
 
 # for node
-export NODE_PATH=/usr/local/lib/node_modules
+export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 export PATH="$PATH:/usr/local/share/npm/bin"
 
 # for RVM

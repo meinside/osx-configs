@@ -58,6 +58,7 @@ Applications
 .bundler
 
 # node.js
+.config/configstore
 .npm
 node_modules
 
