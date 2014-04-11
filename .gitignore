@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.02.24.
+# last update: 2014.04.11.
 
 # binary files
 *.o
@@ -59,6 +59,7 @@ Applications
 
 # node.js
 .config/configstore
+.node-gyp
 .npm
 node_modules
 
