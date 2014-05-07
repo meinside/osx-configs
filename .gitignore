@@ -87,6 +87,7 @@ Google Drive
 .atom/.node-gyp/
 .atom/packages/
 .atom/storage/
+.atom/compile-cache/
 .bashrc
 .bro
 .cache/
