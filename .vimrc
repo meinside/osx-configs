@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 14.02.04.
+" last update: 14.05.12.
 "
 "
 "
@@ -51,6 +51,9 @@ if filereadable(vundle_readme)
 	" For uploading Gist
 	Bundle 'mattn/webapi-vim'
 	Bundle 'mattn/gist-vim'
+
+	" For Ruby
+	Bundle 'tpope/vim-bundler'
 
 	" CoffeeScript
 	Bundle 'kchmck/vim-coffee-script'

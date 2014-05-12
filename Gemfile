@@ -12,7 +12,7 @@ gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libr
 
 # gems for development/test
 # for rails
-gem 'rails', '~> 4.1.0'
+gem 'rails', '~> 4.1.1'
 # for trello
 gem 'ruby-trello'
 # for watir
