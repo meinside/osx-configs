@@ -52,7 +52,7 @@ GEM
       tzinfo (~> 1.1)
     addressable (2.3.6)
     arel (5.0.1.20140414130214)
-    aws-sdk (1.40.0)
+    aws-sdk (1.40.1)
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     builder (3.2.2)
@@ -83,8 +83,8 @@ GEM
     net-sftp (2.1.2)
       net-ssh (>= 2.6.5)
     net-ssh (2.9.0)
-    nokogiri (1.6.1)
-      mini_portile (~> 0.5.0)
+    nokogiri (1.6.2)
+      mini_portile (~> 0.5.2)
     oauth (0.4.7)
     polyglot (0.3.4)
     rack (1.5.2)
@@ -173,7 +173,7 @@ PLATFORMS
 
 DEPENDENCIES
   meinside-ruby!
-  rails (~> 4.1.0)
+  rails (~> 4.1.1)
   rspec
   rtmux
   ruby-trello
