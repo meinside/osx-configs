@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.04.25.
+# last update: 2014.06.10.
 
 # binary files
 *.o
@@ -14,10 +14,6 @@
 *.pyo
 *.class
 
-# swap files
-*.swp
-*~.nib
-
 # xcode files
 build/*
 *.pbxuser
@@ -27,25 +23,25 @@ build/*
 *.mode2v3
 xcuserdata
 
-# scm files
+# other scm files/dirs
 .svn
 .cvs
 
 # OSX files/dirs
 .DS_Store
-.Trash
+.Trash/
 .CFUserTextEncoding
 .crash_*
-Desktop
-Documents
-Downloads
-Library
-Movies
-Music
-Pictures
-Public
-Sites
-Applications
+Desktop/
+Documents/
+Downloads/
+Library/
+Movies/
+Music/
+Pictures/
+Public/
+Sites/
+Applications/
 
 # X11 files/dirs
 .Xauthority
@@ -61,14 +57,20 @@ Applications
 .config/configstore
 .node-gyp
 .npm
-node_modules
+node_modules/
 
-# other src dirs
+# Atom editor
+.atom/.node-gyp/
+.atom/packages/
+.atom/storage/
+.atom/compile-cache/
+
+# src dirs
 srcs
 ruby
 node
 rails
-public_html
+public_html/
 
 # private files
 .gitconfig
@@ -80,25 +82,19 @@ public_html
 # history files
 .*history
 
-# other files/dirs
-Dropbox
-Google Drive
+# other applications' files/dirs
 .android/
-.atom/.node-gyp/
-.atom/packages/
-.atom/storage/
-.atom/compile-cache/
 .bashrc
+.boot2docker/
 .bro
 .cache/
 .cups/
 .dropbox/
 .dropbox-master/
-.dvdcss/
 .eclipse/
 .electrum/
-.filezilla/
-.heroku
+.Genymobile/
+.heroku/
 .itmstransporter/
 .lesshst
 .m2/
@@ -106,16 +102,22 @@ Google Drive
 .netrc
 .org.eclipse.epp.usagedata.recording.userId
 .putty/
-.ssh
-.subversion
-.vim
+.ssh/
+.subversion/
+.vim/
 .viminfo
 .RData
-.rstudio-desktop
+.rstudio-desktop/
 .wireshark-etc/
 .wireshark/
 .htoprc
+Dropbox/
+Google Drive/
+Sync/
+VirtualBox VMs/
 
 # temporary files/dirs
+*.swp
+*~.nib
 tmp/
 
