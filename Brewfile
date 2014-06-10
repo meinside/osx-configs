@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.04.16.
+# last update: 2014.06.10.
 
 # for bash
 install mobile-shell
@@ -13,6 +13,7 @@ install htop
 
 # for development
 install casperjs --devel
+install docker
 install git --with-pcre
 install gnupg
 install imagemagick
