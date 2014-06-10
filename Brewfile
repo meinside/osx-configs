@@ -39,7 +39,6 @@ install imagemagick
 install leiningen
 install node
 install phantomjs
-install ruby
 # for docker
 cask install boot2docker
 # for building other things (like rubygems)

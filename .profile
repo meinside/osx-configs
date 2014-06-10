@@ -55,9 +55,9 @@ fi
 #####################
 
 # for ruby
-#export RUBYOPT="-rubygems"
 #export RUBYOPT="-w -rubygems"
-export PATH="$PATH:/usr/local/opt/ruby/bin"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for java
 export JAVA_JVM_VERSION="1.6"
