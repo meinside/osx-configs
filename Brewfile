@@ -13,13 +13,16 @@ install htop
 
 # for development
 install casperjs --devel
-install docker
 install git --with-pcre
 install gnupg
 install imagemagick
 install leiningen
 install node
 install phantomjs
+
+# for docker
+install boot2docker
+install docker
 
 # for building other things (like rubygems)
 install libmagic
