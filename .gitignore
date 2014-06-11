@@ -73,6 +73,7 @@ rails
 public_html/
 
 # private files
+.dockercfg
 .gitconfig
 .gnupg
 .other_aliases
