@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.06.10.
+# last update: 2014.06.18.
 
 ################
 # update
@@ -34,6 +34,7 @@ cask install virtualbox
 install casperjs --devel
 install git --with-pcre
 install gnupg
+install go
 install heroku-toolbelt
 install imagemagick
 install leiningen
