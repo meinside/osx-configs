@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 14.05.12.
+" last update: 14.06.18.
 "
 "
 "
@@ -100,14 +100,6 @@ set sts=4
 set fencs=ucs-bom,utf-8,korea
 set termencoding=utf-8
 colo evening
-
-" put an underline under the cursor
-:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>	" \c will toggle this cursor line
-augroup CursorLine
-	au!
-	au VimEnter,WinEnter,BufWinEnter * setlocal cursorline
-	au WinLeave * setlocal nocursorline
-augroup END
 
 " custom key mappings, 11.04.15,
 nmap <F2> :30vsplit . <CR>
