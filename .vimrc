@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 14.06.18.
+" last update: 14.06.19.
 "
 "
 "
@@ -160,7 +160,7 @@ if has("autocmd")
 
 	" For other programming languages
 	autocmd FileType clj set ai sw=2 ts=2 sts=2 et
-	autocmd FileType go set ai sw=2 ts=2 sts=2 et
+	autocmd FileType go set ai sw=4 ts=4 sts=4 noet
 
 	" When editing a file, always jump to the last known cursor position.
 	" Don't do it when the position is invalid or when inside an event handler
