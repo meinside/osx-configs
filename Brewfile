@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.06.18.
+# last update: 2014.06.25.
 
 ################
 # update
@@ -16,6 +16,7 @@ install brew-cask
 ################
 # essential tools
 install htop
+install httpie
 install mobile-shell
 install ngrep
 install pstree
