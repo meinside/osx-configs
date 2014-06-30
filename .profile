@@ -1,7 +1,7 @@
 # .profile
 #
-# created on 07.04.01.
-# updated on 14.04.08.
+# created on 2007.04.01.
+# updated on 2014.06.30.
 #
 # ... by meinside@gmail.com
 
@@ -14,13 +14,10 @@ export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}
 # other configurations
 umask 027
 export DISPLAY=:0.0
-#export EDITOR="/usr/bin/vim -%d %s"
 export EDITOR="/usr/bin/vim"
 export SVN_EDITOR="/usr/bin/vim"
 export LANG="ko_KR.UTF-8"
 export LC_ALL="ko_KR.UTF-8"
-#export LANG="en.UTF-8"
-#export LC_ALL="en.UTF-8"
 export TERM="xterm-color"
 export CLICOLOR=true
 export HISTCONTROL=erasedups
@@ -32,13 +29,12 @@ alias ls="ls -G"
 alias ll="ls -G -l"
 alias grep="grep --color=auto"
 alias ctags='ctags -R --totals=yes'
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
-# custom aliases
+# aliases for development
 alias ngrep="sudo ngrep -q -W byline"
 alias npm="sudo npm"
-alias pg-start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
-alias pg-stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias httpserver="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8888, :DocumentRoot => Dir.pwd).start'"
 
 # load extra aliases if exist
 if [ -f ~/.other_aliases ]; then
