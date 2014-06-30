@@ -1,0 +1,20 @@
+" meinside's vimrc file for vrapper (http://vrapper.sourceforge.net/)
+" created by meinside@gmail.com,
+" last update: 2014.06.30.
+
+set backspace=indent,eol,start
+set nobackup		" do not keep a backup file, use versions instead
+set history=50		" keep 50 lines of command line history
+set ruler		" show the cursor position all the time
+set showcmd		" display incomplete commands
+set incsearch		" do incremental searching
+set cindent
+set ai
+set smartindent
+set nu
+set ts=4
+set sw=4
+set sts=4
+set fencs=ucs-bom,utf-8,korea
+set termencoding=utf-8
+colo evening
