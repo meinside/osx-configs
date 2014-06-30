@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.06.25.
+# last update: 2014.06.30.
 
 # binary files
 *.o
@@ -79,6 +79,8 @@ public_html/
 .other_aliases
 .gist-vim
 .rtmux.conf
+.zcompdump-*
+.zsh-update
 
 # history files
 .*history
@@ -103,6 +105,7 @@ public_html/
 .m2/
 .mplayer/
 .netrc
+.oh-my-zsh/
 .org.eclipse.epp.usagedata.recording.userId
 .putty/
 .ssh/

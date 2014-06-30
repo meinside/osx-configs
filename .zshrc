@@ -1,17 +1,50 @@
-# .profile
+# .zshrc
 #
-# created on 2007.04.01.
+# created on 2014.06.30.
 # updated on 2014.06.30.
 #
 # ... by meinside@gmail.com
+#
+# $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+# $ chsh -s /bin/zsh
+#
 
-# for prompt
-source ~/.bash/colors
-source ~/.bash/git-prompt
-export PS1="\[$bldcyn\]\u@\h\[$txtrst\]:\[$bldblu\]\w\[$txtgrn\]\$git_branch\[$txtred\]\$git_dirty\[$txtrst\]\$ "
-export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"; find_git_branch; find_git_dirty'
+# Path to your oh-my-zsh installation.
+# (https://github.com/robbyrussell/oh-my-zsh)
+export ZSH=$HOME/.oh-my-zsh
 
-# other configurations
+# If you would like oh-my-zsh to automatically update itself
+# without prompting you
+DISABLE_UPDATE_PROMPT="true"
+
+# Set name of the theme to load.
+# Look in ~/.oh-my-zsh/themes/
+# Optionally, if you set this to "random", it'll load a random theme each
+# time that oh-my-zsh is loaded.
+ZSH_THEME="gentoo"
+
+# Uncomment the following line to display red dots whilst waiting for completion.
+COMPLETION_WAITING_DOTS="true"
+
+# Uncomment the following line if you want to disable marking untracked files
+# under VCS as dirty. This makes repository status check for large repositories
+# much, much faster.
+# DISABLE_UNTRACKED_FILES_DIRTY="true"
+
+# Uncomment the following line if you want to change the command execution time
+# stamp shown in the history command output.
+# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
+HIST_STAMPS="yyyy-mm-dd"
+
+# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
+# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
+# Example format: plugins=(rails git textmate ruby lighthouse)
+#plugins=(osx git ruby rails)
+plugins=(osx)
+
+source $ZSH/oh-my-zsh.sh
+
+# User configuration
 umask 027
 export DISPLAY=:0.0
 export EDITOR="/usr/bin/vim"
@@ -22,7 +55,6 @@ export TERM="xterm-color"
 export CLICOLOR=true
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
-shopt -s histappend
 
 # common aliases
 alias ls="ls -G"
@@ -43,7 +75,6 @@ fi
 
 # for Xcode
 #defaults write com.apple.xcode PBXCustomTemplateMacroDefinitions '{ORGANIZATIONNAME = "some_organization_name" ; }'
-
 
 
 #####################

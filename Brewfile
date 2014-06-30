@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.06.25.
+# last update: 2014.06.30.
 
 ################
 # update
@@ -23,6 +23,7 @@ install pstree
 install tmux
 install tree
 install wget
+install zsh
 
 ################
 # essential applications
