@@ -1,11 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # prep.sh
 # 
 # for setting up various things automatically in OSX
 # (https://raw.github.com/meinside/osx-configs/master/bin/prep.sh)
 # 
-# last update: 2014.06.10.
+# last update: 2014.06.30.
 # 
 # by meinside@gmail.com
 
