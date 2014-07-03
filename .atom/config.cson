@@ -19,6 +19,7 @@
   ]
   'projectHome': '/Users/meinside/srcs'
   'audioBeep': false
+  'useReactEditor': true
 'editor':
   'fontSize': 13
 'markdown-preview':
