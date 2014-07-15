@@ -50,7 +50,7 @@ install mysql
 
 ################
 # others
-#install ffmpeg --with-libvpx --with-libvoris
+#install ffmpeg --with-libvpx --with-libvorbis
 
 ################
 # cleanup
