@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.06.30.
+# last update: 2014.07.15.
 
 ################
 # update
@@ -47,6 +47,10 @@ cask install boot2docker
 # for building other things (like rubygems)
 install libmagic
 install mysql
+
+################
+# others
+#install ffmpeg --with-libvps --with-libvoris
 
 ################
 # cleanup
