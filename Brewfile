@@ -28,6 +28,7 @@ install zsh
 ################
 # essential applications
 cask install google-chrome
+cask install iterm2
 cask install java
 cask install virtualbox
 
