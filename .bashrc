@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2014.06.30.
+# updated on 2014.07.23.
 #
 # ... by meinside@gmail.com
 
@@ -53,6 +53,12 @@ fi
 #export RUBYOPT="-w -rubygems"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# for golang
+if [ -x `which go` ] ; then
+	export GOROOT=`go env GOROOT`
+	export GOPATH=$HOME/srcs/go
+fi
 
 # for java
 export JAVA_JVM_VERSION="1.6"
