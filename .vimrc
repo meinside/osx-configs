@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2014.07.28.
+" last update: 2014.07.31.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -88,6 +88,9 @@ set termencoding=utf-8
 " for pretty color schemes in iTerm2
 set t_Co=256
 colo elflord
+
+" for running correct rvm ruby (not osx's default ruby) in zsh
+set shell=/bin/bash
 
 " custom key mappings, 2011.04.15,
 nmap <F2> :30vsplit . <CR>
