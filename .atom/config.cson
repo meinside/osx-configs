@@ -1,11 +1,5 @@
-'exception-reporting':
-  'userId': 'df2e68a8-085d-f5e9-91b3-68db193b9e89'
-'release-notes':
-  'viewedVersion': '0.94.0'
 'welcome':
   'showOnStartup': false
-'metrics':
-  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
 'core':
   'themes': [
     'atom-dark-ui'
@@ -17,9 +11,7 @@
     '.DS_Store'
     '*.swp'
   ]
-  'projectHome': '/Users/meinside/srcs'
   'audioBeep': false
-  'useReactEditor': true
 'editor':
   'fontSize': 13
 'markdown-preview':
@@ -29,3 +21,7 @@
     'text.plain'
     'text.plain.null-grammar'
   ]
+'exception-reporting':
+  'userId': '7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d'
+'metrics':
+  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
