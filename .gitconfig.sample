@@ -1,7 +1,7 @@
 # sample .gitconfig file
 # (copy as .gitconfig and customize it)
 #
-# last update: 2014.03.03.
+# last update: 2014.08.27.
 
 [alias]
 	# commands
@@ -35,6 +35,7 @@
 [grep]
 	extendRegexp = true
 	lineNumber = true
+	fullname = true
 [color]
 	ui = auto
 [core]
@@ -50,4 +51,6 @@
 	email = meinside@gmail.com
 [github]
 	user = meinside
+[tag]
+	sort = version:refname
 
