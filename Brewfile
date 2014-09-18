@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.07.15.
+# last update: 2014.09.18.
 
 ################
 # update
@@ -27,6 +27,7 @@ install zsh
 
 ################
 # essential applications
+cask install atom
 cask install google-chrome
 cask install iterm2
 cask install java
