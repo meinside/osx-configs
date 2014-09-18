@@ -58,8 +58,7 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [ -x `which go` ] ; then
 	export GOROOT=`go env GOROOT`
 	export GOPATH=$HOME/srcs/go
-	export GOBIN="$GOPATH/bin"
-	export PATH="$PATH:$GOBIN"
+	export PATH="$GOPATH/bin"
 fi
 
 # for java
