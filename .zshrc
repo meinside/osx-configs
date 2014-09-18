@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.07.22.
+# updated on 2014.09.18.
 #
 # ... by meinside@gmail.com
 #
@@ -84,12 +84,14 @@ fi
 # for ruby
 #export RUBYOPT="-w -rubygems"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for golang
 if [ -x `which go` ] ; then
 	export GOROOT=`go env GOROOT`
 	export GOPATH=$HOME/srcs/go
+	export GOBIN="$GOPATH/bin"
+	export PATH="$PATH:$GOBIN"
 fi
 
 # for java
@@ -102,9 +104,9 @@ export PATH="$PATH:/usr/local/share/npm/bin"
 
 # custom paths
 if [ -d "$HOME/node" ] ; then
-	PATH="$PATH:$HOME/node"
+	export PATH="$PATH:$HOME/node"
 fi
 if [ -d "$HOME/bin" ] ; then
-	PATH="$PATH:$HOME/bin"
+	export PATH="$PATH:$HOME/bin"
 fi
 
