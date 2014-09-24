@@ -158,7 +158,7 @@ GEM
     tilt (1.4.1)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
-    watir-webdriver (0.6.10)
+    watir-webdriver (0.6.11)
       selenium-webdriver (>= 2.18.0)
     websocket (1.2.1)
     wirble (0.1.3)
