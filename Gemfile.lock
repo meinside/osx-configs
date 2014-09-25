@@ -65,7 +65,7 @@ GEM
     dropbox-sdk (1.6.4)
       json
     erubis (2.7.0)
-    ffi (1.9.3)
+    ffi (1.9.4)
     hike (1.2.3)
     i18n (0.6.11)
     i2c (0.4.0)
