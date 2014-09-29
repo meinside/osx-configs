@@ -1,7 +1,7 @@
 # Brewfile of meinside@gmail.com
 # (run `brew bundle`)
 # 
-# last update: 2014.09.18.
+# last update: 2014.09.29.
 
 ################
 # update
@@ -44,6 +44,7 @@ install imagemagick
 install leiningen
 install node
 install phantomjs
+cask install sourcetree
 # for docker
 cask install boot2docker
 # for building other things (like rubygems)
@@ -53,6 +54,7 @@ install mysql
 ################
 # others
 #install ffmpeg --with-libvpx --with-libvorbis
+cask install spectacle
 
 ################
 # cleanup
