@@ -58,7 +58,7 @@ GEM
       json (~> 1.4)
       nokogiri (>= 1.4.4)
     builder (3.2.2)
-    childprocess (0.5.4)
+    childprocess (0.5.5)
       ffi (~> 1.0, >= 1.0.11)
     coderay (1.1.0)
     diff-lcs (1.2.5)
