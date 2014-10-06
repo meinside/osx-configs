@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.09.18.
+# updated on 2014.10.06.
 #
 # ... by meinside@gmail.com
 #
@@ -67,6 +67,9 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 alias ngrep="sudo ngrep -q -W byline"
 alias npm="sudo npm"
 alias httpserver="ruby -rwebrick -e'WEBrick::HTTPServer.new(:Port => 8888, :DocumentRoot => Dir.pwd).start'"
+
+# load zsh functions
+. ~/.zshfunc
 
 # load extra aliases if exist
 if [ -f ~/.other_aliases ]; then

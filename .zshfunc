@@ -1,0 +1,22 @@
+# .zsh_functions
+#
+# my zsh functions
+#
+# created on 2014.10.06.
+# updated on 2014.10.06.
+#
+# ... by meinside@gmail.com
+# 
+
+# list files changed in given days
+# (referenced: http://gotofritz.net/blog/howto/finding-recently-changed-files-osx-terminal/)
+ls_changed_in_days () {
+	if [[ $1 && -x $2 ]]; then
+		echo "> listing files modified in $1 day(s): $2"
+
+		find $2 -type f -mtime -$1 -print0 | xargs -0 du -sk | sort -nr
+	else
+		echo "* usage: $0 NUM_DAYS DIR_PATH"
+	fi
+}
+
