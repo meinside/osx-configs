@@ -3,20 +3,68 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2014.10.06.
+# updated on 2014.10.07.
 #
 # ... by meinside@gmail.com
 # 
 
 # list files changed in given days
 # (referenced: http://gotofritz.net/blog/howto/finding-recently-changed-files-osx-terminal/)
-ls_changed_in_days () {
+ls-changed-in-days () {
 	if [[ $1 && -x $2 ]]; then
 		echo "> listing files modified in $1 day(s): $2"
 
 		find $2 -type f -mtime -$1 -print0 | xargs -0 du -sk | sort -nr
 	else
 		echo "* usage: $0 NUM_DAYS DIR_PATH"
+	fi
+}
+
+# install bundle, brew, brew cask and everything!
+install-all () {
+	if ! [[ -x `which brew` ]]; then
+		# install homebrew
+		ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+	fi
+
+	# homebrew
+	source $HOME/Brewfile
+	__install_brew_pkgs__
+
+	# bundler
+	BUNDLE_GEMFILE=$HOME/Gemfile bundle install
+}
+
+# update bundle, brew, brew cask and everything!
+update-all () {
+	# homebrew
+	if [[ -x `which brew` ]]; then
+		echo "> updating brew..."
+
+		brew update
+		brew upgrade
+
+		echo "> cleaning brew..."
+
+		brew cleanup
+		brew cask cleanup
+	else
+		echo "* brew not installed"
+	fi
+
+	# bundler
+	if [[ -x `which bundle` ]]; then
+		echo "> updating bundle..."
+
+		gem update
+
+		BUNDLE_GEMFILE=$HOME/Gemfile bundle update
+
+		echo "> cleaning bundle..."
+
+		gem cleanup
+	else
+		echo "* bundler not installed"
 	fi
 }
 

@@ -1,63 +1,51 @@
 # Brewfile of meinside@gmail.com
-# (run `brew bundle`)
+# (for install-all() in .zshfunc)
 # 
-# last update: 2014.09.29.
+# last update: 2014.10.07.
 
-################
-# update
-update
-upgrade
+__install_brew_pkgs__ () {
 
-################
 # for installing packaged applications
-tap caskroom/cask
-install brew-cask
+brew install caskroom/cask/brew-cask
 
-################
 # essential tools
-install htop
-install httpie
-install mobile-shell
-install ngrep
-install pstree
-install tmux
-install tree
-install wget
-install zsh
+brew install htop
+brew install httpie
+brew install mobile-shell
+brew install ngrep
+brew install pstree
+brew install tmux
+brew install tree
+brew install wget
+brew install zsh
 
-################
-# essential applications
-cask install atom
-cask install google-chrome
-cask install iterm2
-cask install java
-cask install virtualbox
-
-################
 # for development
-install casperjs --devel
-install git --with-pcre
-install gnupg
-install go
-install heroku-toolbelt
-install imagemagick
-install leiningen
-install node
-install phantomjs
-cask install sourcetree
-# for docker
-cask install boot2docker
+brew install casperjs --devel
+brew install git --with-pcre
+brew install gnupg
+brew install go
+brew install heroku-toolbelt
+brew install imagemagick
+brew install leiningen
+brew install node
+brew install phantomjs
+
 # for building other things (like rubygems)
-install libmagic
-install mysql
+brew install libmagic
+brew install mysql
 
-################
 # others
-#install ffmpeg --with-libvpx --with-libvorbis
-cask install spectacle
+#brew install ffmpeg --with-libvpx --with-libvorbis
 
-################
-# cleanup
-cleanup
-cask cleanup
+# cask
+brew cask install atom
+brew cask install boot2docker
+brew cask install google-chrome
+brew cask install iterm2
+brew cask install java
+brew cask install sourcetree
+brew cask install spectacle
+brew cask install virtualbox
+
+}
 
