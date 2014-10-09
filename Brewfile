@@ -1,9 +1,8 @@
 # Brewfile of meinside@gmail.com
-# (for install-all() in .zshfunc)
 # 
-# last update: 2014.10.07.
+# last update: 2014.10.09.
 
-__install_brew_pkgs__ () {
+# Homebrew Packages
 
 # for installing packaged applications
 brew install caskroom/cask/brew-cask
@@ -46,6 +45,4 @@ brew cask install java
 brew cask install sourcetree
 brew cask install spectacle
 brew cask install virtualbox
-
-}
 

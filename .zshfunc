@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2014.10.07.
+# updated on 2014.10.09.
 #
 # ... by meinside@gmail.com
 # 
@@ -28,8 +28,7 @@ install-all () {
 	fi
 
 	# homebrew
-	source $HOME/Brewfile
-	__install_brew_pkgs__
+	$SHELL $HOME/Brewfile
 
 	# bundler
 	BUNDLE_GEMFILE=$HOME/Gemfile bundle install
