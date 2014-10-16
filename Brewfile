@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2014.10.09.
+# last update: 2014.10.15.
 
 # Homebrew Packages
 
@@ -38,10 +38,12 @@ brew install mysql
 
 # cask
 brew cask install atom
+#brew cask install bittorrent-sync
 brew cask install boot2docker
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install java
+#brew cask install qbittorrent
 brew cask install sourcetree
 brew cask install spectacle
 brew cask install virtualbox
