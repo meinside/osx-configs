@@ -1,11 +1,17 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.10.06.
+# updated on 2014.10.20.
 #
 # ... by meinside@gmail.com
 #
+# >> install oh-my-zsh
 # $ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+#
+# >> append '/usr/local/bin/zsh' to /etc/shells
+# $ sudo vi /etc/shells
+#
+# >> change shell
 # $ chsh -s /bin/zsh
 #
 
