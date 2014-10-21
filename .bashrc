@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2014.09.18.
+# updated on 2014.10.21.
 #
 # ... by meinside@gmail.com
 
@@ -58,7 +58,7 @@ export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 if [ -x `which go` ] ; then
 	export GOROOT=`go env GOROOT`
 	export GOPATH=$HOME/srcs/go
-	export PATH="$GOPATH/bin"
+	export PATH="$PATH:$GOPATH/bin"
 fi
 
 # for java
