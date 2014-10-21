@@ -90,31 +90,35 @@ fi
 #  for development  #
 #####################
 
-# for ruby
-#export RUBYOPT="-w -rubygems"
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [[ -z $TMUX ]]; then
 
-# for golang
-if [ -x "`which go`" ] ; then
-	export GOROOT=`go env GOROOT`
-	export GOPATH=$HOME/srcs/go
-	export PATH="$PATH:$GOPATH/bin"
-fi
+	# for ruby
+	#export RUBYOPT="-w -rubygems"
+	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# for java
-export JAVA_JVM_VERSION="1.6"
-export CLASSPATH=.
+	# for golang
+	if [ -x "`which go`" ] ; then
+		export GOROOT=`go env GOROOT`
+		export GOPATH=$HOME/srcs/go
+		export PATH="$PATH:$GOPATH/bin"
+	fi
 
-# for node
-export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
-export PATH="$PATH:/usr/local/share/npm/bin"
+	# for java
+	export JAVA_JVM_VERSION="1.6"
+	export CLASSPATH=.
 
-# custom paths
-if [ -d "$HOME/node" ] ; then
-	export PATH="$PATH:$HOME/node"
-fi
-if [ -d "$HOME/bin" ] ; then
-	export PATH="$PATH:$HOME/bin"
+	# for node
+	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
+	export PATH="$PATH:/usr/local/share/npm/bin"
+
+	# custom paths
+	if [ -d "$HOME/node" ] ; then
+		export PATH="$PATH:$HOME/node"
+	fi
+	if [ -d "$HOME/bin" ] ; then
+		export PATH="$PATH:$HOME/bin"
+	fi
+
 fi
 
