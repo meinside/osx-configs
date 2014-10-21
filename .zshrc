@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.10.20.
+# updated on 2014.10.21.
 #
 # ... by meinside@gmail.com
 #
@@ -96,7 +96,7 @@ fi
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # for golang
-if [ -x `which go` ] ; then
+if [ -x "`which go`" ] ; then
 	export GOROOT=`go env GOROOT`
 	export GOPATH=$HOME/srcs/go
 	export PATH="$PATH:$GOPATH/bin"
