@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.10.21.
+# updated on 2014.10.22.
 #
 # ... by meinside@gmail.com
 #
@@ -90,12 +90,12 @@ fi
 #  for development  #
 #####################
 
-if [[ -z $TMUX ]]; then
+# for ruby
+#export RUBYOPT="-w -rubygems"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-	# for ruby
-	#export RUBYOPT="-w -rubygems"
-	[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+if [[ -z $TMUX ]]; then
 
 	# for golang
 	if [ -x "`which go`" ] ; then
