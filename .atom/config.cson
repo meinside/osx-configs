@@ -1,28 +1,25 @@
-'welcome':
-  'showOnStartup': false
-'core':
-  'themes': [
-    'atom-dark-ui'
-    'atom-dark-syntax'
-  ]
-  'ignoredNames': [
-    '.git'
-    '.svn'
-    '.DS_Store'
-    '*.swp'
-  ]
-  'audioBeep': false
-'editor':
-  'fontSize': 13
-  'invisibles': {}
-'markdown-preview':
-  'grammars': [
-    'source.gfm'
-    'source.litcoffee'
-    'text.plain'
-    'text.plain.null-grammar'
-  ]
-'exception-reporting':
-  'userId': '7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d'
-'metrics':
-  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
+'global':
+  'welcome':
+    'showOnStartup': false
+  'core':
+    'ignoredNames': [
+      '.git'
+      '.svn'
+      '.DS_Store'
+      '*.swp'
+    ]
+    'audioBeep': false
+  'editor':
+    'fontSize': 13
+    'invisibles': {}
+  'markdown-preview':
+    'grammars': [
+      'source.gfm'
+      'source.litcoffee'
+      'text.plain'
+      'text.plain.null-grammar'
+    ]
+  'exception-reporting':
+    'userId': '7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d'
+  'metrics':
+    'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
