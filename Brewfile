@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2014.10.23.
+# last update: 2014.11.11.
 
 # Homebrew Packages
 
@@ -15,6 +15,7 @@ brew install ngrep
 brew install pstree
 brew install tmux
 brew install tree
+brew install vim
 brew install wget
 brew install zsh
 
