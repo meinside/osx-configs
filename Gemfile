@@ -1,4 +1,4 @@
-# last update: 2014.04.09.
+# last update: 2014.12.08.
 
 source 'http://rubygems.org'
 
@@ -12,7 +12,7 @@ gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libr
 
 # gems for development/test
 # for rails
-gem 'rails', '~> 4.1.1'
+gem 'rails', '~> 4.2.0rc2'
 # for trello
 gem 'ruby-trello'
 # for watir
