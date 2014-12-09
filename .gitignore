@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.06.30.
+# last update: 2014.12.09.
 
 # binary files
 *.o
@@ -58,6 +58,9 @@ Applications/
 .node-gyp
 .npm
 node_modules/
+
+# java
+.gradle/
 
 # Atom editor
 .atom/.node-gyp/
