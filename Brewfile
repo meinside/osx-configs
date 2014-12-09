@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2014.11.13.
+# last update: 2014.12.09.
 
 # Homebrew Packages
 
@@ -35,14 +35,13 @@ brew install libmagic
 brew install mysql
 
 # others
-#brew install ffmpeg --with-libvpx --with-libvorbis
+brew install ffmpeg --with-libvpx --with-libvorbis
 
 # cask
 brew cask install atom
 brew cask install bittorrent-sync
 brew cask install boot2docker
 brew cask install dropbox
-brew cask install eclipse-ide
 brew cask install google-chrome
 brew cask install iterm2
 brew cask install java
