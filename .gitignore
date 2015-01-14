@@ -70,9 +70,6 @@ node_modules/
 
 # src dirs
 srcs
-ruby
-node
-rails
 public_html/
 
 # private files
