@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2014.08.11.
+" last update: 2015.01.23.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -41,14 +41,11 @@ if filereadable(vundle_readme)
 	" For Ruby
 	Bundle 'vim-ruby/vim-ruby'
 
-	" CoffeeScript
+	" For CoffeeScript
 	Bundle 'kchmck/vim-coffee-script'
 	Bundle 'lukaszkorecki/CoffeeTags'
 
-	" Clojure
-	Bundle 'guns/vim-clojure-static'
-
-	" Go
+	" For Go
 	Bundle 'jnwhiteh/vim-golang'
 	" XXX: gotags is needed! ($ go get -u github.com/jstemmer/gotags)
 	Bundle 'jstemmer/gotags'
@@ -80,11 +77,16 @@ if filereadable(vundle_readme)
 	    \ 'ctagsargs' : '-sort -silent'
 		\ }
 
-	" CSS
+	" For CSS
 	Bundle 'cakebaker/scss-syntax.vim'
 
-	" HAML
+	" For HAML
 	Bundle 'tpope/vim-haml'
+
+	" For vim-codefmt (:FormatLines, :FormatCode)
+	Bundle 'google/vim-maktaba'
+	Bundle 'google/vim-codefmtlib'
+	Bundle 'google/vim-codefmt'
 
 	"
 	""""""""
