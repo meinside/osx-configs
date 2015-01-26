@@ -1,4 +1,4 @@
-'global':
+'*':
   'welcome':
     'showOnStartup': false
   'core':
@@ -23,12 +23,12 @@
     'userId': '7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d'
   'metrics':
     'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
-'exception-reporting':
-  'userId': '9b9eca66-2609-20d8-6473-fdbb1cdc3a1b'
-'welcome':
-  'showOnStartup': false
-'metrics':
-  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
-'core': {}
 'editor':
   'invisibles': {}
+'core': {}
+'metrics':
+  'userId': '4ff51923f5a2a48138457ec727e02802cd3139eb'
+'welcome':
+  'showOnStartup': false
+'exception-reporting':
+  'userId': '9b9eca66-2609-20d8-6473-fdbb1cdc3a1b'
