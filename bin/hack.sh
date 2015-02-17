@@ -3,7 +3,7 @@
 # cherry-picked
 # from: https://gist.github.com/erikh/2260182
 #
-# last update: 2014.06.30.
+# last update: 2015.02.17.
 
 echo "Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 0
@@ -169,3 +169,8 @@ chflags nohidden ~/Library
 
 echo "Kill affected applications"
 for app in Safari Finder Dock Mail SystemUIServer; do killall "$app" >/dev/null 2>&1; done
+
+# disable boot sound
+sudo nvram SystemAudioVolume=%80
+# (for reenabling it)
+#sudo nvram -d SystemAudioVolume
