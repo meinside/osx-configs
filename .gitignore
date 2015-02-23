@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2014.12.09.
+# last update: 2015.02.23.
 
 # binary files
 *.o
@@ -14,14 +14,11 @@
 *.pyo
 *.class
 
-# xcode files
-build/*
-*.pbxuser
-*.perspective
-*.perspectivev3
-*.mode1v3
-*.mode2v3
-xcuserdata
+# temporary/history files & dirs
+*.swp
+*~.nib
+.cache/
+tmp/
 
 # other scm files/dirs
 .svn
@@ -32,6 +29,7 @@ xcuserdata
 .Trash/
 .CFUserTextEncoding
 .crash_*
+Applications/
 Desktop/
 Documents/
 Downloads/
@@ -41,7 +39,6 @@ Music/
 Pictures/
 Public/
 Sites/
-Applications/
 
 # X11 files/dirs
 .Xauthority
@@ -62,23 +59,33 @@ node_modules/
 # java
 .gradle/
 
-# Atom editor
+# golang
+.gore/
+
+# atom editor
 .atom/.node-gyp/
 .atom/packages/
 .atom/storage/
 .atom/compile-cache/
 
+# xcode files
+xcuserdata
+
 # src dirs
 srcs
 public_html/
 
-# private files
+# private/config files & dirs
+.android/
+.bashrc
+.boot2docker/
 .dockercfg
 .gitconfig
 .gnupg
 .other_aliases
 .gist-vim
 .rtmux.conf
+.ssh/
 .zcompdump-*
 .zsh-update
 
@@ -86,29 +93,18 @@ public_html/
 .*history
 .dbshell
 
-# other applications' files/dirs
-.android/
-.bashrc
-.boot2docker/
-.bro
-.cache/
+# other applications' files & dirs
 .cups/
 .dropbox/
 .dropbox-master/
 .eclipse/
-.electrum/
 .Genymobile/
 .heroku/
 .httpie/
-.itmstransporter/
 .lesshst
-.m2/
-.mplayer/
 .netrc
 .oh-my-zsh/
-.org.eclipse.epp.usagedata.recording.userId
 .putty/
-.ssh/
 .subversion/
 .vim/
 .viminfo
@@ -121,9 +117,4 @@ Dropbox/
 Google Drive/
 Sync/
 VirtualBox VMs/
-
-# temporary files/dirs
-*.swp
-*~.nib
-tmp/
 
