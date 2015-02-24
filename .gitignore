@@ -63,7 +63,7 @@ node_modules/
 .gore/
 
 # atom editor
-.atom/.node-gyp/
+.atom/.apm/
 .atom/packages/
 .atom/storage/
 .atom/compile-cache/
