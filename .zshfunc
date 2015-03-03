@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2014.10.09.
+# updated on 2015.03.03.
 #
 # ... by meinside@gmail.com
 # 
@@ -53,15 +53,15 @@ update-all () {
 
 	# bundler
 	if [[ -x `which bundle` ]]; then
+		echo "> cleaning bundle..."
+
+		gem cleanup
+
 		echo "> updating bundle..."
 
 		gem update
 
 		BUNDLE_GEMFILE=$HOME/Gemfile bundle update
-
-		echo "> cleaning bundle..."
-
-		gem cleanup
 	else
 		echo "* bundler not installed"
 	fi
