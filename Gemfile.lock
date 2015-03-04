@@ -69,6 +69,8 @@ GEM
     builder (3.2.2)
     childprocess (0.5.5)
       ffi (~> 1.0, >= 1.0.11)
+    cocoapods (0.5.1)
+      xcodeproj (~> 0.1.0)
     coderay (1.1.0)
     diff-lcs (1.2.5)
     dropbox-sdk (1.6.4)
@@ -90,7 +92,7 @@ GEM
     mimemagic (0.2.1)
     mini_portile (0.6.2)
     minitest (5.5.1)
-    multi_json (1.10.1)
+    multi_json (1.11.0)
     mysql (2.9.1)
     net-scp (1.2.1)
       net-ssh (>= 2.6.5)
@@ -194,6 +196,7 @@ GEM
     write_xlsx (0.81.1)
       rubyzip (>= 1.0.0)
       zip-zip
+    xcodeproj (0.1.0)
     zip-zip (0.3)
       rubyzip (>= 1.0.0)
 
@@ -201,6 +204,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  cocoapods
   meinside-ruby!
   pushbullet-ruby
   rails (~> 4.2.0)

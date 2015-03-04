@@ -1,5 +1,5 @@
 # My global Gemfile
-# last update: 2015.02.25.
+# last update: 2015.03.04.
 
 source 'http://rubygems.org'
 
@@ -17,12 +17,14 @@ gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libr
 ################
 # for development/test
 #
+# for CocoaPods
+gem 'cocoapods'
 # for rails
 gem 'rails', '~> 4.2.0'
+# for Rserve
+gem 'rserve-client'
 # for trello
 gem 'ruby-trello'
 # for watir
 gem 'watir-webdriver'
-# for Rserve
-gem 'rserve-client'
 
