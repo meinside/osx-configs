@@ -69,6 +69,7 @@ node_modules/
 .atom/compile-cache/
 
 # xcode files
+.cocoapods/
 xcuserdata
 
 # src dirs
