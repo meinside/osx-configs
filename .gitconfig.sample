@@ -30,6 +30,9 @@
 	sa = stash apply
 	ss = stash save
 
+	# submodule
+	smu = submodule update --init --recursive
+
 	# grep with group
 	g = "grep --break --heading --line-number"
 [grep]
