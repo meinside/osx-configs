@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2015.02.23.
+# last update: 2015.03.11.
 
 #### formulas
 #
@@ -42,6 +42,7 @@ brew cask install atom
 brew cask install bittorrent-sync
 brew cask install dropbox
 brew cask install google-chrome
+brew cask install licecap
 brew cask install steam
 #brew cask install spectacle
 brew cask install xquartz
