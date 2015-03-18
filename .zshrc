@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2014.12.04.
+# updated on 2015.03.18.
 #
 # ... by meinside@gmail.com
 #
@@ -89,11 +89,12 @@ fi
 #####################
 #  for development  #
 #####################
-
+	
 # for ruby
 #export RUBYOPT="-w -rubygems"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
 # XXX - for using my global Gemfile as fallback...
 autoload -U add-zsh-hook
 set-fallback-gemfile () {
@@ -121,7 +122,7 @@ if [[ -z $TMUX ]]; then
 	if [ -x "`which go`" ] ; then
 		export GOROOT=`go env GOROOT`
 		export GOPATH=$HOME/srcs/go
-		export PATH="$PATH:$GOPATH/bin"
+		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
 
 	# for java
@@ -132,10 +133,7 @@ if [[ -z $TMUX ]]; then
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
 
-	# custom paths
-	if [ -d "$HOME/node" ] ; then
-		export PATH="$PATH:$HOME/node"
-	fi
+	# additional paths
 	if [ -d "$HOME/bin" ] ; then
 		export PATH="$PATH:$HOME/bin"
 	fi
