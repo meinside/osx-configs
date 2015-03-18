@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2015.03.11.
+# last update: 2015.03.18.
 
 #### formulas
 #
@@ -44,15 +44,17 @@ brew cask install dropbox
 brew cask install google-chrome
 brew cask install licecap
 brew cask install steam
-#brew cask install spectacle
 brew cask install xquartz
 #
 # for development
 brew cask install boot2docker
 brew cask install iterm2
 brew cask install java
-brew cask install r	# defaults write org.R-project.R force.LANG en_US.UTF-8
+brew cask install r	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew cask install rstudio
 brew cask install sourcetree
 brew cask install virtualbox
+#
+# etc.
+#brew cask install d235j-xbox360-controller-driver
 
