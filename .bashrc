@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2014.10.22.
+# updated on 2015.03.18.
 #
 # ... by meinside@gmail.com
 
@@ -60,7 +60,7 @@ if [[ -z $TMUX ]]; then
 	if [ `which go` ] ; then
 		export GOROOT=`go env GOROOT`
 		export GOPATH=$HOME/srcs/go
-		export PATH="$PATH:$GOPATH/bin"
+		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
 
 	# for java
@@ -71,10 +71,7 @@ if [[ -z $TMUX ]]; then
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
 
-	# custom paths
-	if [ -d "$HOME/node" ] ; then
-		export PATH="$PATH:$HOME/node"
-	fi
+	# additional paths
 	if [ -d "$HOME/bin" ] ; then
 		export PATH="$PATH:$HOME/bin"
 	fi
