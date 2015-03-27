@@ -226,7 +226,7 @@ GEM
     write_xlsx (0.81.1)
       rubyzip (>= 1.0.0)
       zip-zip
-    xcodeproj (0.23.0)
+    xcodeproj (0.23.1)
       activesupport (>= 3)
       colored (~> 1.2)
     zip-zip (0.3)
