@@ -59,8 +59,6 @@ update-all () {
 
 		echo "> updating bundle..."
 
-		gem update
-
 		BUNDLE_GEMFILE=$HOME/Gemfile bundle update
 	else
 		echo "* bundler not installed"
