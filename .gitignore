@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.03.04.
+# last update: 2015.03.30.
 
 # binary files
 *.o
@@ -111,6 +111,7 @@ public_html/
 .viminfo
 .RData
 .rstudio-desktop/
+.w3m/
 .wireshark-etc/
 .wireshark/
 .htoprc
