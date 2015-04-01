@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.03.30.
+# last update: 2015.04.01.
 
 # binary files
 *.o
@@ -103,6 +103,7 @@ public_html/
 .heroku/
 .httpie/
 .lesshst
+.lnav/
 .netrc
 .oh-my-zsh/
 .putty/

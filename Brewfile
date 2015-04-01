@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2015.03.18.
+# last update: 2015.04.01.
 
 #### formulas
 #
@@ -8,6 +8,7 @@
 brew install ffmpeg --with-libvpx --with-libvorbis
 brew install htop
 brew install httpie
+brew install lnav
 brew install mobile-shell
 brew install ngrep
 brew install pstree
