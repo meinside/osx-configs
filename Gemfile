@@ -1,5 +1,5 @@
 # My global Gemfile
-# last update: 2015.03.04.
+# last update: 2015.04.09.
 
 source 'http://rubygems.org'
 
@@ -23,8 +23,9 @@ gem 'cocoapods'
 gem 'rails', '~> 4.2.0'
 # for Rserve
 gem 'rserve-client'
+# for Rubocop
+gem 'rubocop'
 # for trello
 gem 'ruby-trello'
 # for watir
 gem 'watir-webdriver'
-
