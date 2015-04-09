@@ -9,9 +9,13 @@
       "*.swp"
     ]
     audioBeep: false
+    projectHome: "/Users/meinside"
+    followSymlinks: true
   editor:
-    fontSize: 13
     invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    fontSize: 12
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -24,12 +28,15 @@
   metrics:
     userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
   linter: {}
-  "autocomplete-plus": {}
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
   "go-plus":
     goPath: "~/srcs/go"
-"exception-reporting":
-  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
-welcome:
-  showOnStartup: false
+  "linter-rubocop":
+    rubocopExecutablePath: "/Users/meinside/.rvm/gems/ruby-2.2.1/bin/rubocop"
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
+welcome:
+  showOnStartup: false
+"exception-reporting":
+  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
