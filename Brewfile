@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2015.04.01.
+# last update: 2015.04.22.
 
 #### formulas
 #
@@ -51,6 +51,7 @@ brew cask install xquartz
 brew cask install boot2docker
 brew cask install iterm2
 brew cask install java
+brew cask install kinematic
 brew cask install r	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew cask install rstudio
 brew cask install sourcetree
