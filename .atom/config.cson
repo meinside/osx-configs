@@ -33,12 +33,12 @@
   "go-plus":
     goPath: "~/srcs/go"
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/meinside/.rvm/gems/ruby-2.2.1/bin/rubocop"
+    rubocopExecutablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
   "vim-mode":
     useClipboardAsDefaultRegister: true
-"exception-reporting":
-  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
-welcome:
-  showOnStartup: false
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
+welcome:
+  showOnStartup: false
+"exception-reporting":
+  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
