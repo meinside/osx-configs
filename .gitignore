@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.04.22.
+# last update: 2015.05.18.
 
 # binary files
 *.o
@@ -95,6 +95,7 @@ public_html/
 .dbshell
 
 # other applications' files & dirs
+.AndroidStudio*/
 .cups/
 .docker/
 .dropbox/
