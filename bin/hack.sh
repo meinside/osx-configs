@@ -178,3 +178,6 @@ sudo nvram SystemAudioVolume=%80
 # enable chime on connection of power cable
 #defaults write com.apple.PowerChime ChimeOnAllHardware -bool true
 
+# change screenshot save location
+#defaults write com.apple.screencapture location ~/Downloads; killall SystemUIServer
+
