@@ -1,0 +1,25 @@
+[
+  {
+    "type": "url",
+    "icon": "octoface",
+    "url": "http://github.com",
+    "tooltip": "Github Page",
+    "iconset": ""
+  },
+  {
+    "type": "spacer"
+  },
+  {
+    "type": "button",
+    "icon": "document",
+    "callback": "application:new-file",
+    "tooltip": "New File",
+    "iconset": "ion"
+  },
+  {
+    "type": "button",
+    "icon": "columns",
+    "iconset": "fa",
+    "callback": ["pane:split-right", "pane:split-right"]
+  }
+]

@@ -12,7 +12,8 @@
     projectHome: "/Users/meinside"
     followSymlinks: true
   editor:
-    invisibles: {}
+    invisibles:
+      {}
     showIndentGuide: true
     showInvisibles: true
     fontSize: 12
@@ -27,7 +28,8 @@
     userId: "7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d"
   metrics:
     userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
-  linter: {}
+  linter:
+    {}
   "autocomplete-plus":
     confirmCompletion: "tab and enter"
   "go-plus":
@@ -36,9 +38,18 @@
     rubocopExecutablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
   "vim-mode":
     useClipboardAsDefaultRegister: true
-metrics:
-  userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
-welcome:
-  showOnStartup: false
+  "flex-tool-bar":
+    {}
+  "tool-bar":
+    position: "Left"
+    iconSize: "16px"
+  "atom-fuzzy-grep":
+    grepCommandString: "grep -r -n --color=never"
+  "atom-beautify":
+    {}
 "exception-reporting":
   userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
+welcome:
+  showOnStartup: false
+metrics:
+  userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
