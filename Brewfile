@@ -1,6 +1,6 @@
 # Brewfile of meinside@gmail.com
 # 
-# last update: 2015.04.22.
+# last update: 2015.05.26.
 
 #### formulas
 #
@@ -48,6 +48,7 @@ brew cask install steam
 brew cask install xquartz
 #
 # for development
+#brew cask install androidtool
 brew cask install boot2docker
 brew cask install iterm2
 brew cask install java
