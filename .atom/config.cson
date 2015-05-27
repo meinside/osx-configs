@@ -35,7 +35,7 @@
   "go-plus":
     goPath: "~/srcs/go"
   "linter-rubocop":
-    rubocopExecutablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
+    executablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
   "vim-mode":
     useClipboardAsDefaultRegister: true
   "flex-tool-bar":
