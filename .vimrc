@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2015.01.23.
+" last update: 2015.06.04.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -46,7 +46,7 @@ if filereadable(vundle_readme)
 	Bundle 'lukaszkorecki/CoffeeTags'
 
 	" For Go
-	Bundle 'jnwhiteh/vim-golang'
+	Bundle 'fatih/vim-go'
 	" XXX: gotags is needed! ($ go get -u github.com/jstemmer/gotags)
 	Bundle 'jstemmer/gotags'
 	let g:tagbar_type_go = {
