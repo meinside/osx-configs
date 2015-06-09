@@ -49,9 +49,17 @@
     _analyticsUserId: "34605c2b-fc27-4bdb-a15c-a76397a428b8"
   "atom-terminal":
     app: "/Users/meinside/Applications/iTerm.app"
-"exception-reporting":
-  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
-welcome:
-  showOnStartup: false
+  "git-history":
+    {}
+  minimap:
+    plugins:
+      bookmarks: true
+      "git-diff": true
+  "toggle-quotes":
+    {}
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
+welcome:
+  showOnStartup: false
+"exception-reporting":
+  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
