@@ -1,6 +1,8 @@
 # Brewfile of meinside@gmail.com
+#
+# Usage: $ sh ./Brewfile
 # 
-# last update: 2015.05.26.
+# last update: 2015.06.09.
 
 #### formulas
 #

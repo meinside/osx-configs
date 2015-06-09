@@ -1,5 +1,5 @@
-# My global Gemfile
-# last update: 2015.04.09.
+# Global Gemfile of meinside@gmail.com
+# last update: 2015.06.09.
 
 source 'http://rubygems.org'
 
@@ -12,7 +12,7 @@ gem 'rspec'
 # my gems
 gem 'pushbullet-ruby'
 gem 'rtmux'
-gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my ruby scripts and libraries
+gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my personal ruby scripts and libraries
 
 ################
 # for development/test

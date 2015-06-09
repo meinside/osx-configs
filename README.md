@@ -17,10 +17,7 @@ Run **bin/prep.sh** and it will clone files and install several things automatic
 
 ```
 $ cd ~
-$ wget "https://raw.github.com/meinside/osx-configs/master/bin/prep.sh"
-$ chmod +x ./prep.sh
-$ ./prep.sh
-$ rm ./prep.sh
+$ wget -O - "https://raw.github.com/meinside/osx-configs/master/bin/prep.sh" | bash
 ```
 
 => will install **Homebrew**, **RVM** and **Ruby**
@@ -31,7 +28,7 @@ Reorder paths in **/etc/paths** for convenience:
 
 ``$ sudo vi /etc/paths``
 
-=> put **/usr/local/bin** on the top for homebrew
+=> put **/usr/local/bin** on the top for Homebrew
 
 ```
 /usr/local/bin
