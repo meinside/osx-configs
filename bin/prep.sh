@@ -5,12 +5,15 @@
 # for setting up various things automatically in OSX
 # (https://raw.github.com/meinside/osx-configs/master/bin/prep.sh)
 # 
-# last update: 2014.10.21.
+# last update: 2015.06.09.
 # 
 # by meinside@gmail.com
 
-#REPOSITORY="git@github.com:meinside/osx-configs.git"
-REPOSITORY="git://github.com/meinside/osx-configs.git"
+if [ `whoami` == 'meinside' ]; then
+	REPOSITORY="git@github.com:meinside/osx-configs.git"
+else
+	REPOSITORY="git://github.com/meinside/osx-configs.git"
+fi
 TMP_DIR="$HOME/configs.tmp"
 
 echo -e "\033[32mThis script will setup various things for OSX\033[0m"
