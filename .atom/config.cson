@@ -47,6 +47,8 @@
     grepCommandString: "grep -r -n --color=never"
   "atom-beautify":
     _analyticsUserId: "34605c2b-fc27-4bdb-a15c-a76397a428b8"
+  "atom-terminal":
+    app: "/Users/meinside/Applications/iTerm.app"
 "exception-reporting":
   userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
 welcome:
