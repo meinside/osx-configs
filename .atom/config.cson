@@ -11,6 +11,10 @@
     audioBeep: false
     projectHome: "/Users/meinside"
     followSymlinks: true
+    themes: [
+      "atom-dark-ui"
+      "solarized-dark-syntax"
+    ]
   editor:
     invisibles:
       {}
