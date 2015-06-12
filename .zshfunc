@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2015.03.03.
+# updated on 2015.06.12.
 #
 # ... by meinside@gmail.com
 # 
@@ -62,6 +62,17 @@ update-all () {
 		BUNDLE_GEMFILE=$HOME/Gemfile bundle update
 	else
 		echo "* bundler not installed"
+	fi
+}
+
+# list go imports
+list-go-imports () {
+	if [[ $1 && $1 == '--all' ]]; then
+		# show all (including standard packages)
+		go list -f '{{join .Deps "\n"}}' | xargs go list -f '{{.ImportPath}}'
+	else
+		# not including standard
+		go list -f '{{join .Deps "\n"}}' | xargs go list -f '{{if not .Standard}}{{.ImportPath}}{{end}}'
 	fi
 }
 
