@@ -16,8 +16,7 @@
       "solarized-dark-syntax"
     ]
   editor:
-    invisibles:
-      {}
+    invisibles: {}
     showIndentGuide: true
     showInvisibles: true
     fontSize: 12
@@ -32,8 +31,7 @@
     userId: "7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d"
   metrics:
     userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
-  linter:
-    {}
+  linter: {}
   "autocomplete-plus":
     confirmCompletion: "tab and enter"
   "go-plus":
@@ -42,8 +40,7 @@
     executablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
   "vim-mode":
     useClipboardAsDefaultRegister: true
-  "flex-tool-bar":
-    {}
+  "flex-tool-bar": {}
   "tool-bar":
     position: "Left"
     iconSize: "16px"
@@ -53,14 +50,12 @@
     _analyticsUserId: "34605c2b-fc27-4bdb-a15c-a76397a428b8"
   "atom-terminal":
     app: "/Users/meinside/Applications/iTerm.app"
-  "git-history":
-    {}
+  "git-history": {}
   minimap:
     plugins:
       bookmarks: true
       "git-diff": true
-  "toggle-quotes":
-    {}
+  "toggle-quotes": {}
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
 welcome:
