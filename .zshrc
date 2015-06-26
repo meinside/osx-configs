@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2015.03.18.
+# updated on 2015.06.26.
 #
 # ... by meinside@gmail.com
 #
@@ -12,7 +12,7 @@
 # $ sudo vi /etc/shells
 #
 # >> change shell
-# $ chsh -s /bin/zsh
+# $ chsh -s /usr/local/bin/zsh
 #
 
 # Path to your oh-my-zsh installation.
