@@ -1,5 +1,5 @@
 # Global Gemfile of meinside@gmail.com
-# last update: 2015.06.09.
+# last update: 2015.06.30.
 
 source 'http://rubygems.org'
 
@@ -19,6 +19,7 @@ gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my personal ruby scripts
 #
 # for CocoaPods
 gem 'cocoapods'
+gem 'cocoapods-deintegrate'
 # for rails
 gem 'rails', '~> 4.2.0'
 # for Rserve
