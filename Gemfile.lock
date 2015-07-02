@@ -106,7 +106,7 @@ GEM
       json
     erubis (2.7.0)
     escape (0.0.4)
-    ffi (1.9.9)
+    ffi (1.9.10)
     fuzzy_match (2.0.4)
     globalid (0.3.5)
       activesupport (>= 4.1.0)
