@@ -2,12 +2,12 @@
 #
 # Usage: $ sh ./Brewfile
 # 
-# last update: 2015.06.09.
+# last update: 2015.07.07.
 
 #### formulas
 #
 # utilities
-brew install ffmpeg --with-libvpx --with-libvorbis
+brew install ffmpeg --with-libvpx --with-libvorbis --with-faac
 brew install htop
 brew install httpie
 brew install lnav
