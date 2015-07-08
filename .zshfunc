@@ -28,7 +28,8 @@ install-all () {
 	fi
 
 	# homebrew
-	$SHELL $HOME/Brewfile
+	brew tap Homebrew/bundle
+	brew bundle
 
 	# bundler
 	BUNDLE_GEMFILE=$HOME/Gemfile bundle install

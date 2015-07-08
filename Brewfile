@@ -1,65 +1,68 @@
 # Brewfile of meinside@gmail.com
 #
-# Usage: $ sh ./Brewfile
+# Usage: 
+#
+# $ brew tap Homebrew/bundle
+# $ brew bundle
 # 
-# last update: 2015.07.07.
+# last update: 2015.07.08.
 
 #### formulas
 #
 # utilities
-brew install ffmpeg --with-libvpx --with-libvorbis --with-faac
-brew install htop
-brew install httpie
-brew install lnav
-brew install mobile-shell
-brew install ngrep
-brew install pstree
-brew install tmux
-brew install tree
-brew install vim
-brew install wget
-brew install zsh
+brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
+brew 'htop'
+brew 'httpie'
+brew 'lnav'
+brew 'mobile-shell'
+brew 'ngrep'
+brew 'pstree'
+brew 'tmux'
+brew 'tree'
+brew 'vim'
+brew 'wget'
+brew 'zsh'
 #
 # for development
-brew install casperjs --devel
-brew install git --with-pcre
-brew install gnupg
-brew install go
-brew install heroku-toolbelt
-brew install imagemagick
-#brew install leiningen
-brew install node
-brew install phantomjs
+brew 'casperjs', args: ['--devel']
+brew 'git', args: ['--with-pcre']
+brew 'gnupg'
+brew 'go'
+brew 'heroku-toolbelt'
+brew 'imagemagick'
+#brew 'leiningen'
+brew 'node'
+brew 'phantomjs'
 #
 # for building other things (like rubygems)
-brew install libmagic
-brew install mysql
+brew 'libmagic'
+brew 'mysql'
 
 #### cask
 #
 # for installing packaged applications
-brew install caskroom/cask/brew-cask
+tap 'caskroom/cask'
 #
 # utilities
-brew cask install atom
-brew cask install bittorrent-sync
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install licecap
-brew cask install steam
-brew cask install xquartz
+cask 'atom'
+cask 'bittorrent-sync'
+cask 'dropbox'
+cask 'google-chrome'
+cask 'licecap'
+cask 'steam'
+cask 'xquartz'
 #
 # for development
-#brew cask install androidtool
-brew cask install boot2docker
-brew cask install iterm2
-brew cask install java
-brew cask install kinematic
-brew cask install r	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
-brew cask install rstudio
-brew cask install sourcetree
-brew cask install virtualbox
+#cask 'androidtool'
+cask 'boot2docker'
+cask 'iterm2'
+cask 'java'
+cask 'kitematic'
+cask 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
+cask 'rstudio'
+cask 'sourcetree'
+cask 'virtualbox'
 #
 # etc.
-#brew cask install d235j-xbox360-controller-driver
+#cask 'd235j-xbox360-controller-driver'
 
