@@ -56,6 +56,7 @@
       bookmarks: true
       "git-diff": true
   "toggle-quotes": {}
+  react: {}
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
 welcome:
