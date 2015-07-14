@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.07.08.
+# last update: 2015.07.14.
 
 #### formulas
 #
@@ -42,6 +42,7 @@ brew 'mysql'
 #
 # for installing packaged applications
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 #
 # utilities
 cask 'atom'
