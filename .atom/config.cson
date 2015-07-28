@@ -55,6 +55,7 @@
     plugins:
       bookmarks: true
       "git-diff": true
+      "find-and-replace": true
   "toggle-quotes": {}
   react: {}
 metrics:
