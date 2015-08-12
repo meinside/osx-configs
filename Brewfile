@@ -31,8 +31,8 @@ brew 'go'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 #brew 'leiningen'
-#brew 'node'
-brew 'iojs'
+brew 'node'
+#brew 'iojs'	# nvm use iojs
 brew 'phantomjs'
 #
 # for building other things (like rubygems)
