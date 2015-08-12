@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.07.14.
+# last update: 2015.08.12.
 
 #### formulas
 #
@@ -31,7 +31,8 @@ brew 'go'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 #brew 'leiningen'
-brew 'node'
+#brew 'node'
+brew 'iojs'
 brew 'phantomjs'
 #
 # for building other things (like rubygems)
