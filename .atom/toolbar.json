@@ -21,5 +21,19 @@
     "icon": "columns",
     "iconset": "fa",
     "callback": ["pane:split-right", "pane:split-right"]
+  },
+  {
+    "type": "button",
+    "icon": "circuit-board",
+    "callback": "git-diff:toggle-diff-list",
+    "style": {
+      "color": "#FA4F28"
+    }
+  },
+  {
+    "type": "button",
+    "icon": "markdown",
+    "callback": "markdown-preview:toggle",
+    "hide": "!markdown"
   }
 ]
