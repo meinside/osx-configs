@@ -38,7 +38,7 @@
     goPath: "~/srcs/go"
     formatTool: "gofmt"
   "linter-rubocop":
-    executablePath: "/Users/meinside/.rvm/gems/ruby-2.2.2/bin/rubocop"
+    executablePath: "/Users/meinside/.rvm/gems/ruby-2.2.3/bin/rubocop"
   "vim-mode":
     useClipboardAsDefaultRegister: true
   "flex-tool-bar": {}
