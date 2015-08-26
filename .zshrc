@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2015.07.13.
+# updated on 2015.08.26.
 #
 # ... by meinside@gmail.com
 #
@@ -77,8 +77,8 @@ alias httpserver="ruby -rwebrick -e's=WEBrick::HTTPServer.new(Port:8888,Document
 . ~/.zshfunc
 
 # load extra aliases if exist
-if [ -f ~/.other_aliases ]; then
-	. ~/.other_aliases
+if [ -f ~/.custom_aliases ]; then
+	. ~/.custom_aliases
 fi
 
 # for Xcode

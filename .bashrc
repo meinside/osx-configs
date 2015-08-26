@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2015.07.13.
+# updated on 2015.08.26.
 #
 # ... by meinside@gmail.com
 
@@ -36,8 +36,8 @@ alias ngrep="sudo ngrep -q -W byline"
 alias httpserver="ruby -rwebrick -e's=WEBrick::HTTPServer.new(Port:8888,DocumentRoot:Dir.pwd);trap(\"INT\"){s.shutdown};s.start'"
 
 # load extra aliases if exist
-if [ -f ~/.other_aliases ]; then
-	. ~/.other_aliases
+if [ -f ~/.custom_aliases ]; then
+	. ~/.custom_aliases
 fi
 
 # for Xcode
