@@ -20,7 +20,7 @@
     "type": "button",
     "icon": "columns",
     "iconset": "fa",
-    "callback": ["pane:split-right", "pane:split-right"]
+    "callback": ["pane:split-right"]
   },
   {
     "type": "button",
