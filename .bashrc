@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2015.08.26.
+# updated on 2015.09.03.
 #
 # ... by meinside@gmail.com
 
@@ -49,6 +49,9 @@ fi
 #####################
 
 # for ruby
+# XXX - install ruby from source code, if not, it would complain about ssl certifications
+# $ rvm install 2.2.3 --disable-binary
+
 #export RUBYOPT="-w -rubygems"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
