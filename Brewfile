@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.08.12.
+# last update: 2015.09.17.
 
 #### formulas
 #
@@ -51,6 +51,7 @@ cask 'bittorrent-sync'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'licecap'
+cask 'osxfuse'
 cask 'steam'
 cask 'xquartz'
 #
