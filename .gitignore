@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.09.17.
+# last update: 2015.10.02.
 
 # binary files
 *.o
@@ -17,6 +17,7 @@
 # temporary/history files & dirs
 *.swp
 *~.nib
+.bash_sessions/
 .cache/
 tmp/
 
