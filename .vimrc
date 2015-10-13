@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2015.06.10.
+" last update: 2015.10.13.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -59,6 +59,10 @@ if filereadable(vundle_readme)
 	Bundle 'google/vim-codefmtlib'
 	Bundle 'google/vim-codefmt'
 
+	" For statusline/tabline configuration
+	Bundle 'itchyny/lightline.vim'
+	set laststatus=2
+
 	"
 	""""""""
 
@@ -105,26 +109,8 @@ set shell=/bin/bash
 " custom key mappings, 2011.04.15,
 nmap <F2> :30vsplit . <CR>
 
-" for macvim, 2009.02.23,
-if has("transparency")
-	set noimd
-	set imi=1
-	set ims=-1
-	set transparency=20
-	set fuoptions=maxvert,maxhorz	" maximize window when :set fu
-	win 120 40	" window size (120 x 40)
-	colo pablo
-endif
-
-" For Win32 GUI: remove 't' flag from 'guioptions': no tearoff menu entries
-" let &guioptions = substitute(&guioptions, "t", "", "g")
-
 " Don't use Ex mode, use Q for formatting
 map Q gq
-
-" This is an alternative that also works in block mode, but the deleted
-" text is lost and it only works for putting the current register.
-"vnoremap p "_dp
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
