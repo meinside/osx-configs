@@ -237,7 +237,7 @@ GEM
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
-    watir-webdriver (0.9.0)
+    watir-webdriver (0.9.1)
       selenium-webdriver (>= 2.46.2)
     websocket (1.2.2)
     wirble (0.1.3)
