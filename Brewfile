@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.09.17.
+# last update: 2015.10.16.
 
 #### formulas
 #
@@ -68,4 +68,5 @@ cask 'virtualbox'
 #
 # etc.
 #cask 'd235j-xbox360-controller-driver'
+#cask 'gureumkim'	# for hangul input
 
