@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.10.16.
+# last update: 2015.10.23.
 
 #### formulas
 #
@@ -25,6 +25,7 @@ brew 'zsh'
 #
 # for development
 brew 'casperjs', args: ['--devel']
+brew 'coreutils'
 brew 'git', args: ['--with-pcre']
 brew 'gnupg'
 brew 'go'
