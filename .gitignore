@@ -19,6 +19,7 @@
 *~.nib
 .bash_sessions/
 .cache/
+.local/
 tmp/
 
 # other scm files/dirs
