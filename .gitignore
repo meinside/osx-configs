@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.10.02.
+# last update: 2015.12.04.
 
 # binary files
 *.o
@@ -89,6 +89,7 @@ public_html/
 .ssh/
 .zcompdump-*
 .zsh-update
+mbox
 
 # history files
 .*history
