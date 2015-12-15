@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2015.12.04.
+# last update: 2015.12.15.
 
 # binary files
 *.o
@@ -66,6 +66,7 @@ node_modules/
 
 # atom editor
 .atom/.apm/
+.atom/blob-store/
 .atom/packages/
 .atom/storage/
 .atom/compile-cache/
