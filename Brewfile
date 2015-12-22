@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.10.23.
+# last update: 2015.12.22.
 
 #### formulas
 #
@@ -62,6 +62,7 @@ cask 'boot2docker'
 cask 'iterm2'
 cask 'java'
 cask 'kitematic'
+cask 'postico'
 cask 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 cask 'rstudio'
 cask 'sourcetree'
