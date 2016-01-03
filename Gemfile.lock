@@ -210,7 +210,7 @@ GEM
     ruby-hmac (0.4.0)
     ruby-ole (1.2.12)
     ruby-progressbar (1.7.5)
-    ruby-trello (1.4.0)
+    ruby-trello (1.4.1)
       activemodel (>= 3.2.0)
       addressable (~> 2.3)
       json
@@ -223,7 +223,7 @@ GEM
       rubyzip (~> 1.0)
       websocket (~> 1.0)
     shared-mime-info (0.2.5)
-    spreadsheet (1.1.0)
+    spreadsheet (1.1.1)
       ruby-ole (>= 1.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
