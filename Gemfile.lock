@@ -128,7 +128,7 @@ GEM
       mime-types (>= 1.16, < 3)
     mime (0.4.3)
     mime-types (2.99)
-    mimemagic (0.3.0)
+    mimemagic (0.3.1)
     mini_portile2 (2.0.0)
     minitest (5.8.3)
     molinillo (0.4.1)
