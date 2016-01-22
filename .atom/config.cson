@@ -1,25 +1,39 @@
 "*":
-  welcome:
-    showOnStartup: false
+  "atom-beautify":
+    _analyticsUserId: "34605c2b-fc27-4bdb-a15c-a76397a428b8"
+  "atom-fuzzy-grep":
+    grepCommandString: "grep -r -n --color=never"
+  "atom-terminal":
+    app: "/Users/meinside/Applications/iTerm.app"
+  "autocomplete-plus":
+    confirmCompletion: "tab and enter"
   core:
+    audioBeep: false
+    followSymlinks: true
     ignoredNames: [
       ".git"
       ".svn"
       ".DS_Store"
       "*.swp"
     ]
-    audioBeep: false
     projectHome: "/Users/meinside"
-    followSymlinks: true
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
     ]
   editor:
+    fontSize: 12
     invisibles: {}
     showIndentGuide: true
     showInvisibles: true
-    fontSize: 12
+  "exception-reporting":
+    userId: "7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d"
+  "flex-tool-bar": {}
+  "git-history": {}
+  "go-plus":
+    formatTool: "gofmt"
+    goPath: "~/srcs/go"
+  linter: {}
   "markdown-preview":
     grammars: [
       "source.gfm"
@@ -27,41 +41,25 @@
       "text.plain"
       "text.plain.null-grammar"
     ]
-  "exception-reporting":
-    userId: "7ce93fa8-eb56-a4e6-0cf0-6f63cc84673d"
   metrics:
     userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
-  linter: {}
-  "autocomplete-plus":
-    confirmCompletion: "tab and enter"
-  "go-plus":
-    goPath: "~/srcs/go"
-    formatTool: "gofmt"
-  "linter-rubocop":
-    executablePath: "/Users/meinside/.rvm/gems/ruby-2.2.3/bin/rubocop"
-  "vim-mode":
-    useClipboardAsDefaultRegister: true
-  "flex-tool-bar": {}
-  "tool-bar":
-    position: "Left"
-    iconSize: "16px"
-  "atom-fuzzy-grep":
-    grepCommandString: "grep -r -n --color=never"
-  "atom-beautify":
-    _analyticsUserId: "34605c2b-fc27-4bdb-a15c-a76397a428b8"
-  "atom-terminal":
-    app: "/Users/meinside/Applications/iTerm.app"
-  "git-history": {}
   minimap:
     plugins:
       bookmarks: true
-      "git-diff": true
       "find-and-replace": true
-  "toggle-quotes": {}
+      "git-diff": true
   react: {}
+  "toggle-quotes": {}
+  "tool-bar":
+    iconSize: "16px"
+    position: "Left"
+  "vim-mode":
+    useClipboardAsDefaultRegister: true
+  welcome:
+    showOnStartup: false
+"exception-reporting":
+  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
 metrics:
   userId: "4ff51923f5a2a48138457ec727e02802cd3139eb"
 welcome:
   showOnStartup: false
-"exception-reporting":
-  userId: "9b9eca66-2609-20d8-6473-fdbb1cdc3a1b"
