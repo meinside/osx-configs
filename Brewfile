@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2015.12.22.
+# last update: 2016.01.29.
 
 #### formulas
 #
@@ -32,8 +32,7 @@ brew 'go'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 #brew 'leiningen'
-brew 'node'
-#brew 'iojs'	# nvm use iojs
+brew 'node', args: ['--with-full-icu']
 brew 'phantomjs'
 #
 # for building other things (like rubygems)
@@ -41,10 +40,6 @@ brew 'libmagic'
 brew 'mysql'
 
 #### cask
-#
-# for installing packaged applications
-tap 'caskroom/cask'
-tap 'caskroom/versions'
 #
 # utilities
 cask 'atom'
@@ -57,7 +52,6 @@ cask 'steam'
 cask 'xquartz'
 #
 # for development
-#cask 'androidtool'
 cask 'boot2docker'
 cask 'iterm2'
 cask 'java'
@@ -69,6 +63,5 @@ cask 'sourcetree'
 cask 'virtualbox'
 #
 # etc.
-#cask 'd235j-xbox360-controller-driver'
-#cask 'gureumkim'	# for hangul input
+cask 'gureumkim'	# for hangul input
 
