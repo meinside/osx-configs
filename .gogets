@@ -9,6 +9,7 @@ golang.org/x/tools/cmd/godoc
 # useful packages
 github.com/mailgun/godebug
 github.com/motemen/gore
+github.com/tcnksm/gotests
 
 # for development
 github.com/astaxie/beego
