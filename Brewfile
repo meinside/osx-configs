@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.02.01.
+# last update: 2016.02.16.
 
 #### formulas
 #
@@ -61,6 +61,7 @@ cask 'postico'
 cask 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 cask 'rstudio'
 cask 'sourcetree'
+cask 'sequel-pro'
 cask 'virtualbox'
 #
 # etc.
