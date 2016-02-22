@@ -101,7 +101,7 @@ GEM
       nap (>= 0.8, < 2.0)
       netrc (= 0.7.8)
     cocoapods-try (0.5.1)
-    coderay (1.1.0)
+    coderay (1.1.1)
     colored (1.2)
     concurrent-ruby (1.0.0)
     diff-lcs (1.2.5)
@@ -213,7 +213,7 @@ GEM
       json
       oauth (~> 0.4.5)
       rest-client (~> 1.8.0)
-    rubyzip (1.1.7)
+    rubyzip (1.2.0)
     selenium-webdriver (2.52.0)
       childprocess (~> 0.5)
       multi_json (~> 1.0)
