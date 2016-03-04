@@ -82,6 +82,7 @@ public_html/
 # private/config files & dirs
 .android/
 .boot2docker/
+.config/
 .custom_aliases
 .dockercfg
 .gist-vim
