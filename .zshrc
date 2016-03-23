@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2015.10.13.
+# updated on 2016.03.23.
 #
 # ... by meinside@gmail.com
 #
@@ -48,7 +48,20 @@ HIST_STAMPS="yyyy-mm-dd"
 #plugins=(osx git ruby rails)
 plugins=(osx brew)
 
-source $ZSH/oh-my-zsh.sh
+# Search for oh-my-zsh.sh
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+	source $ZSH/oh-my-zsh.sh
+else
+	echo "> Install oh-my-zsh,"
+	echo "$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh"
+	echo
+	echo "> Append '`which zsh`' to /etc/shells,"
+	echo "$ sudo vi /etc/shells"
+	echo
+	echo "> And change shell:"
+	echo "$ chsh -s `which zsh`"
+	echo
+fi
 
 # User configuration
 umask 027
