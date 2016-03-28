@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2015.11.13.
+" last update: 2016.03.28.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -43,18 +43,14 @@ if filereadable(vundle_readme)
 	" For Ruby
 	Plugin 'vim-ruby/vim-ruby'
 
-	" For CoffeeScript
-	Plugin 'kchmck/vim-coffee-script'
-	Plugin 'lukaszkorecki/CoffeeTags'
-
 	" For Go
 	Plugin 'fatih/vim-go'
 
 	" For CSS
 	Plugin 'cakebaker/scss-syntax.vim'
 
-	" For HAML
-	Plugin 'tpope/vim-haml'
+	" For Swift
+	Plugin 'keith/swift.vim'
 
 	" For vim-codefmt (:FormatLines, :FormatCode)
 	Plugin 'google/vim-maktaba'
