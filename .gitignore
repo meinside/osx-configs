@@ -137,4 +137,6 @@ VirtualBox VMs/
 
 # personal data
 files/
+.wake
+.sleep
 
