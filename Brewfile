@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.02.16.
+# last update: 2016.04.07.
 
 #### formulas
 #
@@ -35,6 +35,7 @@ brew 'jq'
 #brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'phantomjs'
+brew 'wrk'
 #
 # for building other things (like rubygems)
 brew 'libmagic'
