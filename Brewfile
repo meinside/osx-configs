@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.04.07.
+# last update: 2016.05.12.
 
 #### formulas
 #
@@ -54,7 +54,6 @@ cask 'steam'
 cask 'xquartz'
 #
 # for development
-cask 'boot2docker'
 cask 'iterm2'
 cask 'java'
 cask 'kitematic'
