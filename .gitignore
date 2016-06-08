@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2016.05.11.
+# last update: 2016.06.08.
 
 # binary files
 *.o
@@ -138,6 +138,7 @@ VirtualBox VMs/
 
 # personal data
 files/
+.emulator_console_auth_token
 .homebrew_analytics_user_uuid
 .wakeup
 .sleep
