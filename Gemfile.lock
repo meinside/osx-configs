@@ -217,7 +217,7 @@ GEM
       oauth (~> 0.4.5)
       rest-client (~> 1.8.0)
     rubyzip (1.2.0)
-    selenium-webdriver (2.53.1)
+    selenium-webdriver (2.53.3)
       childprocess (~> 0.5)
       rubyzip (~> 1.0)
       websocket (~> 1.0)
