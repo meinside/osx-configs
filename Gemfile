@@ -20,7 +20,7 @@ gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my personal ruby scripts
 gem 'cocoapods'
 gem 'cocoapods-deintegrate'
 # for rails
-gem 'rails', '~> 4.2.0'
+gem 'rails'
 # for Rserve
 gem 'rserve-client'
 # for Rubocop
