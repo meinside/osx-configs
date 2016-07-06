@@ -114,7 +114,7 @@ GEM
       json
     erubis (2.7.0)
     escape (0.0.4)
-    ffi (1.9.10)
+    ffi (1.9.12)
     fourflusher (0.3.2)
     fuzzy_match (2.0.4)
     globalid (0.3.6)
