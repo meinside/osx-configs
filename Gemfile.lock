@@ -95,7 +95,7 @@ GEM
       fuzzy_match (~> 2.0.4)
       nap (~> 1.0)
     cocoapods-deintegrate (1.0.0)
-    cocoapods-downloader (1.0.1)
+    cocoapods-downloader (1.1.0)
     cocoapods-plugins (1.0.0)
       nap
     cocoapods-search (1.0.0)
@@ -114,7 +114,7 @@ GEM
       json
     erubis (2.7.0)
     escape (0.0.4)
-    ffi (1.9.13)
+    ffi (1.9.14)
     fourflusher (0.3.2)
     fuzzy_match (2.0.4)
     globalid (0.3.6)
@@ -254,7 +254,7 @@ GEM
     write_xlsx (0.83.0)
       rubyzip (>= 1.0.0)
       zip-zip
-    xcodeproj (1.1.0)
+    xcodeproj (1.2.0)
       activesupport (>= 3)
       claide (>= 1.0.0, < 2.0)
       colored (~> 1.2)
