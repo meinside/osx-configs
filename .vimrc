@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2016.03.28.
+" last update: 2016.07.18.
 
 
 """"""""""""""""""""""""""""""""""""
