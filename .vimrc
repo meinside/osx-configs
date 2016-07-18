@@ -45,6 +45,8 @@ if filereadable(vundle_readme)
 
 	" For Go
 	Plugin 'fatih/vim-go'
+	" https://github.com/fatih/vim-go/blob/master/gosnippets/UltiSnips/go.snippets
+	Plugin 'SirVer/ultisnips'
 
 	" For CSS
 	Plugin 'cakebaker/scss-syntax.vim'
