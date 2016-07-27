@@ -1,6 +1,6 @@
 " meinside's vimrc file,
 " created by meinside@gmail.com,
-" last update: 2016.07.18.
+" last update: 2016.07.27.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -105,6 +105,8 @@ set sts=4
 set fencs=ucs-bom,utf-8,korea
 set termencoding=utf-8
 set wildmenu	" visual autocomplete for command menu
+set showbreak=↳
+set breakindent
 
 " for pretty color schemes in iTerm2
 set t_Co=256
