@@ -3,7 +3,15 @@
 # cherry-picked
 # from: https://gist.github.com/erikh/2260182
 #
-# last update: 2015.04.27.
+# last update: 2016.08.01.
+
+##
+# This is script with usefull tips taken from:
+#   https://github.com/mathiasbynens/dotfiles/blob/master/.osx
+#
+# install it:
+#   curl -sL https://raw.github.com/gist/2108403/hack.sh | sh
+#
 
 echo "Enable full keyboard access for all controls (e.g. enable Tab in modal dialogs)"
 defaults write NSGlobalDomain AppleKeyboardUIMode -int 0
@@ -131,8 +139,8 @@ echo "Enable snap-to-grid for desktop icons"
 echo "Disable the warning before emptying the Trash"
 defaults write com.apple.finder WarnOnEmptyTrash -bool false
 
-# Empty Trash securely by default
-# defaults write com.apple.finder EmptyTrashSecurely -bool true
+echo "Empty Trash securely by default"
+defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 echo "Require password immediately after sleep or screen saver begins"
 defaults write com.apple.screensaver askForPassword -int 1
@@ -141,11 +149,36 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 echo "Enable tap to click (Trackpad)"
 defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool true
 
+#echo "Map bottom right Trackpad corner to right-click"
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
+#defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+
+echo "Disable Safari’s thumbnail cache for History and Top Sites"
+defaults write com.apple.Safari DebugSnapshotsUpdatePolicy -int 2
+
+echo "Enable Safari’s debug menu"
+defaults write com.apple.Safari IncludeInternalDebugMenu -bool true
+
+echo "Make Safari’s search banners default to Contains instead of Starts With"
+defaults write com.apple.Safari FindOnPageMatchesWordStartsOnly -bool false
+
+# Remove useless icons from Safari’s bookmarks bar
+# defaults write com.apple.Safari ProxiesInBookmarksBar "()"
+
 echo "Add a context menu item for showing the Web Inspector in web views"
 defaults write NSGlobalDomain WebKitDeveloperExtras -bool true
 
 echo "Only use UTF-8 in Terminal.app"
 defaults write com.apple.terminal StringEncodings -array 4
+
+echo "Disable the Ping sidebar in iTunes"
+defaults write com.apple.iTunes disablePingSidebar -bool true
+
+echo "Disable all the other Ping stuff in iTunes"
+defaults write com.apple.iTunes disablePing -bool true
+
+echo "Make ⌘ + F focus the search input in iTunes"
+defaults write com.apple.iTunes NSUserKeyEquivalents -dict-add "Target Search Field" "@F"
 
 # Disable send and reply animations in Mail.app
 # defaults write com.apple.Mail DisableReplyAnimations -bool true
@@ -153,6 +186,11 @@ defaults write com.apple.terminal StringEncodings -array 4
 
 # Disable Resume system-wide
 # defaults write NSGlobalDomain NSQuitAlwaysKeepsWindows -bool false
+
+#echo "Disable the “reopen windows when logging back in” option"
+## This works, although the checkbox will still appear to be checked.
+#defaults write com.apple.loginwindow TALLogoutSavesState -bool false
+#defaults write com.apple.loginwindow LoginwindowLaunchesRelaunchApps -bool false
 
 echo "Enable Dashboard dev mode (allows keeping widgets on the desktop)"
 defaults write com.apple.dashboard devmode -bool true
@@ -162,6 +200,14 @@ echo "Reset Launchpad"
 
 echo "Show the ~/Library folder"
 chflags nohidden ~/Library
+
+#echo "Disable local Time Machine backups"
+#hash tmutil &> /dev/null && sudo tmutil disablelocal
+
+#echo "Remove Dropbox’s green checkmark icons in Finder"
+#file=/Applications/Dropbox.app/Contents/Resources/check.icns
+#[ -e "$file" ] && mv -f "$file" "$file.bak"
+#unset file
 
 #Fix for the ancient UTF-8 bug in QuickLook (http://mths.be/bbo)
 # Commented out, as this is known to cause problems when saving files in Adobe Illustrator CS5 :(
