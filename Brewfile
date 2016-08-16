@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.05.12.
+# last update: 2016.08.16.
 
 #### formulas
 #
@@ -35,6 +35,7 @@ brew 'jq'
 #brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'phantomjs'
+brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew 'wrk'
 #
 # for building other things (like rubygems)
@@ -58,7 +59,6 @@ cask 'iterm2'
 cask 'java'
 cask 'kitematic'
 cask 'postico'
-cask 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 cask 'rstudio'
 cask 'sourcetree'
 cask 'sequel-pro'
