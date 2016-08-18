@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.08.16.
+# last update: 2016.08.18.
 
 #### formulas
 #
@@ -24,6 +24,7 @@ brew 'wget'
 brew 'zsh'
 #
 # for development
+brew 'curl', args: ['--with-nghttp2']
 brew 'casperjs', args: ['--devel']
 brew 'coreutils'
 brew 'git', args: ['--with-pcre']
