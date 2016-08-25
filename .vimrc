@@ -27,12 +27,10 @@ if filereadable(vundle_readme)
 	" Useful plugins
 	Plugin 'surround.vim'
 	Plugin 'matchit.zip'
-	Plugin 'ragtag.vim'
-	Plugin 'fugitive.vim'
-	Plugin 'tpope/vim-endwise'
+	Plugin 'ragtag.vim'	" TAG + <ctrl-x> + @, !, #, $, /, <space>, <cr>, ...
 
 	" For source file browsing
-	" XXX: ctags is needed!
+	" XXX: ctags is needed! ($ brew install ctags)
 	Plugin 'majutsushi/tagbar'
 	nmap <F8> :TagbarToggle<CR>
 
@@ -42,12 +40,10 @@ if filereadable(vundle_readme)
 
 	" For Ruby
 	Plugin 'vim-ruby/vim-ruby'
+	Plugin 'tpope/vim-endwise'
 
 	" For Go
 	Plugin 'fatih/vim-go'
-
-	" For CSS
-	Plugin 'cakebaker/scss-syntax.vim'
 
 	" For Swift
 	Plugin 'keith/swift.vim'
