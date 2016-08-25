@@ -28,7 +28,6 @@ if filereadable(vundle_readme)
 	Plugin 'surround.vim'
 	Plugin 'matchit.zip'
 	Plugin 'ragtag.vim'
-	Plugin 'snippetsEmu'
 	Plugin 'fugitive.vim'
 	Plugin 'tpope/vim-endwise'
 
