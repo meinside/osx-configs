@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.08.18.
+# last update: 2016.08.31.
 
 #### formulas
 #
@@ -33,9 +33,9 @@ brew 'go'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
-#brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'phantomjs'
+# XXX - needs: brew tap homebrew/science
 brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew 'wrk'
 #
