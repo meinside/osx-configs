@@ -16,6 +16,7 @@ github.com/tcnksm/gotests
 github.com/astaxie/beego
 github.com/beego/bee
 github.com/derekparker/delve/cmd/dlv
+github.com/davecheney/httpstat
 
 # my packages
 github.com/meinside/gtmx
