@@ -133,7 +133,7 @@ GEM
     mime-types (2.99.3)
     mimemagic (0.3.2)
     mini_portile2 (2.1.0)
-    minitest (5.9.0)
+    minitest (5.9.1)
     molinillo (0.4.5)
     mysql (2.9.1)
     nap (1.1.0)
