@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.08.31.
+# last update: 2016.09.29.
 
 #### formulas
 #
@@ -19,7 +19,7 @@ brew 'ngrep'
 brew 'pstree'
 brew 'tmux'
 brew 'tree'
-brew 'vim'
+brew 'vim', ars:['--with-python3']
 brew 'wget'
 brew 'zsh'
 #
