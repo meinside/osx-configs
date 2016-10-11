@@ -17,6 +17,7 @@
       "*.swp"
     ]
     projectHome: "/Users/meinside"
+    telemetryConsent: "limited"
     themes: [
       "atom-dark-ui"
       "solarized-dark-syntax"
