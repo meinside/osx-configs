@@ -245,7 +245,7 @@ GEM
       unf_ext
     unf_ext (0.0.7.2)
     unicode-display_width (1.1.1)
-    watir-webdriver (0.9.3)
+    watir-webdriver (0.9.9)
       selenium-webdriver (>= 2.46.2)
     websocket (1.2.3)
     websocket-driver (0.6.4)
