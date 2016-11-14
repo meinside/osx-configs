@@ -11,6 +11,7 @@ github.com/mailgun/godebug
 github.com/motemen/gore
 github.com/pkg/profile
 github.com/tcnksm/gotests
+github.com/google/gops
 
 # for development
 github.com/astaxie/beego
