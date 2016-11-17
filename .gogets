@@ -2,8 +2,10 @@
 # $ goget
 #
 # then it will automatically 'go get -u' all packages listed in this file(~/.gogets)
+#
+# last update: 2016.11.17.
 
-# official
+# official packages
 golang.org/x/tools/cmd/godoc
 
 # useful packages
@@ -18,6 +20,7 @@ github.com/astaxie/beego
 github.com/beego/bee
 github.com/derekparker/delve/cmd/dlv
 github.com/davecheney/httpstat
+github.com/y0ssar1an/q
 
 # my packages
 github.com/meinside/gtmx
