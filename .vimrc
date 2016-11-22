@@ -1,7 +1,7 @@
 " meinside's vimrc file,
 "
 " created by meinside@gmail.com,
-" last update: 2016.10.19.
+" last update: 2016.11.22.
 
 
 """"""""""""""""""""""""""""""""""""
@@ -47,6 +47,9 @@ if filereadable(vundle_readme)
 
 	" For Swift
 	Plugin 'keith/swift.vim'
+
+	" For Julia
+	Plugin 'JuliaEditorSupport/julia-vim'
 
 	" For vim-codefmt (:FormatLines, :FormatCode)
 	Plugin 'google/vim-maktaba'
