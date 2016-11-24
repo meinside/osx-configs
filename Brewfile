@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.09.29.
+# last update: 2016.11.24.
 
 #### formulas
 #
@@ -14,6 +14,7 @@ brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
 brew 'htop'
 brew 'httpie'
 brew 'lnav'
+brew 'm-cli'
 brew 'mobile-shell'
 brew 'ngrep'
 brew 'pstree'
