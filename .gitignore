@@ -64,6 +64,10 @@ node_modules/
 # golang
 .gore/
 
+# python
+.pip/
+.virtualenvs/
+
 # atom editor
 .atom/.apm/
 .atom/blob-store/

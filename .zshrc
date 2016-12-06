@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2016.03.23.
+# updated on 2016.12.06.
 #
 # ... by meinside@gmail.com
 #
@@ -154,4 +154,8 @@ if [[ -z $TMUX ]]; then
 	fi
 
 fi
+
+# for python (virtualenv)
+export WORKON_HOME=$HOME/.virtualenvs
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 

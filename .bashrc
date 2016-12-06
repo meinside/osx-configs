@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2015.10.13.
+# updated on 2016.12.11.
 #
 # ... by meinside@gmail.com
 
@@ -79,4 +79,8 @@ if [[ -z $TMUX ]]; then
 	fi
 
 fi
+
+# for python (virtualenv)
+export WORKON_HOME=$HOME/.virtualenvs
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
