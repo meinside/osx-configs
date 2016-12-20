@@ -256,12 +256,12 @@ GEM
     write_xlsx (0.83.0)
       rubyzip (>= 1.0.0)
       zip-zip
-    xcodeproj (1.4.1)
+    xcodeproj (1.4.2)
       CFPropertyList (~> 2.3.3)
       activesupport (>= 3)
       claide (>= 1.0.1, < 2.0)
       colored (~> 1.2)
-      nanaimo (~> 0.2.0)
+      nanaimo (~> 0.2.3)
     zip-zip (0.3)
       rubyzip (>= 1.0.0)
 
