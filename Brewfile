@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.12.06.
+# last update: 2016.12.22.
 
 #### formulas
 #
@@ -35,7 +35,7 @@ brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
 brew 'node', args: ['--with-full-icu']
-brew 'opencv3', args: ['--HEAD']
+brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
 brew 'phantomjs'
 # XXX - needs: brew tap homebrew/science
 brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
@@ -49,7 +49,7 @@ brew 'mysql'
 #
 # utilities
 cask 'atom'
-cask 'bittorrent-sync'
+cask 'resilio-sync'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'licecap'
