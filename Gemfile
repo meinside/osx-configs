@@ -1,5 +1,5 @@
 # Global Gemfile of meinside@gmail.com
-# last update: 2015.07.27.
+# last update: 2016.12.26.
 
 source 'http://rubygems.org'
 
@@ -9,14 +9,9 @@ gem 'wirble'
 gem 'rspec'
 
 ################
-# my gems
-gem 'pushbullet-ruby'
-gem 'meinside-ruby', github: 'meinside/meinside-ruby'	# my personal ruby scripts and libraries
-
-################
 # for development/test
 #
-# for CocoaPods
+# for CocoaPods (Xcode)
 gem 'cocoapods'
 gem 'cocoapods-deintegrate'
 # for rails
@@ -25,7 +20,5 @@ gem 'rails'
 gem 'rserve-client'
 # for Rubocop
 gem 'rubocop'
-# for trello
-gem 'ruby-trello'
 # for watir
 gem 'watir-webdriver'
