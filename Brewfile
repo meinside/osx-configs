@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.12.22.
+# last update: 2016.12.28.
 
 #### formulas
 #
@@ -34,6 +34,7 @@ brew 'go'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
+brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
 brew 'phantomjs'
