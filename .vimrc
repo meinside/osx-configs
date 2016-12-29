@@ -163,6 +163,7 @@ if has("autocmd")
 	autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et	" Ruby
 	autocmd FileType go set ai sw=4 ts=4 sts=4 noet	" Golang
 	autocmd FileType clj,cljs set ai sw=2 ts=2 sts=2 et	" Clojure and ClojureScript
+	autocmd FileType python set ai sw=2 ts=2 sts=2 et   " Python
 
 	" When editing a file, always jump to the last known cursor position.
 	" Don't do it when the position is invalid or when inside an event handler
