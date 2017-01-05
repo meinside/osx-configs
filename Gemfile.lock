@@ -102,7 +102,7 @@ GEM
     nap (1.1.0)
     netrc (0.7.8)
     nio4r (1.2.1)
-    nokogiri (1.7.0)
+    nokogiri (1.7.0.1)
       mini_portile2 (~> 2.1.0)
     parser (2.3.3.1)
       ast (~> 2.2)
