@@ -32,8 +32,11 @@
   "flex-tool-bar": {}
   "git-history": {}
   "go-plus":
+    config: {}
     formatTool: "gofmt"
+    get: {}
     goPath: "~/srcs/go"
+    test: {}
   linter: {}
   "markdown-preview":
     grammars: [
