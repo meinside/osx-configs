@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2016.12.28.
+# last update: 2017.02.06.
 
 #### formulas
 #
@@ -15,9 +15,11 @@ brew 'htop'
 brew 'httpie'
 brew 'lnav'
 brew 'm-cli'
+brew 'mas'	# for Mac App Store
 brew 'mobile-shell'
 brew 'ngrep'
 brew 'pstree'
+brew 'reattach-to-user-namespace'	# for using pbcopy, pbpaste, or mas in tmux
 brew 'tmux'
 brew 'tree'
 brew 'vim', ars:['--with-python3']
