@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2016.12.06.
+# updated on 2017.02.06.
 #
 # ... by meinside@gmail.com
 #
@@ -103,12 +103,7 @@ fi
 #####################
 
 # for ruby
-# XXX - install ruby from source code, if not, it would complain about ssl certifications
-# $ rvm install 2.2.3 --disable-binary
-
-#export RUBYOPT="-w -rubygems"
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # XXX - for using my global Gemfile as fallback...
 autoload -U add-zsh-hook
@@ -132,6 +127,9 @@ set-fallback-gemfile () {
 add-zsh-hook chpwd set-fallback-gemfile
 
 if [[ -z $TMUX ]]; then
+
+	# for ruby
+	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 	# for golang
 	if [ -x "`which go`" ] ; then
