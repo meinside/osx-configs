@@ -3,10 +3,10 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2016.10.07.
+# updated on 2017.02.07.
 #
 # ... by meinside@gmail.com
-# 
+#
 
 # list files changed in given days
 # (referenced: http://gotofritz.net/blog/howto/finding-recently-changed-files-osx-terminal/)
@@ -37,8 +37,16 @@ install-all () {
 
 # update bundle, brew, brew cask and everything!
 update-all () {
-	# appstore
+	# osx updates
 	softwareupdate -i -r
+
+	# mac appstore
+	if [[ -x `which mas` ]]; then
+		echo
+		echo "> upgrading mac appstore apps..."
+
+		mas upgrade
+	fi
 
 	# homebrew
 	if [[ -x `which brew` ]]; then
@@ -93,4 +101,3 @@ list-go-imports () {
 		go list -f '{{join .Deps "\n"}}' | xargs go list -f '{{if not .Standard}}{{.ImportPath}}{{end}}'
 	fi
 }
-
