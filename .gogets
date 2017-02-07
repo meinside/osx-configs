@@ -3,7 +3,7 @@
 #
 # then it will automatically 'go get -u' all packages listed in this file(~/.gogets)
 #
-# last update: 2016.11.17.
+# last update: 2017.02.07.
 
 # official packages
 golang.org/x/tools/cmd/godoc
@@ -16,6 +16,7 @@ github.com/tcnksm/gotests
 github.com/google/gops
 
 # for development
+github.com/asciimoo/wuzz
 github.com/astaxie/beego
 github.com/beego/bee
 github.com/derekparker/delve/cmd/dlv
