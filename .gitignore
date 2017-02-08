@@ -53,6 +53,7 @@ Sites/
 .bundler
 
 # node.js
+.babel.json
 .config/configstore
 .node-gyp
 .npm
