@@ -72,6 +72,7 @@ Plugin 'tpope/vim-endwise'
 " For Go
 Plugin 'fatih/vim-go'
 Plugin 'jodosha/vim-godebug'	" 'delve' needed (:GoToggleBreakpoint, :GoDebug)
+let g:go_term_enabled=1	" XXX - if it is not set, 'delve' is not usable in nvim (2017.02.10.)
 
 " For Swift
 Plugin 'keith/swift.vim'
