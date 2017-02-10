@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2017.02.08.
+# last update: 2017.02.10.
 
 # binary files
 *.o
@@ -111,6 +111,7 @@ mbox
 # other applications' files & dirs
 .AndroidStudio*/
 .cups/
+.dlv/
 .docker/
 .dropbox/
 .dropbox-master/

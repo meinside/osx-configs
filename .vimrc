@@ -71,7 +71,7 @@ Plugin 'tpope/vim-endwise'
 
 " For Go
 Plugin 'fatih/vim-go'
-Plugin 'jodosha/vim-godebug'	" needs 'dlv'
+Plugin 'jodosha/vim-godebug'	" 'delve' needed (:GoToggleBreakpoint, :GoDebug)
 
 " For Swift
 Plugin 'keith/swift.vim'

@@ -3,10 +3,11 @@
 #
 # then it will automatically 'go get -u' all packages listed in this file(~/.gogets)
 #
-# last update: 2017.02.07.
+# last update: 2017.02.10.
 
 # official packages
 golang.org/x/tools/cmd/godoc
+golang.org/x/debug
 
 # useful packages
 github.com/mailgun/godebug
