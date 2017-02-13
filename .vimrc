@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.02.10.
+" last update: 2017.02.13.
 "
 "
 " XXX - for neovim:
@@ -15,6 +15,8 @@ if has('nvim')
 
 	set termguicolors
 	colo pablo
+
+	set mouse-=a	" not to enter visual mode when dragging text
 else
 	" settings for vim only
 
