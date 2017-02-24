@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2017.02.06.
+# last update: 2017.02.24.
 
 #### formulas
 #
@@ -18,28 +18,29 @@ brew 'm-cli'
 brew 'mas'	# for Mac App Store
 brew 'mobile-shell'
 brew 'ngrep'
+brew 'neovim/neovim/neovim'
 brew 'pstree'
 brew 'reattach-to-user-namespace'	# for using pbcopy, pbpaste, or mas in tmux
 brew 'tmux'
 brew 'tree'
-brew 'vim', ars:['--with-python3']
+brew 'vim'
 brew 'wget'
 brew 'zsh'
 #
 # for development
 brew 'curl', args: ['--with-nghttp2']
-brew 'casperjs', args: ['--devel']
 brew 'coreutils'
 brew 'git', args: ['--with-pcre']
 brew 'gnupg'
 brew 'go'
+brew 'go-delve/delve/delve'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
 brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
-brew 'phantomjs'
+brew 'python'
 # XXX - needs: brew tap homebrew/science
 brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew 'wrk'

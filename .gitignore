@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2017.02.10.
+# last update: 2017.02.24.
 
 # binary files
 *.o
@@ -125,6 +125,7 @@ mbox
 .lesshst
 .lnav/
 .m2/
+.matplotlib/
 .netrc
 .ngrok2/
 .oh-my-zsh/

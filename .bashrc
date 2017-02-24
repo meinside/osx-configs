@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2016.12.11.
+# updated on 2017.02.24.
 #
 # ... by meinside@gmail.com
 
@@ -80,7 +80,8 @@ if [[ -z $TMUX ]]; then
 
 fi
 
-# for python (virtualenv)
+# for python
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 

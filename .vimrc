@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.02.13.
+" last update: 2017.02.24.
 "
 "
 " XXX - for neovim:
@@ -75,7 +75,9 @@ Plugin 'tpope/vim-endwise'
 
 " For Go
 Plugin 'fatih/vim-go'
-Plugin 'jodosha/vim-godebug'	" 'delve' needed (:GoToggleBreakpoint, :GoDebug)
+if has('nvim')
+	Plugin 'jodosha/vim-godebug'	" 'delve' needed (:GoToggleBreakpoint, :GoDebug)
+endif
 
 " For Swift
 Plugin 'keith/swift.vim'
@@ -91,15 +93,15 @@ let g:lightline = {
 	\ 'colorscheme': 'wombat',
 	\ }
 
-" For snippets
-" - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
-" - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"	" <tab> for next placeholder
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"	" <shift-tab> for previous placeholder
-let g:UltiSnipsEditSplit="vertical"
+"" For snippets
+"" - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
+"" - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
+"Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<tab>"	" <tab> for next placeholder
+"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"	" <shift-tab> for previous placeholder
+"let g:UltiSnipsEditSplit="vertical"
 
 "
 """"""""

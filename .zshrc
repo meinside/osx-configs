@@ -153,7 +153,8 @@ if [[ -z $TMUX ]]; then
 
 fi
 
-# for python (virtualenv)
+# for python
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
