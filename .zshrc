@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2017.02.06.
+# updated on 2017.03.29.
 #
 # ... by meinside@gmail.com
 #
@@ -64,7 +64,7 @@ else
 fi
 
 # User configuration
-umask 027
+#umask 027
 export DISPLAY=:0.0
 export EDITOR="/usr/bin/vim"
 export SVN_EDITOR="/usr/bin/vim"

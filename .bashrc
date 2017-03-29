@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2017.02.24.
+# updated on 2017.03.29.
 #
 # ... by meinside@gmail.com
 
@@ -12,7 +12,7 @@ export PS1="\[$bldcyn\]\u@\h\[$txtrst\]:\[$bldblu\]\w\[$txtgrn\]\$git_branch\[$t
 export PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME%%.*}: ${PWD/#$HOME/~}\007"; find_git_branch; find_git_dirty'
 
 # other configurations
-umask 027
+#umask 027
 export DISPLAY=:0.0
 export EDITOR="/usr/bin/vim"
 export SVN_EDITOR="/usr/bin/vim"
