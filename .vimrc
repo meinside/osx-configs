@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.02.24.
+" last update: 2017.04.07.
 "
 "
 " XXX - for neovim:
@@ -60,12 +60,19 @@ Plugin 'surround.vim'
 Plugin 'matchit.zip'
 Plugin 'ragtag.vim'	" TAG + <ctrl-x> + @, !, #, $, /, <space>, <cr>, ...
 
+" For autocompletion
+if has('nvim')
+	" python3 needed ($ pip3 install --upgrade neovim)
+	Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	let g:deoplete#enable_at_startup = 1
+endif
+
 " For source file browsing
 " XXX: ctags is needed! ($ brew install ctags)
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
-" For uploading Gist
+" For uploading Gist (:Gist / :Gist -p / :Gist -a / ...)
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 
@@ -76,11 +83,18 @@ Plugin 'tpope/vim-endwise'
 " For Go
 Plugin 'fatih/vim-go'
 if has('nvim')
-	Plugin 'jodosha/vim-godebug'	" 'delve' needed (:GoToggleBreakpoint, :GoDebug)
+	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
+	Plugin 'jodosha/vim-godebug'
+
+	" For autocompletion
+	Plugin 'zchee/deoplete-go', { 'do': 'make'}
 endif
 
-" For Swift
-Plugin 'keith/swift.vim'
+" For Python
+if has('nvim')
+	" For autocompletion
+	Plugin 'zchee/deoplete-jedi'
+endif
 
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plugin 'google/vim-maktaba'
