@@ -173,7 +173,7 @@ GEM
     thread_safe (0.3.6)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
-    unicode-display_width (1.2.0)
+    unicode-display_width (1.2.1)
     watir-webdriver (0.9.9)
       selenium-webdriver (>= 2.46.2)
     websocket (1.2.4)
