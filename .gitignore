@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2017.02.24.
+# last update: 2017.05.11.
 
 # binary files
 *.o
@@ -116,6 +116,7 @@ mbox
 .dropbox/
 .dropbox-master/
 .eclipse/
+.ethash/
 .Genymobile/
 .heroku/
 .httpie/
