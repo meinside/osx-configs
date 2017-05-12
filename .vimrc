@@ -90,6 +90,9 @@ if has('nvim')
 	Plugin 'zchee/deoplete-go', { 'do': 'make'}
 endif
 
+"For Haskell
+Plugin 'neovimhaskell/haskell-vim'
+
 " For Python
 if has('nvim')
 	" For autocompletion
