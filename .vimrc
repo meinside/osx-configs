@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.05.22.
+" last update: 2017.05.23.
 "
 "
 " XXX - for neovim:
@@ -94,7 +94,7 @@ endif
 if has('nvim')
 	Plugin 'neovimhaskell/haskell-vim'
 endif
-Plugin 'itchyny/vim-haskell-indent'
+Plugin 'alx741/vim-hindent'	" $ stack install hindent
 
 " For Python
 if has('nvim')
