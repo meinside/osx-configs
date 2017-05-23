@@ -94,7 +94,9 @@ endif
 if has('nvim')
 	Plugin 'neovimhaskell/haskell-vim'
 endif
-Plugin 'alx741/vim-hindent'	" $ stack install hindent
+if executable('hindent')
+	Plugin 'alx741/vim-hindent'	" $ stack install hindent
+endif
 
 " For Python
 if has('nvim')
