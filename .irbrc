@@ -1,8 +1,16 @@
-# My .irbrc file for OSX
+# My .irbrc file for macOS
 #
 # meinside@gmail.com
 #
-# last update: 2015.02.25.
+# last update: 2017.05.24.
+
+# useful gems:
+# - wirble
+# - rspec
+#
+# for development/test
+# - cocoapods
+# - cocoapods-deintegrate
 
 # check if it's irb or macirb
 case File.basename($0)

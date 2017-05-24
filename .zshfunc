@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2017.02.07.
+# updated on 2017.05.24.
 #
 # ... by meinside@gmail.com
 #
@@ -30,9 +30,6 @@ install-all () {
 	# homebrew
 	brew tap Homebrew/bundle
 	brew bundle
-
-	# bundler
-	BUNDLE_GEMFILE=$HOME/Gemfile bundle install
 }
 
 # update bundle, brew, brew cask and everything!
@@ -64,22 +61,6 @@ update-all () {
 	else
 		echo
 		echo "* brew not installed"
-	fi
-
-	# bundler
-	if [[ -x `which bundle` ]]; then
-		echo
-		echo "> cleaning bundle..."
-
-		gem cleanup
-
-		echo
-		echo "> updating bundle..."
-
-		BUNDLE_GEMFILE=$HOME/Gemfile bundle update
-	else
-		echo
-		echo "* bundler not installed"
 	fi
 
 	# go get
