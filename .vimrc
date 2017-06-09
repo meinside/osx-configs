@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.05.23.
+" last update: 2017.06.09.
 "
 "
 " XXX - for neovim:
@@ -103,6 +103,9 @@ if has('nvim')
 	" For autocompletion
 	Plugin 'zchee/deoplete-jedi'
 endif
+
+" For React
+Plugin 'chemzqm/vim-jsx-improve'
 
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plugin 'google/vim-maktaba'
