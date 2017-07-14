@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.06.12.
+" last update: 2017.07.14.
 "
 "
 " XXX - for neovim:
@@ -10,18 +10,14 @@
 " $ mkdir -p ~/.config/nvim
 " $ ln -sf ~/.vimrc ~/.config/nvim/init.vim
 
-if has('nvim')
-	" settings for nvim only
-
+if has('nvim')	" settings for nvim only
 	set termguicolors
 	colo pablo
 
 	set mouse-=a	" not to enter visual mode when dragging text
 
 	let g:go_term_enabled=1	" XXX - if it is not set, 'delve' is not usable in nvim (2017.02.10.)
-else
-	" settings for vim only
-
+else	" settings for vim only
 	set t_Co=256
 	colo elflord
 endif
@@ -59,6 +55,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'surround.vim'
 Plugin 'matchit.zip'
 Plugin 'ragtag.vim'	" TAG + <ctrl-x> + @, !, #, $, /, <space>, <cr>, ...
+Plugin 'vim-airline/vim-airline'
+let g:airline#extensions#ale#enabled = 1
 
 " For autocompletion
 if has('nvim')
@@ -89,6 +87,17 @@ if has('nvim')
 	" For autocompletion
 	Plugin 'zchee/deoplete-go', { 'do': 'make'}
 endif
+let g:go_fmt_command = "goimports"	" auto import dependencies
+let g:go_highlight_build_constraints = 1
+let g:go_highlight_extra_types = 1
+let g:go_highlight_fields = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_operators = 1
+let g:go_highlight_structs = 1
+let g:go_highlight_types = 1
+let g:go_auto_sameids = 1
+let g:go_auto_type_info = 1
 
 " For Haskell
 if has('nvim')
@@ -113,13 +122,6 @@ let g:jsx_ext_required=0
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
-
-" For statusline/tabline configuration
-Plugin 'itchyny/lightline.vim'
-set laststatus=2
-let g:lightline = {
-	\ 'colorscheme': 'wombat',
-	\ }
 
 "" For snippets
 "" - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
@@ -231,9 +233,9 @@ if has("autocmd")
 		" Don't do it when the position is invalid or when inside an event handler
 		" (happens when dropping a file on gvim).
 		autocmd BufReadPost *
-			\ if line("'\"") > 0 && line("'\"") <= line("$") |
-			\   exe "normal g`\"" |
-			\ endif
+					\ if line("'\"") > 0 && line("'\"") <= line("$") |
+					\   exe "normal g`\"" |
+					\ endif
 
 	augroup END
 
