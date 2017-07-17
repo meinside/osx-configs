@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 "
 " created by meinside@gmail.com,
-" last update: 2017.07.14.
+" last update: 2017.07.17.
 "
 "
 " XXX - for neovim:
@@ -200,16 +200,8 @@ endif
 
 " Only do this part when compiled with support for autocommands.
 if has("autocmd")
-
-	" Enable file type detection.
-	" Use the default filetype settings, so that mail gets 'tw' set to 72,
-	" 'cindent' is on in C files, etc.
-	" Also load indent files, to automatically do language-dependent indenting.
-	filetype plugin indent on
-
 	" Put these in an autocmd group, so that we can delete them easily.
 	augroup vimrcEx
-
 		au!
 
 		" For all text files set 'textwidth' to 78 characters.
@@ -232,11 +224,8 @@ if has("autocmd")
 					\ if line("'\"") > 0 && line("'\"") <= line("$") |
 					\   exe "normal g`\"" |
 					\ endif
-
 	augroup END
-
 else
-
 	set autoindent		" always set autoindenting on
-
 endif " has("autocmd")
+
