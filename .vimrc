@@ -16,7 +16,7 @@ if has('nvim')	" settings for nvim only
 
 	set mouse-=a	" not to enter visual mode when dragging text
 
-	let g:go_term_enabled=1	" XXX - if it is not set, 'delve' is not usable in nvim (2017.02.10.)
+	let g:go_term_enabled=1	" XXX - it needs to be set for 'delve' (2017.02.10.)
 else	" settings for vim only
 	set t_Co=256
 	colo elflord
@@ -29,14 +29,12 @@ let vundle_fresh=0
 if !filereadable(vundle_readme)
 	echo "Installing Vundle..."
 	echo ""
-
 	silent execute "!git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim"
-
 	let vundle_fresh=1
 endif
 
-set nocompatible               " be iMproved, required
-filetype off                   " required!
+set nocompatible	" be iMproved, required
+filetype off		" required!
 
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -48,7 +46,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 """"""""
-" add bundles here
+" vundle packages
 "
 
 " Useful plugins
@@ -63,13 +61,11 @@ let g:gitgutter_highlight_lines = 1
 
 " For autocompletion
 if has('nvim')
-	" python3 needed ($ pip3 install --upgrade neovim)
-	Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+	Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" XXX - python3 needed ($ pip3 install --upgrade neovim)
 	let g:deoplete#enable_at_startup = 1
 endif
 
-" For source file browsing
-" XXX: ctags is needed! ($ brew install ctags)
+" For source file browsing, XXX: ctags is needed! ($ brew install ctags)
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
@@ -84,11 +80,9 @@ Plugin 'tpope/vim-endwise'
 " For Go
 Plugin 'fatih/vim-go'
 if has('nvim')
-	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
-	Plugin 'jodosha/vim-godebug'
+	Plugin 'jodosha/vim-godebug'	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
 
-	" For autocompletion
-	Plugin 'zchee/deoplete-go', { 'do': 'make'}
+	Plugin 'zchee/deoplete-go', { 'do': 'make'}	" For autocompletion
 endif
 let g:go_fmt_command = "goimports"	" auto import dependencies
 let g:go_highlight_build_constraints = 1
@@ -112,8 +106,7 @@ endif
 
 " For Python
 if has('nvim')
-	" For autocompletion
-	Plugin 'zchee/deoplete-jedi'
+	Plugin 'zchee/deoplete-jedi'	" For autocompletion
 endif
 
 " For JavaScript and React
