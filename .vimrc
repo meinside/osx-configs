@@ -1,8 +1,6 @@
 " meinside's .vimrc file for vim or neovim,
-"
 " created by meinside@gmail.com,
-" last update: 2017.07.17.
-"
+" last update: 2017.07.19.
 "
 " XXX - for neovim:
 "
@@ -13,9 +11,7 @@
 if has('nvim')	" settings for nvim only
 	set termguicolors
 	colo pablo
-
 	set mouse-=a	" not to enter visual mode when dragging text
-
 	let g:go_term_enabled=1	" XXX - it needs to be set for 'delve' (2017.02.10.)
 else	" settings for vim only
 	set t_Co=256
@@ -29,7 +25,7 @@ let vundle_fresh=0
 if !filereadable(vundle_readme)
 	echo "Installing Vundle..."
 	echo ""
-	silent execute "!git clone https://github.com/gmarik/vundle ~/.vim/bundle/Vundle.vim"
+	silent execute "!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
 	let vundle_fresh=1
 endif
 
@@ -81,7 +77,6 @@ Plugin 'tpope/vim-endwise'
 Plugin 'fatih/vim-go'
 if has('nvim')
 	Plugin 'jodosha/vim-godebug'	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
-
 	Plugin 'zchee/deoplete-go', { 'do': 'make'}	" For autocompletion
 endif
 let g:go_fmt_command = "goimports"	" auto import dependencies
@@ -147,7 +142,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" install bundles
+" install bundles if not installed yet
 if vundle_fresh == 1
 	echo "Installing bundles..."
 	echo ""
