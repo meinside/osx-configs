@@ -23,7 +23,6 @@ brew 'pstree'
 brew 'reattach-to-user-namespace'	# for using pbcopy, pbpaste, or mas in tmux
 brew 'tmux'
 brew 'tree'
-brew 'vim'
 brew 'wget'
 brew 'zsh'
 #

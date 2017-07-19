@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2017.05.24.
+# updated on 2017.07.19.
 #
 # ... by meinside@gmail.com
 #
@@ -135,7 +135,8 @@ if [[ -z $TMUX ]]; then
 
 fi
 
-# for python
+# for python (installed with brew)
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
