@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2017.07.19.
+# last update: 2017.07.26.
 
 #### formulas
 #
@@ -40,7 +40,7 @@ brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
 brew 'python'
-# XXX - needs: brew tap homebrew/science
+tap 'homebrew/science'
 brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew 'wrk'
 #
@@ -49,6 +49,8 @@ brew 'libmagic'
 brew 'mysql'
 
 #### cask
+#
+tap 'caskroom/cask'
 #
 # utilities
 cask 'atom'
@@ -69,6 +71,11 @@ cask 'rstudio'
 cask 'sourcetree'
 cask 'sequel-pro'
 cask 'virtualbox'
+#
+# fonts
+tap 'caskroom/fonts'
+cask 'font-hack'
+cask 'font-fira-code'
 #
 # etc.
 cask 'gureumkim'	# for hangul input
