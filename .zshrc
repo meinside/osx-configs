@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2017.07.19.
+# updated on 2017.07.27.
 #
 # ... by meinside@gmail.com
 #
@@ -23,11 +23,13 @@ export ZSH=$HOME/.oh-my-zsh
 # without prompting you
 DISABLE_UPDATE_PROMPT="true"
 
+# https://github.com/robbyrussell/oh-my-zsh/wiki/themes
+#
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="risto"
+ZSH_THEME="ys"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 COMPLETION_WAITING_DOTS="true"
