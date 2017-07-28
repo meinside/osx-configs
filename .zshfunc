@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2017.06.23.
+# updated on 2017.07.28.
 #
 # ... by meinside@gmail.com
 #
@@ -35,13 +35,14 @@ install-all () {
 # update bundle, brew, brew cask and everything!
 update-all () {
 	# osx updates
+	echo
+	echo "> Checking for macOS software updates..."
 	softwareupdate --install --all
 
 	# mac appstore
 	if [[ -x `which mas` ]]; then
 		echo
-		echo "> Updating Mac Appstore apps..."
-
+		echo "> Updating Mac App Store apps..."
 		mas upgrade
 	fi
 
@@ -49,13 +50,11 @@ update-all () {
 	if [[ -x `which brew` ]]; then
 		echo
 		echo "> Updating brew..."
-
 		brew update
 		brew upgrade
 
 		echo
 		echo "> Cleaning brew..."
-
 		brew cleanup
 		brew cask cleanup
 	else
@@ -67,9 +66,13 @@ update-all () {
 	if [[ -x `which goget` ]]; then
 		echo
 		echo "> Updating go packages..."
-
 		goget
 	fi
+
+	# vim bundles
+	echo
+	echo "> Updating vim bundles..."
+	vi +PluginInstall +qall
 }
 
 # list go imports
