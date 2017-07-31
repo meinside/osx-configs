@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2017.07.28.
+# updated on 2017.07.31.
 #
 # ... by meinside@gmail.com
 #
@@ -72,7 +72,7 @@ update-all () {
 	# vim bundles
 	echo
 	echo "> Updating vim bundles..."
-	vi +PluginInstall +qall
+	vi +PluginUpdate +qall
 }
 
 # list go imports
