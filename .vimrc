@@ -1,6 +1,6 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
-" last update: 2017.07.19.
+" last update: 2017.08.03.
 "
 " XXX - for neovim:
 "
@@ -54,6 +54,9 @@ Plugin 'vim-airline/vim-airline'
 let g:airline#extensions#ale#enabled = 1
 Plugin 'airblade/vim-gitgutter'	" [c, ]c for prev/next hunk
 let g:gitgutter_highlight_lines = 1
+Plugin 'Yggdroot/indentLine'
+let g:indentLine_char = '⎸'
+let g:indentLine_enabled = 0	" :IndentLinesToggle
 
 " For autocompletion
 if has('nvim')
