@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2017.07.05.
+# last update: 2017.08.03.
 
 # binary files
 *.o
@@ -128,6 +128,7 @@ mbox
 .ipfs/
 .itmstransporter/
 .julia/
+.keras/
 .lein/
 .lesshst
 .lnav/
