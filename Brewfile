@@ -5,14 +5,13 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2017.07.26.
+# last update: 2017.09.01.
 
 #### formulas
 #
 # utilities
 brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
 brew 'htop'
-brew 'httpie'
 brew 'lnav'
 brew 'm-cli'
 brew 'mas'	# for Mac App Store
@@ -33,20 +32,14 @@ brew 'git', args: ['--with-pcre']
 brew 'gnupg'
 brew 'go'
 brew 'go-delve/delve/delve'
+brew 'haskell-stack'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
 brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
-brew 'python'
-tap 'homebrew/science'
-brew 'r'	# $ defaults write org.R-project.R force.LANG en_US.UTF-8
 brew 'wrk'
-#
-# for building other things (like rubygems)
-brew 'libmagic'
-brew 'mysql'
 
 #### cask
 #
@@ -65,10 +58,7 @@ cask 'xquartz'
 # for development
 cask 'iterm2'
 cask 'java'
-cask 'kitematic'
 cask 'postico'
-cask 'rstudio'
-cask 'sourcetree'
 cask 'sequel-pro'
 cask 'virtualbox'
 #
