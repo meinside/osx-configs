@@ -115,6 +115,10 @@ endif
 if executable('hindent')
 	Plugin 'alx741/vim-hindent'	" $ stack install hindent
 endif
+if executable('ghc-mod')
+	Plugin 'eagletmt/neco-ghc'	" $ stack install ghc-mod
+	let g:haskellmode_completion_ghc = 0
+endif
 
 " For Python
 if has('nvim')
@@ -224,10 +228,17 @@ if has("autocmd")
 		autocmd FileType css,scss set ai sw=2 ts=2 sts=2 et
 
 		" For programming languages
-		autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et	" Ruby
-		autocmd FileType go set ai sw=4 ts=4 sts=4 noet	" Golang
-		autocmd FileType python set ai sw=2 ts=2 sts=2 et	" Python
-		autocmd FileType haskell set ai sw=2 ts=2 sts=2 et	" Haskell
+		" Golang
+		autocmd FileType go set ai sw=4 ts=4 sts=4 noet
+		" Ruby
+		autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et
+		" Python
+		autocmd FileType python set ai sw=2 ts=2 sts=2 et
+		" Haskell
+		autocmd FileType haskell set ai sw=2 ts=2 sts=2 et
+		if executable('ghc-mod')
+			autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
+		endif
 
 		" When editing a file, always jump to the last known cursor position.
 		" Don't do it when the position is invalid or when inside an event handler
