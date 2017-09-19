@@ -1,6 +1,6 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
-" last update: 2017.08.03.
+" last update: 2017.09.19.
 "
 " XXX - for neovim:
 "
@@ -71,6 +71,20 @@ nmap <F8> :TagbarToggle<CR>
 " For uploading Gist (:Gist / :Gist -p / :Gist -a / ...)
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
+
+" For syntax checking
+Plugin 'vim-syntastic/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+" > Haskell:
+" $ stack install hlint ghc-mod
+" > Go:
+let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
 
 " For Ruby
 Plugin 'vim-ruby/vim-ruby'
