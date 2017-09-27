@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2017.09.12.
+# last update: 2017.09.27.
 
 #### formulas
 #
@@ -31,6 +31,7 @@ brew 'coreutils'
 brew 'git', args: ['--with-pcre']
 brew 'gnupg'
 brew 'go'
+tap 'go-delve/delve'
 brew 'go-delve/delve/delve'
 brew 'haskell-stack'
 brew 'heroku-toolbelt'
@@ -67,5 +68,5 @@ cask 'font-hack'
 cask 'font-fira-code'
 #
 # etc.
-cask 'gureumkim'	# for hangul input
+#cask 'gureumkim'	# for hangul input
 
