@@ -1,10 +1,10 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
-" last update: 2017.09.19.
+" last update: 2017.09.29.
 "
 " XXX - for neovim:
 "
-" $ pip install --upgrade neovim
+" $ pip3 install --upgrade neovim
 " $ mkdir -p ~/.config/nvim
 " $ ln -sf ~/.vimrc ~/.config/nvim/init.vim
 
