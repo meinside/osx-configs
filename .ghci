@@ -1,0 +1,12 @@
+-- ~/.ghci
+--
+-- $ stack install pretty-show hscolour
+--
+-- last update: 2017.10.18.
+
+:set -XOverloadedStrings
+:set -Wall
+:set prompt "λ> "
+:set -fdefer-type-errors
+let colorPrint = System.IO.putStrLn . Language.Haskell.HsColour.hscolour Language.Haskell.HsColour.TTY Language.Haskell.HsColour.Colourise.defaultColourPrefs False False "" False . Text.Show.Pretty.ppShow
+:set -interactive-print colorPrint
