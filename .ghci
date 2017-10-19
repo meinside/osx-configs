@@ -1,12 +1,29 @@
 -- ~/.ghci
 --
+-- My ghci configuration file
+--
 -- $ stack install pretty-show hscolour
 --
--- last update: 2017.10.18.
+-- created on : 2017.10.18.
+-- last update: 2017.10.19.
 
-:set -XOverloadedStrings
+-- warning/error options
 :set -Wall
-:set prompt "λ> "
 :set -fdefer-type-errors
+
+-- customized prompt
+:set prompt "\ESC[33m\STXλ > \ESC[m\STX"
+
+-- pretty print
 let colorPrint = System.IO.putStrLn . Language.Haskell.HsColour.hscolour Language.Haskell.HsColour.TTY Language.Haskell.HsColour.Colourise.defaultColourPrefs False False "" False . Text.Show.Pretty.ppShow
 :set -interactive-print colorPrint
+
+-- show types of evaluated expressions
+:set +t
+
+-- enable multiline expressions
+:set +m
+
+-- enable overloaded strings
+:set -XOverloadedStrings
+
