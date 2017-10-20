@@ -1,6 +1,6 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
-" last update: 2017.09.29.
+" last update: 2017.10.20.
 "
 " XXX - for neovim:
 "
@@ -57,6 +57,8 @@ let g:gitgutter_highlight_lines = 1
 Plugin 'Yggdroot/indentLine'
 let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 0	" :IndentLinesToggle
+Plugin 'docunext/closetag.vim'
+Plugin 'tpope/vim-sleuth'
 
 " For autocompletion
 if has('nvim')
@@ -73,18 +75,21 @@ Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 
 " For syntax checking
-Plugin 'vim-syntastic/syntastic'
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-" > Haskell:
-" $ stack install hlint ghc-mod
-" > Go:
-let g:syntastic_go_checkers = ['govet', 'errcheck', 'go']
+Plugin 'w0rp/ale'
+"let g:ale_fixers = {
+"\	'go': ['govet', 'errcheck', 'go'],
+"\}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+let g:ale_lint_on_text_changed = 'never'
+let g:ale_set_loclist = 0
+let g:ale_set_quickfix = 1
+let g:ale_open_list = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)	" ctrl+k for previous error
+nmap <silent> <C-j> <Plug>(ale_next_wrap)	" ctrl+j for next error
 
 " For Ruby
 Plugin 'vim-ruby/vim-ruby'
@@ -109,6 +114,7 @@ let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
 
 " For Haskell
+" $ stack install hlint ghc-mod
 if has('nvim')
 	Plugin 'neovimhaskell/haskell-vim'
 endif
@@ -134,16 +140,6 @@ let g:jsx_ext_required=0
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plugin 'google/vim-maktaba'
 Plugin 'google/vim-codefmt'
-
-"" For snippets
-"" - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
-"" - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
-"Plugin 'SirVer/ultisnips'
-"Plugin 'honza/vim-snippets'
-"let g:UltiSnipsExpandTrigger="<tab>"
-"let g:UltiSnipsJumpForwardTrigger="<tab>"	" <tab> for next placeholder
-"let g:UltiSnipsJumpBackwardTrigger="<s-tab>"	" <shift-tab> for previous placeholder
-"let g:UltiSnipsEditSplit="vertical"
 
 "
 """"""""
