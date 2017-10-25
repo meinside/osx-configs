@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2017.10.24.
+" last update: 2017.10.25.
 "
 " XXX - for neovim:
 "
@@ -106,7 +106,8 @@ let g:go_highlight_structs = 1
 let g:go_highlight_types = 1
 let g:go_auto_sameids = 1
 let g:go_auto_type_info = 1
-let g:syntastic_go_checkers = ['golint', 'errcheck', 'go']
+let g:syntastic_go_checkers = ['go', 'errcheck', 'golint']
+let g:syntastic_aggregate_errors = 1
 
 " For Haskell
 " $ stack install hlint ghc-mod
