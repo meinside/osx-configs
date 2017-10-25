@@ -67,6 +67,16 @@ if has('nvim')
 	let g:deoplete#enable_at_startup = 1
 endif
 
+" For snippets
+" - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
+" - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"   " <tab> for next placeholder
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"    " <shift-tab> for previous placeholder
+let g:UltiSnipsEditSplit="vertical"
+
 " For source file browsing, XXX: ctags is needed! ($ brew install ctags)
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
