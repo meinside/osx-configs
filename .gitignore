@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2018.01.06.
+# last update: 2018.02.20.
 
 # binary files
 *.o
@@ -22,6 +22,7 @@
 .lldb/
 .local/
 .rncache/
+default.profraw
 tmp/
 
 # other scm files/dirs
