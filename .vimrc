@@ -1,14 +1,21 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2017.10.25.
+" last update: 2018.02.23.
 "
 " XXX - for neovim:
 "
 " $ pip3 install --upgrade neovim
-" $ mkdir -p ~/.config/nvim
-" $ ln -sf ~/.vimrc ~/.config/nvim/init.vim
 
+""""""""""""""""""""""""""""""""""""
+" settings for nvim
+"
+"
+" for nvim, symbolic link ~/.vimrc to ~/.config/nvim/init.vim
+if !filereadable(expand('~/.config/nvim/init.vim'))
+	silent !mkdir -p ~/.config/nvim
+	silent !ln -sf ~/.vimrc ~/.config/nvim/init.vim
+endif
 if has('nvim')	" settings for nvim only
 	set termguicolors
 	colo pablo
@@ -120,15 +127,19 @@ let g:syntastic_go_checkers = ['go', 'errcheck', 'golint']
 let g:syntastic_aggregate_errors = 1
 
 " For Haskell
-" $ stack install hlint ghc-mod
+" $ stack install hlint
 if has('nvim')
 	Plugin 'neovimhaskell/haskell-vim'
 endif
+" $ stack install hindent
 if executable('hindent')
-	Plugin 'alx741/vim-hindent'	" $ stack install hindent
+	Plugin 'alx741/vim-hindent'
 endif
+" $ stack install ghc-mod
+" or
+" $ stack build ghc-mod --copy-compiler-tool
 if executable('ghc-mod')
-	Plugin 'eagletmt/neco-ghc'	" $ stack install ghc-mod
+	Plugin 'eagletmt/neco-ghc'
 	let g:haskellmode_completion_ghc = 0
 endif
 
@@ -137,11 +148,12 @@ if has('nvim')
 	Plugin 'zchee/deoplete-jedi'	" For autocompletion
 endif
 
-" For JavaScript and React
+" For JavaScript frameworks
 Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'
+Plugin 'mxw/vim-jsx'	" React
 let g:javascript_plugin_flow=1
 let g:jsx_ext_required=0
+Plugin 'posva/vim-vue'	" Vue.js
 
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plugin 'google/vim-maktaba'

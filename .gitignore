@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2018.02.20.
+# last update: 2018.02.26.
 
 # binary files
 *.o
@@ -70,6 +70,7 @@ npm-debug.log
 .gore/
 
 # haskell
+.cabal/
 .ghc/
 .stack/
 

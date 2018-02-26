@@ -3,9 +3,11 @@
 -- My ghci configuration file
 --
 -- $ stack install pretty-show hscolour
+-- or
+-- $ stack build pretty-show hscolour --copy-compiler-tool
 --
 -- created on : 2017.10.18.
--- last update: 2017.11.15.
+-- last update: 2018.02.26.
 
 -- warning/error options
 :set -Wall
