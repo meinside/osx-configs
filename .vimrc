@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim or neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.02.23.
+" last update: 2018.02.27.
 "
 " XXX - for neovim:
 "
@@ -20,7 +20,7 @@ if has('nvim')	" settings for nvim only
 	set termguicolors
 	colo pablo
 	set mouse-=a	" not to enter visual mode when dragging text
-	let g:go_term_enabled=1	" XXX - it needs to be set for 'delve' (2017.02.10.)
+	let g:go_term_enabled = 1	" XXX - it needs to be set for 'delve' (2017.02.10.)
 else	" settings for vim only
 	set t_Co=256
 	colo elflord
@@ -28,13 +28,12 @@ endif
 
 """"""""""""""""""""""""""""""""""""
 " settings for vundle (https://github.com/VundleVim/Vundle.vim)
-let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
-let vundle_fresh=0
-if !filereadable(vundle_readme)
+let vundle_fresh = 0
+if !filereadable(expand('~/.vim/bundle/Vundle.vim/README.md'))
 	echo "Installing Vundle..."
 	echo ""
 	silent execute "!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
-	let vundle_fresh=1
+	let vundle_fresh = 1
 endif
 
 set nocompatible	" be iMproved, required
@@ -79,16 +78,16 @@ endif
 " - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"   " <tab> for next placeholder
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"    " <shift-tab> for previous placeholder
-let g:UltiSnipsEditSplit="vertical"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"   " <tab> for next placeholder
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"    " <shift-tab> for previous placeholder
+let g:UltiSnipsEditSplit = "vertical"
 
 " For source file browsing, XXX: ctags is needed! ($ brew install ctags)
 Plugin 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
-" For uploading Gist (:Gist / :Gist -p / :Gist -a / ...)
+" For uploading Gist (:Gist / :Gist -p / ...)
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 
@@ -127,20 +126,26 @@ let g:syntastic_go_checkers = ['go', 'errcheck', 'golint']
 let g:syntastic_aggregate_errors = 1
 
 " For Haskell
-" $ stack install hlint
 if has('nvim')
 	Plugin 'neovimhaskell/haskell-vim'
 endif
-" $ stack install hindent
+" $ stack install hlint hindent
 if executable('hindent')
 	Plugin 'alx741/vim-hindent'
 endif
 " $ stack install ghc-mod
 " or
 " $ stack build ghc-mod --copy-compiler-tool
-if executable('ghc-mod')
-	Plugin 'eagletmt/neco-ghc'
-	let g:haskellmode_completion_ghc = 0
+let ghc_mod_installed = 0
+if executable('stack')
+	" For autocompletion
+	let ghc_mods = systemlist('stack exec -- which ghc-mod')
+	if len(ghc_mods) > 0 && executable(ghc_mods[0])
+		Plugin 'eagletmt/neco-ghc'
+		let g:necoghc_use_stack = 1
+		let g:haskellmode_completion_ghc = 0
+		let ghc_mod_installed = 1
+	endif
 endif
 
 " For Python
@@ -151,8 +156,8 @@ endif
 " For JavaScript frameworks
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'	" React
-let g:javascript_plugin_flow=1
-let g:jsx_ext_required=0
+let g:javascript_plugin_flow = 1
+let g:jsx_ext_required = 0
 Plugin 'posva/vim-vue'	" Vue.js
 
 " For vim-codefmt (:FormatLines, :FormatCode)
@@ -177,7 +182,7 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-" install bundles if not installed yet
+" install plugins if not installed yet
 if vundle_fresh == 1
 	echo "Installing bundles..."
 	echo ""
@@ -250,7 +255,7 @@ if has("autocmd")
 		autocmd FileType python set ai sw=2 ts=2 sts=2 et
 		" Haskell
 		autocmd FileType haskell set ai sw=2 ts=2 sts=2 et
-		if executable('ghc-mod')
+		if ghc_mod_installed == 1
 			autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
 		endif
 
