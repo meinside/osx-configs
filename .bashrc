@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2017.07.19.
+# updated on 2018.02.27.
 #
 # ... by meinside@gmail.com
 
@@ -64,6 +64,9 @@ if [[ -z $TMUX ]]; then
 		export GOPATH=$HOME/srcs/go
 		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
+
+	# for haskell
+	alias ghci="stack exec ghci --"
 
 	# for java
 	export JAVA_JVM_VERSION="1.6"
