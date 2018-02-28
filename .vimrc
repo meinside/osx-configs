@@ -1,7 +1,7 @@
-" meinside's .vimrc file for vim or neovim,
+" meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.02.27.
+" last update: 2018.02.28.
 "
 " XXX - for neovim:
 "
@@ -11,7 +11,7 @@
 " settings for nvim
 "
 "
-" for nvim, symbolic link ~/.vimrc to ~/.config/nvim/init.vim
+" for nvim, symbolic link '~/.vimrc' to '~/.config/nvim/init.vim'
 if !filereadable(expand('~/.config/nvim/init.vim'))
 	silent !mkdir -p ~/.config/nvim
 	silent !ln -sf ~/.vimrc ~/.config/nvim/init.vim
@@ -27,74 +27,75 @@ else	" settings for vim only
 endif
 
 """"""""""""""""""""""""""""""""""""
-" settings for vundle (https://github.com/VundleVim/Vundle.vim)
-let vundle_fresh = 0
-if !filereadable(expand('~/.vim/bundle/Vundle.vim/README.md'))
-	echo "Installing Vundle..."
-	echo ""
-	silent execute "!git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim"
-	let vundle_fresh = 1
+" settings for vim-plug (https://github.com/junegunn/vim-plug)
+if has('nvim')
+	" for nvim
+	if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
+		silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+					\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
+else
+	" for vim
+	if empty(glob('~/.vim/autoload/plug.vim'))
+		silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+					\ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+	endif
 endif
 
-set nocompatible	" be iMproved, required
-filetype off		" required!
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-""""""""
-" vundle packages
-"
+" Specify a directory for plugins
+if has('nvim')
+	call plug#begin('~/.local/share/nvim/plugged')
+else
+	call plug#begin('~/.vim/plugged')
+endif
 
 " Useful plugins
-Plugin 'matchit.zip'
-Plugin 'ragtag.vim'	" TAG + <ctrl-x> + @, !, #, $, /, <space>, <cr>, ...
-Plugin 'surround.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
+Plug 'tmhedberg/matchit'
+Plug 'tpope/vim-ragtag'	" TAG + <ctrl-x> + @, !, #, $, /, <space>, <cr>, ...
+Plug 'tpope/vim-surround'
+Plug 'tpope/vim-fugitive'
+Plug 'vim-airline/vim-airline'
 let g:airline#extensions#ale#enabled = 1
-Plugin 'airblade/vim-gitgutter'	" [c, ]c for prev/next hunk
+Plug 'airblade/vim-gitgutter'	" [c, ]c for prev/next hunk
 let g:gitgutter_highlight_lines = 1
-Plugin 'Yggdroot/indentLine'
+Plug 'Yggdroot/indentLine'
 let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 0	" :IndentLinesToggle
-Plugin 'docunext/closetag.vim'
-Plugin 'tpope/vim-sleuth'
+Plug 'docunext/closetag.vim'
+Plug 'tpope/vim-sleuth'
 
 " For autocompletion
 if has('nvim')
-	Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }	" XXX - python3 needed ($ pip3 install --upgrade neovim)
+	Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}	" XXX - python3 needed ($ pip3 install --upgrade neovim)
 	let g:deoplete#enable_at_startup = 1
 endif
 
 " For snippets
 " - Ruby: https://github.com/honza/vim-snippets/blob/master/UltiSnips/ruby.snippets
 " - Go: https://github.com/honza/vim-snippets/blob/master/UltiSnips/go.snippets
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"   " <tab> for next placeholder
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"    " <shift-tab> for previous placeholder
 let g:UltiSnipsEditSplit = "vertical"
 
 " For source file browsing, XXX: ctags is needed! ($ brew install ctags)
-Plugin 'majutsushi/tagbar'
+Plug 'majutsushi/tagbar'
 nmap <F8> :TagbarToggle<CR>
 
 " For uploading Gist (:Gist / :Gist -p / ...)
-Plugin 'mattn/webapi-vim'
-Plugin 'mattn/gist-vim'
+Plug 'mattn/webapi-vim'
+Plug 'mattn/gist-vim'
 
 " For syntax checking
-Plugin 'vim-syntastic/syntastic'
+Plug 'vim-syntastic/syntastic'
 set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
+if exists('*SyntasticStatuslineFlag')
+	set statusline+=%{SyntasticStatuslineFlag()}
+endif
 set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
@@ -102,14 +103,14 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 " For Ruby
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'tpope/vim-endwise'
+Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
+Plug 'tpope/vim-endwise', {'for': 'ruby'}
 
 " For Go
-Plugin 'fatih/vim-go'
+Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 if has('nvim')
-	Plugin 'jodosha/vim-godebug'	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
-	Plugin 'zchee/deoplete-go', { 'do': 'make'}	" For autocompletion
+	Plug 'jodosha/vim-godebug', {'for': 'go'}	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
+	Plug 'zchee/deoplete-go', {'for': 'go', 'do': 'make'}	" For autocompletion
 endif
 let g:go_fmt_command = "goimports"	" auto import dependencies
 let g:go_highlight_build_constraints = 1
@@ -127,11 +128,11 @@ let g:syntastic_aggregate_errors = 1
 
 " For Haskell
 if has('nvim')
-	Plugin 'neovimhaskell/haskell-vim'
+	Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
 endif
 " $ stack install hlint hindent
 if executable('hindent')
-	Plugin 'alx741/vim-hindent'
+	Plug 'alx741/vim-hindent', {'for': 'haskell'}
 endif
 " $ stack install ghc-mod
 " or
@@ -141,7 +142,7 @@ if executable('stack')
 	" For autocompletion
 	let ghc_mods = systemlist('stack exec -- which ghc-mod')
 	if len(ghc_mods) > 0 && executable(ghc_mods[0])
-		Plugin 'eagletmt/neco-ghc'
+		Plug 'eagletmt/neco-ghc', {'for': 'haskell'}
 		let g:necoghc_use_stack = 1
 		let g:haskellmode_completion_ghc = 0
 		let ghc_mod_installed = 1
@@ -150,45 +151,25 @@ endif
 
 " For Python
 if has('nvim')
-	Plugin 'zchee/deoplete-jedi'	" For autocompletion
+	Plug 'zchee/deoplete-jedi', {'for': 'python'}	" For autocompletion
 endif
 
 " For JavaScript frameworks
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jsx'	" React
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'	" React
 let g:javascript_plugin_flow = 1
 let g:jsx_ext_required = 0
-Plugin 'posva/vim-vue'	" Vue.js
+Plug 'posva/vim-vue'	" Vue.js
 
 " For vim-codefmt (:FormatLines, :FormatCode)
-Plugin 'google/vim-maktaba'
-Plugin 'google/vim-codefmt'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
 
 "
 """"""""
 
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
-" install plugins if not installed yet
-if vundle_fresh == 1
-	echo "Installing bundles..."
-	echo ""
-	:BundleInstall
-endif
-
+" Initialize plugin system
+call plug#end()
 "
 """"""""""""""""""""""""""""""""""""
 
