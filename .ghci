@@ -7,10 +7,14 @@
 -- $ stack build pretty-show hscolour --copy-compiler-tool
 --
 -- created on : 2017.10.18.
--- last update: 2018.02.26.
+-- last update: 2018.03.02.
 
 -- warning/error options
 :set -Wall
+:set -Wcompat
+:set -Wincomplete-record-updates
+:set -Wincomplete-uni-patterns
+:set -Wredundant-constraints
 :set -fdefer-type-errors
 
 -- customized prompt
