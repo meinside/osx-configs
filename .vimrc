@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.02.28.
+" last update: 2018.03.20.
 "
 " XXX - for neovim:
 "
@@ -65,6 +65,7 @@ let g:indentLine_char = '⎸'
 let g:indentLine_enabled = 0	" :IndentLinesToggle
 Plug 'docunext/closetag.vim'
 Plug 'tpope/vim-sleuth'
+Plug 'johngrib/vim-f-hangul'	" can use f/t/;/, on Hangul characters
 
 " For autocompletion
 if has('nvim')
