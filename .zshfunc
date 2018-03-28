@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2017.08.28.
+# updated on 2018.03.28.
 #
 # ... by meinside@gmail.com
 #
@@ -72,7 +72,7 @@ update-all () {
 	# vim bundles
 	echo
 	echo "> Updating vim bundles..."
-	vi +PluginUpdate +qall
+	vi +PlugUpdate +qall
 
 	# upgrade oh-my-zsh
 	upgrade_oh_my_zsh
