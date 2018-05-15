@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2018.02.27.
+# last update: 2018.05.15.
 
 # binary files
 *.o
@@ -29,7 +29,7 @@ tmp/
 .svn
 .cvs
 
-# OSX files/dirs
+# macOS files/dirs
 .DS_Store
 .Trash/
 .CFUserTextEncoding
@@ -147,6 +147,7 @@ mbox
 .subversion/
 .vim/
 .viminfo
+.vscode/
 .RData
 .rnd
 .rstudio-desktop/
