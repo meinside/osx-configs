@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2017.09.27.
+# last update: 2018.05.15.
 
 #### formulas
 #
@@ -46,13 +46,12 @@ brew 'wrk'
 tap 'caskroom/cask'
 #
 # utilities
-cask 'atom'
-cask 'resilio-sync'
 cask 'dropbox'
 cask 'google-chrome'
 cask 'licecap'
 cask 'osxfuse'
 cask 'steam'
+cask 'visual-studio-code'
 cask 'xquartz'
 #
 # for development
