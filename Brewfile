@@ -9,6 +9,9 @@
 
 #### formulas
 #
+# libraries
+brew 'coreutils'
+#
 # utilities
 brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
 brew 'htop'
@@ -25,23 +28,27 @@ brew 'tree'
 brew 'wget'
 brew 'zsh'
 #
-# for development
-brew 'curl', args: ['--with-nghttp2']
-brew 'coreutils'
-brew 'git', args: ['--with-pcre']
-brew 'gnupg'
+# for programming languages
 brew 'go'
 tap 'go-delve/delve'
 brew 'go-delve/delve/delve'
 brew 'haskell-stack'
+brew 'node', args: ['--with-full-icu']
+tap 'kylef/formulae'
+brew 'kylef/formulae/swiftenv'
+# $ swiftenv install --list
+# $ swiftenv install [version]
+# $ git clone https://github.com/jinmingjian/sourcekite.git && cd sourcekite && make install
+brew 'swiftlint'
+#
+# for development tools
+brew 'curl', args: ['--with-nghttp2']
+brew 'git', args: ['--with-pcre']
+brew 'gnupg'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
-brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
-brew 'swiftlint'
-tap 'kylef/formulae'
-brew 'kylef/formulae/swiftenv'
 brew 'wrk'
 
 #### cask
@@ -60,7 +67,7 @@ cask 'xquartz'
 # for development
 cask 'iterm2'
 cask 'java'
-cask 'postico'
+#cask 'postico'
 cask 'sequel-pro'
 cask 'virtualbox'
 #

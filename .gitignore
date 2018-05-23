@@ -140,6 +140,7 @@ mbox
 .oracle_jre_usage/
 .putty/
 .subversion/
+.swift-version
 .vim/
 .viminfo
 .vscode/
@@ -162,5 +163,6 @@ Blizzard/
 .homebrew_analytics_user_uuid
 .wakeup
 .sleep
+bin/
 files/
 
