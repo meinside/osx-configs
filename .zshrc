@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2018.02.27.
+# updated on 2018.05.23.
 #
 # ... by meinside@gmail.com
 #
@@ -121,6 +121,11 @@ if [[ -z $TMUX ]]; then
 
 	# for haskell
 	alias ghci="stack exec ghci --"
+
+	# for swift
+	if which swiftenv > /dev/null; then
+		eval "$(swiftenv init -)"
+	fi
 
 	# for java
 	export JAVA_JVM_VERSION="1.6"

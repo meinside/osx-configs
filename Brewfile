@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.05.15.
+# last update: 2018.05.23.
 
 #### formulas
 #
@@ -39,6 +39,9 @@ brew 'imagemagick'
 brew 'jq'
 brew 'node', args: ['--with-full-icu']
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
+brew 'swiftlint'
+tap 'kylef/formulae'
+brew 'kylef/formulae/swiftenv'
 brew 'wrk'
 
 #### cask
