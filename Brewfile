@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.05.23.
+# last update: 2018.05.25.
 
 #### formulas
 #
@@ -30,8 +30,6 @@ brew 'zsh'
 #
 # for programming languages
 brew 'go'
-tap 'go-delve/delve'
-brew 'go-delve/delve/delve'
 brew 'haskell-stack'
 brew 'node', args: ['--with-full-icu']
 tap 'kylef/formulae'
