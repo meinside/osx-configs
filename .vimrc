@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.03.20.
+" last update: 2018.05.30.
 "
 " XXX - for neovim:
 "
@@ -141,6 +141,7 @@ endif
 let ghc_mod_installed = 0
 if executable('stack')
 	" For autocompletion
+	" XXX - vim/nvim will hang on this line if `ghc` is not installed yet...
 	let ghc_mods = systemlist('stack exec -- which ghc-mod')
 	if len(ghc_mods) > 0 && executable(ghc_mods[0])
 		Plug 'eagletmt/neco-ghc', {'for': 'haskell'}
