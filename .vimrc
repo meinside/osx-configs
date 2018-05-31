@@ -129,26 +129,18 @@ let g:syntastic_aggregate_errors = 1
 
 " For Haskell
 if has('nvim')
-	Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
-endif
-" $ stack install hlint hindent
-if executable('hindent')
-	Plug 'alx741/vim-hindent', {'for': 'haskell'}
-endif
-" $ stack install ghc-mod
-" or
-" $ stack build ghc-mod --copy-compiler-tool
-let ghc_mod_installed = 0
-if executable('stack')
-	" For autocompletion
-	" XXX - vim/nvim will hang on this line if `ghc` is not installed yet...
-	let ghc_mods = systemlist('stack exec -- which ghc-mod')
-	if len(ghc_mods) > 0 && executable(ghc_mods[0])
-		Plug 'eagletmt/neco-ghc', {'for': 'haskell'}
-		let g:necoghc_use_stack = 1
-		let g:haskellmode_completion_ghc = 0
-		let ghc_mod_installed = 1
-	endif
+    Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
+
+    " $ git clone https://github.com/haskell/haskell-ide-engine --recursive
+    " $ cd haskell-ide-engine
+    " $ stack --stack-yaml=stack-8.2.2.yaml install
+    Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': './install.sh'}
+    let g:LanguageClient_serverCommands = {
+	\ 'haskell': ['hie', '--lsp'],
+    \ }
+    nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
+    nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
+    nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
 endif
 
 " For Python
@@ -238,9 +230,6 @@ if has("autocmd")
 		autocmd FileType python set ai sw=2 ts=2 sts=2 et
 		" Haskell
 		autocmd FileType haskell set ai sw=2 ts=2 sts=2 et
-		if ghc_mod_installed == 1
-			autocmd FileType haskell setlocal omnifunc=necoghc#omnifunc
-		endif
 
 		" When editing a file, always jump to the last known cursor position.
 		" Don't do it when the position is invalid or when inside an event handler
