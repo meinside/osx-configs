@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.06.01.
+" last update: 2018.06.04.
 "
 " XXX - for neovim:
 "
@@ -144,7 +144,10 @@ if has('nvim')
     " $ git clone https://github.com/haskell/haskell-ide-engine --recursive
     " $ cd haskell-ide-engine
     " $ stack --stack-yaml=stack-8.2.2.yaml install
-    let g:LanguageClient_serverCommands['haskell'] = ['hie', '--lsp']
+    let g:LanguageClient_serverCommands.haskell = ['hie', '--lsp']
+
+    " For hoogle
+    " $ stack exec -- hoogle generate
 endif
 
 " For Python
