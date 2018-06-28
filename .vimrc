@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.06.04.
+" last update: 2018.06.28.
 "
 " XXX - for neovim:
 "
@@ -116,6 +116,9 @@ endif
 " For Ruby
 Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
 Plug 'tpope/vim-endwise', {'for': 'ruby'}
+
+" For Dart
+Plug 'dart-lang/dart-vim-plugin'
 
 " For Go
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
