@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.05.25.
+# last update: 2018.06.29.
 
 #### formulas
 #
@@ -29,6 +29,8 @@ brew 'wget'
 brew 'zsh'
 #
 # for programming languages
+tap 'dart-lang/dart'
+brew 'dart'
 brew 'go'
 brew 'haskell-stack'
 brew 'node', args: ['--with-full-icu']

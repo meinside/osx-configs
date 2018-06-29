@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2018.05.23.
+# updated on 2018.06.29.
 #
 # ... by meinside@gmail.com
 
@@ -80,6 +80,9 @@ if [[ -z $TMUX ]]; then
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
+
+	# for dart
+	export PATH="$PATH:$HOME/.pub-cache/bin"
 
 	# additional paths
 	if [ -d "$HOME/bin" ] ; then

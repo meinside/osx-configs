@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.06.28.
+" last update: 2018.06.29.
 "
 " XXX - for neovim:
 "
@@ -118,7 +118,13 @@ Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
 Plug 'tpope/vim-endwise', {'for': 'ruby'}
 
 " For Dart
-Plug 'dart-lang/dart-vim-plugin'
+Plug 'dart-lang/dart-vim-plugin', {'for': 'dart'}
+let dart_html_in_string=v:true
+let g:syntastic_dart_checkers = ['dartanalyzer']
+if has('nvim')
+    " $ pub global activate dart_language_server
+    let g:LanguageClient_serverCommands.dart = ['dart_language_server']
+endif
 
 " For Go
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
@@ -240,6 +246,8 @@ if has("autocmd")
 	autocmd FileType python set ai sw=2 ts=2 sts=2 et
 	" Haskell
 	autocmd FileType haskell set ai sw=2 ts=2 sts=2 et
+	" Dart
+	autocmd FileType dart set ai sw=2 ts=2 sts=2 et
 
 	" When editing a file, always jump to the last known cursor position.
 	" Don't do it when the position is invalid or when inside an event handler
