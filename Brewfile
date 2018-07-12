@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.06.29.
+# last update: 2018.07.12.
 
 #### formulas
 #
@@ -30,7 +30,8 @@ brew 'zsh'
 #
 # for programming languages
 tap 'dart-lang/dart'
-brew 'dart'
+brew 'dart', args: ['--with-dartium', '--with-content-shell']	# for Dart 1.x
+#brew 'dart', args: ['--devel']	# for Dart 2.x
 brew 'go'
 brew 'haskell-stack'
 brew 'node', args: ['--with-full-icu']
