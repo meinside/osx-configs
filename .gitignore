@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2018.07.12.
+# last update: 2018.07.23.
 
 # binary files
 *.o
@@ -100,6 +100,7 @@ public_html/
 .boot2docker/
 .config/
 .custom_aliases
+.custom_paths
 .davmail.properties
 .dockercfg
 .gist-vim
@@ -127,6 +128,7 @@ mbox
 .dropbox-master/
 .eclipse/
 .ethash/
+.flutter
 .Genymobile/
 .heroku/
 .hoogle/

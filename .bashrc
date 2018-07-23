@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2018.06.29.
+# updated on 2018.07.23.
 #
 # ... by meinside@gmail.com
 
@@ -35,7 +35,7 @@ alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/
 alias ngrep="sudo ngrep -q -W byline"
 alias httpserver="ruby -rwebrick -e's=WEBrick::HTTPServer.new(Port:8888,DocumentRoot:Dir.pwd);trap(\"INT\"){s.shutdown};s.start'"
 
-# load extra aliases if exist
+# load additional aliases if exist
 if [ -f ~/.custom_aliases ]; then
 	. ~/.custom_aliases
 fi
@@ -99,4 +99,11 @@ export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+
+# append additional paths if exist
+if [ -f ~/.custom_paths ]; then
+	while IFS='' read -r p; do
+		export PATH=$PATH:"$p"
+	done < ~/.custom_paths
+fi
 
