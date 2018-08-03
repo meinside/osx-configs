@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2018.07.23.
+# updated on 2018.08.03.
 #
 # ... by meinside@gmail.com
 
@@ -85,12 +85,7 @@ if [[ -z $TMUX ]]; then
 	export PATH="$PATH:$HOME/.pub-cache/bin"
 
 	# additional paths
-	if [ -d "$HOME/bin" ] ; then
-		export PATH="$PATH:$HOME/bin"
-	fi
-	if [ -d "$HOME/.local/bin" ] ; then
-		export PATH="$PATH:$HOME/.local/bin"
-	fi
+	export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
 
 fi
 
