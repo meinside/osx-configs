@@ -86,6 +86,7 @@ npm-debug.log
 .dart/
 .dartServer/
 .pub-cache/
+.stagehand
 
 # xcode files
 .cocoapods/
