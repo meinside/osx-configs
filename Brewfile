@@ -31,6 +31,9 @@ brew 'zsh'
 # for programming languages
 tap 'dart-lang/dart'
 brew 'dart'	# Dart 2.x
+# for web development with Dart: https://webdev.dartlang.org/guides/get-started
+# $ pub global activate webdev
+# $ pub global activate stagehand
 brew 'go'
 brew 'haskell-stack'
 brew 'node', args: ['--with-full-icu']
