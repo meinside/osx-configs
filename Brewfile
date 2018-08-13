@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.08.08.
+# last update: 2018.08.13.
 
 #### formulas
 #
@@ -47,6 +47,7 @@ brew 'swiftlint'
 # for development tools
 brew 'curl', args: ['--with-nghttp2']
 brew 'git', args: ['--with-pcre']
+brew 'git-flow'
 brew 'gnupg'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
