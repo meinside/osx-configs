@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2018.03.28.
+# updated on 2018.08.22.
 #
 # ... by meinside@gmail.com
 #
@@ -56,7 +56,6 @@ update-all () {
 		echo
 		echo "> Cleaning brew..."
 		brew cleanup
-		brew cask cleanup
 	else
 		echo
 		echo "* brew not installed"
