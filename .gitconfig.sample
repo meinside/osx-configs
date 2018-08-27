@@ -1,7 +1,7 @@
 # sample .gitconfig file
 # (copy as .gitconfig and customize it)
 #
-# last update: 2017.04.06.
+# last update: 2018.08.27.
 
 [alias]
 	# commands
@@ -61,4 +61,16 @@
 	user = meinside
 [tag]
 	sort = version:refname
+
+# git-flow
+[gitflow "branch"]
+    master = master
+    develop = develop
+[gitflow "prefix"]
+    feature = feature/
+    release = release/
+    hotfix = hotfix/
+    bugfix = bugfix/
+    support = support/
+    versiontag = v
 
