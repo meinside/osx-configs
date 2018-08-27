@@ -70,7 +70,6 @@
     feature = feature/
     release = release/
     hotfix = hotfix/
-    bugfix = bugfix/
     support = support/
     versiontag = v
 
