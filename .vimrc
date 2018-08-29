@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.07.02.
+" last update: 2018.08.29.
 "
 " XXX - for neovim:
 "
@@ -72,6 +72,10 @@ Plug 'johngrib/vim-f-hangul'	" can use f/t/;/, on Hangul characters
 if has('nvim')
     Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}	" XXX - python3 needed ($ pip3 install --upgrade neovim)
     let g:deoplete#enable_at_startup = 1
+    let g:deoplete#enable_smart_case = 1
+
+    " To close preview window after selection
+    autocmd CompleteDone * pclose
 endif
 
 " For snippets
@@ -120,8 +124,10 @@ Plug 'tpope/vim-endwise', {'for': 'ruby'}
 
 " For Dart
 Plug 'dart-lang/dart-vim-plugin', {'for': 'dart'}
-let dart_html_in_string=v:true
-let g:syntastic_dart_checkers = ['dartanalyzer']
+let dart_html_in_string = v:true
+let dart_format_on_save = 1
+"let g:syntastic_dart_checkers = ['dartanalyzer']   " too slow...
+let g:syntastic_dart_checkers = []
 if has('nvim')
     " $ pub global activate dart_language_server
     let g:LanguageClient_serverCommands.dart = ['dart_language_server']
@@ -130,8 +136,11 @@ endif
 " For Go
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 if has('nvim')
-    Plug 'jodosha/vim-godebug', {'for': 'go'}	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
     Plug 'zchee/deoplete-go', {'for': 'go', 'do': 'make'}	" For autocompletion
+    let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']	" Sort order
+    "let g:deoplete#sources#go#source_importer = 1   " XXX too slow yet...
+
+    Plug 'jodosha/vim-godebug', {'for': 'go'}	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
 endif
 let g:go_fmt_command = "goimports"	" auto import dependencies
 let g:go_highlight_build_constraints = 1
@@ -163,6 +172,7 @@ endif
 " For Python
 if has('nvim')
     Plug 'zchee/deoplete-jedi', {'for': 'python'}	" For autocompletion
+    let g:deoplete#sources#jedi#show_docstring = 1
 endif
 
 " For JavaScript frameworks
