@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.08.29.
+" last update: 2018.09.05.
 "
 " XXX - for neovim:
 "
@@ -161,8 +161,7 @@ if has('nvim')
     Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
 
     " $ git clone https://github.com/haskell/haskell-ide-engine --recursive
-    " $ cd haskell-ide-engine
-    " $ stack --stack-yaml=stack-8.2.2.yaml install
+    " $ cd haskell-ide-engine && stack install
     let g:LanguageClient_serverCommands.haskell = ['hie', '--lsp']
 
     " For hoogle
