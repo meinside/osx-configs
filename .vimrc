@@ -160,12 +160,17 @@ let g:syntastic_aggregate_errors = 1
 if has('nvim')
     Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
 
+    " Install ghc with stack, then
+    "
     " $ git clone https://github.com/haskell/haskell-ide-engine --recursive
     " $ cd haskell-ide-engine && stack install
     let g:LanguageClient_serverCommands.haskell = ['hie', '--lsp']
 
     " For hoogle
     " $ stack exec -- hoogle generate
+
+    " For VS Code
+    " $ stack install phoityne-vscode
 endif
 
 " For Python

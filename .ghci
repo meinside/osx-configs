@@ -3,11 +3,10 @@
 -- My ghci configuration file
 --
 -- $ stack install pretty-show hscolour
--- or
--- $ stack build pretty-show hscolour --copy-compiler-tool
 --
 -- created on : 2017.10.18.
--- last update: 2018.03.02.
+-- last update: 2018.09.05.
+--
 
 -- warning/error options
 :set -Wall
@@ -17,8 +16,8 @@
 :set -Wredundant-constraints
 :set -fdefer-type-errors
 
--- customized prompt
-:set prompt "\ESC[1;34m%s\n\ESC[0;33mλ > \ESC[m"
+-- customized prompt (phoityne-vscode doesn't work with this...)
+-- :set prompt "\ESC[1;34m%s\n\ESC[0;33mλ > \ESC[m"
 
 -- pretty print
 let colorPrint = System.IO.putStrLn . Language.Haskell.HsColour.hscolour Language.Haskell.HsColour.TTY Language.Haskell.HsColour.Colourise.defaultColourPrefs False False "" False . Text.Show.Pretty.ppShow
