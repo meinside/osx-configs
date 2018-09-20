@@ -3,26 +3,26 @@ by Sungjin Han <meinside@gmail.com>
 
 ----
 
-## DESCRIPTION ##
+## DESCRIPTION
 
 My personal dotfiles for OSX, mostly for development.
 
 ----
 
-## Other things ##
+## How-to
 
-### Prep script ###
+### Prep script
 
 Run **bin/prep.sh** and it will clone files and install several things automatically.
 
-```
+```bash
 $ cd ~
 $ wget -O - "https://raw.github.com/meinside/osx-configs/master/bin/prep.sh" | bash
 ```
 
 => will install **Homebrew**, **RVM** and **Ruby**
 
-### Paths ###
+### Setup paths
 
 Reorder paths in **/etc/paths** for convenience:
 
@@ -39,3 +39,12 @@ Reorder paths in **/etc/paths** for convenience:
 ```
 
 ----
+
+## Memo
+
+### How to remove unused Xcode simulators
+
+```bash
+$ xcrun simctl delete unavailable
+```
+
