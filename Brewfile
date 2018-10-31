@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.08.13.
+# last update: 2018.10.31.
 
 #### formulas
 #
@@ -36,6 +36,7 @@ brew 'dart'	# Dart 2.x
 # $ pub global activate stagehand
 brew 'go'
 brew 'haskell-stack'
+brew 'kotlin'
 brew 'node', args: ['--with-full-icu']
 tap 'kylef/formulae'
 brew 'kylef/formulae/swiftenv'
