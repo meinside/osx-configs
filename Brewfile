@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.10.31.
+# last update: 2018.11.27.
 
 #### formulas
 #
@@ -83,4 +83,10 @@ cask 'font-fira-code'
 #
 # etc.
 #cask 'gureumkim'	# for hangul input
+
+
+#### for docker
+#
+brew tap wagoodman/dive
+brew install dive
 
