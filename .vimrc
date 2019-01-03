@@ -1,11 +1,11 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2018.09.05.
+" last update: 2019.01.03.
 "
 " XXX - for neovim:
 "
-" $ pip3 install --upgrade neovim
+" $ pip install --upgrade pynvim
 
 """"""""""""""""""""""""""""""""""""
 " settings for nvim
@@ -70,7 +70,7 @@ Plug 'johngrib/vim-f-hangul'	" can use f/t/;/, on Hangul characters
 
 " For autocompletion
 if has('nvim')
-    Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}	" XXX - python3 needed ($ pip3 install --upgrade neovim)
+    Plug 'Shougo/deoplete.nvim', {'do': ':UpdateRemotePlugins'}
     let g:deoplete#enable_at_startup = 1
     let g:deoplete#enable_smart_case = 1
 
