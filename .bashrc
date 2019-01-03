@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2018.08.03.
+# updated on 2019.01.03.
 #
 # ... by meinside@gmail.com
 
@@ -18,7 +18,7 @@ export EDITOR="/usr/bin/vim"
 export SVN_EDITOR="/usr/bin/vim"
 export LANG="ko_KR.UTF-8"
 export LC_ALL="ko_KR.UTF-8"
-export TERM="xterm-256color"
+export TERM="screen-256color"
 export CLICOLOR=true
 export HISTCONTROL=erasedups
 export HISTSIZE=10000

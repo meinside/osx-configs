@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2018.11.07.
+# updated on 2019.01.03.
 #
 # ... by meinside@gmail.com
 #
@@ -72,7 +72,7 @@ export EDITOR="/usr/bin/vim"
 export SVN_EDITOR="/usr/bin/vim"
 export LANG="ko_KR.UTF-8"
 export LC_ALL="ko_KR.UTF-8"
-export TERM="xterm-256color"
+export TERM="screen-256color"
 export CLICOLOR=true
 export HISTCONTROL=erasedups
 export HISTSIZE=10000
@@ -108,7 +108,6 @@ fi
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 if [[ -z $TMUX ]]; then
-
 	# for ruby
 	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
