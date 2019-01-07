@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2018.11.27.
+# last update: 2019.01.07.
 
 #### formulas
 #
@@ -53,6 +53,7 @@ brew 'gnupg'
 brew 'heroku-toolbelt'
 brew 'imagemagick'
 brew 'jq'
+brew 'mkcert'
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
 brew 'wrk'
 
