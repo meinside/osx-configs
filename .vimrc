@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.01.03.
+" last update: 2019.01.09.
 "
 " XXX - for neovim:
 "
@@ -140,7 +140,7 @@ if has('nvim')
     let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']	" Sort order
     "let g:deoplete#sources#go#source_importer = 1   " XXX too slow yet...
 
-    Plug 'jodosha/vim-godebug', {'for': 'go'}	" For :GoToggleBreakpoint / :GoDebug ($ brew install go-delve/delve/delve)
+    Plug 'sebdah/vim-delve', {'for': 'go'}	" :DlvAddBreakpoint / :DlvDebug / ... ($ brew install go-delve/delve/delve)
 endif
 let g:go_fmt_command = "goimports"	" auto import dependencies
 let g:go_highlight_build_constraints = 1
