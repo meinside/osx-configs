@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2018.11.27.
+# last update: 2019.01.21.
 
 # binary files
 *.o
@@ -14,7 +14,7 @@
 *.pyo
 *.class
 
-# temporary/cache/history files & dirs
+# temporary/cache/history/log files & dirs
 *.swp
 *~.nib
 .bash_sessions/
@@ -25,6 +25,8 @@
 default.profraw
 dive.log
 tmp/
+ganttproject.log*
+java*.log*
 
 # other scm files/dirs
 .svn
