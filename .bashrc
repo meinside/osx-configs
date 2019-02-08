@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2019.01.03.
+# updated on 2019.02.08.
 #
 # ... by meinside@gmail.com
 
@@ -48,6 +48,12 @@ fi
 #  for development  #
 #####################
 
+# for python (installed with brew)
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
+export PYTHON_CONFIGURE_OPTS="--enable-framework"
+export WORKON_HOME=$HOME/.virtualenvs
+[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
+
 # for ruby
 # XXX - install ruby from source code, if not, it would complain about ssl certifications
 # $ rvm install 2.2.3 --disable-binary
@@ -88,12 +94,6 @@ if [[ -z $TMUX ]]; then
 	export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
 
 fi
-
-# for python (installed with brew)
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export PYTHON_CONFIGURE_OPTS="--enable-framework"
-export WORKON_HOME=$HOME/.virtualenvs
-[[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
 # append additional paths if exist
 if [ -f ~/.custom_paths ]; then
