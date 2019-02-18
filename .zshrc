@@ -125,7 +125,7 @@ if [[ -z $TMUX ]]; then
 	fi
 
 	# for rust
-	export PATH="$PATH:$HOME/.cargon/bin"
+	export PATH="$PATH:$HOME/.cargo/bin"
 
 	# for swift
 	if which swiftenv > /dev/null; then
