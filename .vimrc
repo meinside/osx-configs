@@ -158,7 +158,11 @@ let g:syntastic_aggregate_errors = 1
 
 " For Rust
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
+let g:syntastic_rust_checkers = ['rustc']   " default is 'cargo'
 let g:rustfmt_autosave = 1  " $ rustup component add rustfmt
+if has('nvim')
+    let g:LanguageClient_serverCommands.rust = ['~/.cargo/bin/rustup', 'run', 'stable', 'rls']
+endif
 
 " For Python
 if has('nvim')
