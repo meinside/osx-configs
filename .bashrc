@@ -71,6 +71,9 @@ if [[ -z $TMUX ]]; then
 		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
 
+	# for rust
+	export PATH="$PATH:$HOME/.cargon/bin"
+
 	# for swift
 	if which swiftenv > /dev/null; then
 		eval "$(swiftenv init -)"
