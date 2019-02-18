@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.01.22.
+# last update: 2019.02.18.
 
 # binary files
 *.o
@@ -72,11 +72,10 @@ npm-debug.log
 # golang
 .gore/
 
-# haskell
-.cabal/
-.ghc/
-.ghc-mod/
-.stack/
+# rust
+.cargo/
+.multirust
+.rustup/
 
 # python
 .pip/

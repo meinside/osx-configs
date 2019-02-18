@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.01.09.
+" last update: 2019.02.18.
 "
 " XXX - for neovim:
 "
@@ -156,22 +156,9 @@ let g:go_auto_type_info = 1
 let g:syntastic_go_checkers = ['go', 'errcheck', 'golint']
 let g:syntastic_aggregate_errors = 1
 
-" For Haskell
-if has('nvim')
-    Plug 'neovimhaskell/haskell-vim', {'for': 'haskell'}
-
-    " Install ghc with stack, then
-    "
-    " $ git clone https://github.com/haskell/haskell-ide-engine --recursive
-    " $ cd haskell-ide-engine && stack install
-    let g:LanguageClient_serverCommands.haskell = ['hie', '--lsp']
-
-    " For hoogle
-    " $ stack exec -- hoogle generate
-
-    " For VS Code
-    " $ stack install phoityne-vscode
-endif
+" For Rust
+Plug 'rust-lang/rust.vim', {'for': 'rust'}
+let g:rustfmt_autosave = 1  " $ rustup component add rustfmt
 
 " For Python
 if has('nvim')
@@ -259,8 +246,6 @@ if has("autocmd")
 	autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et
 	" Python
 	autocmd FileType python set ai sw=2 ts=2 sts=2 et
-	" Haskell
-	autocmd FileType haskell set ai sw=2 ts=2 sts=2 et
 	" Dart
 	autocmd FileType dart set ai sw=2 ts=2 sts=2 et
 

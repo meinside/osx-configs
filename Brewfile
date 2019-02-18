@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.01.07.
+# last update: 2019.02.18.
 
 #### formulas
 #
@@ -35,9 +35,9 @@ brew 'dart'	# Dart 2.x
 # $ pub global activate webdev
 # $ pub global activate stagehand
 brew 'go'
-brew 'haskell-stack'
 brew 'kotlin'
 brew 'node', args: ['--with-full-icu']
+brew 'rustup-init'	# $ rustup-init
 tap 'kylef/formulae'
 brew 'kylef/formulae/swiftenv'
 # $ swiftenv install --list

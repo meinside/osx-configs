@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.02.08.
+# updated on 2019.02.18.
 #
 # ... by meinside@gmail.com
 #
@@ -123,9 +123,6 @@ if [[ -z $TMUX ]]; then
 		export GOPATH=$HOME/srcs/go
 		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
-
-	# for haskell
-	alias ghci="stack exec ghci --"
 
 	# for swift
 	if which swiftenv > /dev/null; then
