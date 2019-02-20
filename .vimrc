@@ -112,7 +112,6 @@ let g:syntastic_check_on_wq = 0
 if has('nvim')
     Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': './install.sh'}
     let g:LanguageClient_serverCommands = {}
-    let g:LanguageClient_changeThrottle = 0.5
     nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
     nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
     nnoremap <silent> <F3> :call LanguageClient#textDocument_rename()<CR>
