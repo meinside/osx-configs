@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.02.20.
+" last update: 2019.03.15.
 "
 " XXX - for neovim:
 "
@@ -158,7 +158,7 @@ let g:syntastic_aggregate_errors = 1
 " For Rust
 " $ rustup component add rustfmt rls rust-analysis rust-src
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
-let g:syntastic_rust_checkers = ['rustc']   " default is 'cargo'
+"let g:syntastic_rust_checkers = ['rustc']   " default is 'cargo' (cargo check)
 let g:rustfmt_autosave = 1
 if has('nvim')
     let g:LanguageClient_serverCommands.rust = ['~/.cargo/bin/rustup', 'run', 'stable', 'rls']
