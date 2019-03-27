@@ -14,6 +14,7 @@ brew 'coreutils'
 #
 # utilities
 brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
+brew 'gnu-sed'
 brew 'htop'
 brew 'lnav'
 brew 'm-cli'
@@ -50,7 +51,8 @@ brew 'curl', args: ['--with-nghttp2']
 brew 'git', args: ['--with-pcre']
 brew 'git-flow'
 brew 'gnupg'
-brew 'heroku-toolbelt'
+tap 'heroku/brew'
+brew 'heroku'
 brew 'imagemagick'
 brew 'jq'
 brew 'mkcert'
@@ -78,7 +80,7 @@ cask 'sequel-pro'
 cask 'virtualbox'
 #
 # fonts
-tap 'caskroom/fonts'
+tap 'homebrew/cask-fonts'
 cask 'font-hack'
 cask 'font-fira-code'
 #
@@ -89,6 +91,6 @@ cask 'font-fira-code'
 #### for docker
 #
 # install Docker Desktop from https://download.docker.com/mac/stable/Docker.dmg
-brew tap wagoodman/dive
-brew install dive
+tap 'wagoodman/dive'
+brew 'dive'
 
