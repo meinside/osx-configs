@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.02.18.
+# last update: 2019.03.27.
 
 #### formulas
 #
@@ -88,6 +88,7 @@ cask 'font-fira-code'
 
 #### for docker
 #
+# install Docker Desktop from https://download.docker.com/mac/stable/Docker.dmg
 brew tap wagoodman/dive
 brew install dive
 
