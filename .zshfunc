@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2019.01.17.
+# updated on 2019.03.27.
 #
 # ... by meinside@gmail.com
 #
@@ -28,33 +28,33 @@ install-all () {
 	fi
 
 	# homebrew
-	brew tap Homebrew/bundle
-	brew bundle
+	brew tap Homebrew/bundle && \
+		brew bundle
 }
 
 # update bundle, brew, brew cask and everything!
 update-all () {
 	# osx updates
 	echo
-	echo "> Checking for macOS software updates..."
+	echo "> checking for macOS software updates..."
 	softwareupdate --install --all
 
 	# mac appstore
 	if [[ -x `which mas` ]]; then
 		echo
-		echo "> Updating Mac App Store apps..."
+		echo "> updating Mac App Store apps..."
 		mas upgrade
 	fi
 
 	# homebrew
 	if [[ -x `which brew` ]]; then
 		echo
-		echo "> Updating brew..."
+		echo "> updating brew..."
 		brew update
 		brew upgrade
 
 		echo
-		echo "> Cleaning brew..."
+		echo "> cleaning brew..."
 		brew cleanup
 	else
 		echo
@@ -64,13 +64,13 @@ update-all () {
 	# go get
 	if [[ -x `which goget` ]]; then
 		echo
-		echo "> Updating go packages..."
+		echo "> updating go packages..."
 		goget
 	fi
 
 	# vim bundles
 	echo
-	echo "> Updating vim bundles..."
+	echo "> updating vim bundles..."
 	vi +PlugUpdate +qall
 
 	# upgrade oh-my-zsh
@@ -88,6 +88,28 @@ list-go-imports () {
 	fi
 }
 
+# Run kubernetes dashboard locally for development
+#
+# https://github.com/kubernetes/dashboard/
+kube-dashboard() {
+	# https://github.com/kubernetes/dashboard/releases
+	ver="1.10.1"
+	yaml="https://raw.githubusercontent.com/kubernetes/dashboard/v$ver/src/deploy/recommended/kubernetes-dashboard.yaml"
+
+	echo "> running kubernetes-dashboard v$ver on:"
+	echo
+	echo "http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"
+	echo
+
+	# add '--enable-skip-login' for development
+	curl "$yaml" | \
+		gsed 's/^\(\(\s*\)- --auto-generate-certificates\)$/\1\n\2- --enable-skip-login/' | \
+		kubectl apply -f - && \
+		kubectl proxy
+}
+
+# cheatsheet
 cheat() {
 	curl "https://cht.sh/$1"
 }
+
