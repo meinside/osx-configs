@@ -88,9 +88,10 @@ cask 'font-fira-code'
 #cask 'gureumkim'	# for hangul input
 
 
-#### for docker
+#### for docker and kubernetes
 #
 # install Docker Desktop from https://download.docker.com/mac/stable/Docker.dmg
+brew 'kubernetes-helm'
 tap 'wagoodman/dive'
 brew 'dive'
 

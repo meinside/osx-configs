@@ -100,24 +100,28 @@ public_html/
 
 # private/config files & dirs
 .android/
-.boot2docker/
 .config/
 .custom_aliases
 .custom_paths
 .davmail.properties
-.dockercfg
 .eclrc
 .gist-vim
 .gitconfig
 .gnupg
 .gtmx.json
-.kube/
 .srcclr/
 .ssh/
 .wget-hsts
 .zcompdump-*
 .zsh-update
 mbox
+
+# container files & dirs
+.boot2docker/
+.docker/
+.dockercfg
+.helm/
+.kube/
 
 # history files
 .*history
@@ -128,7 +132,6 @@ mbox
 .AndroidStudio*/
 .cups/
 .dlv/
-.docker/
 .dropbox/
 .dropbox-master/
 .eclipse/
