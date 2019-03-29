@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.02.18.
+# updated on 2019.03.29.
 #
 # ... by meinside@gmail.com
 #
@@ -47,8 +47,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-#plugins=(osx git ruby rails)
-plugins=(osx brew iterm2 mosh git docker stack copydir)
+plugins=(osx brew history iterm2 mosh git git-flow docker kubectl copydir)
 
 # Search for oh-my-zsh.sh
 if [ -f $ZSH/oh-my-zsh.sh ]; then
