@@ -3,7 +3,7 @@
 # my zsh functions
 #
 # created on 2014.10.06.
-# updated on 2019.03.27.
+# updated on 2019.03.29.
 #
 # ... by meinside@gmail.com
 #
@@ -96,16 +96,26 @@ kube-dashboard() {
 	ver="1.10.1"
 	yaml="https://raw.githubusercontent.com/kubernetes/dashboard/v$ver/src/deploy/recommended/kubernetes-dashboard.yaml"
 
-	echo "> running kubernetes-dashboard v$ver on:"
-	echo
-	echo "http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"
-	echo
+	if [[ $1 && $1 == 'delete' ]]; then
+		echo "> removing kubernetes-dashboard v$ver..."
+		echo
 
-	# add '--enable-skip-login' for development
-	curl "$yaml" | \
-		gsed 's/^\(\(\s*\)- --auto-generate-certificates\)$/\1\n\2- --enable-skip-login/' | \
-		kubectl apply -f - && \
-		kubectl proxy
+		# add '--enable-skip-login' for development
+		curl "$yaml" | \
+			gsed 's/^\(\(\s*\)- --auto-generate-certificates\)$/\1\n\2- --enable-skip-login/' | \
+			kubectl delete -f -
+	else
+		echo "> running kubernetes-dashboard v$ver on:"
+		echo
+		echo "http://localhost:8001/api/v1/namespaces/kube-system/services/https:kubernetes-dashboard:/proxy/"
+		echo
+
+		# add '--enable-skip-login' for development
+		curl "$yaml" | \
+			gsed 's/^\(\(\s*\)- --auto-generate-certificates\)$/\1\n\2- --enable-skip-login/' | \
+			kubectl apply -f - && \
+			kubectl proxy
+	fi
 }
 
 # cheatsheet
