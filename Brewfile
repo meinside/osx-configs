@@ -57,6 +57,7 @@ brew 'imagemagick'
 brew 'jq'
 brew 'mkcert'
 brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
+brew 'wireshark'
 brew 'wrk'
 
 #### cask
