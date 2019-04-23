@@ -3,7 +3,7 @@
 #
 # then it will automatically 'go get -u' all packages listed in this file(~/.gogets)
 #
-# last update: 2019.03.19.
+# last update: 2019.04.23.
 
 # official packages
 golang.org/x/tools/cmd/godoc
@@ -24,6 +24,7 @@ github.com/davecheney/httpstat
 github.com/derekparker/delve/cmd/dlv
 github.com/y0ssar1an/q
 github.com/mattn/go-sqlite3
+github.com/gcla/termshark/cmd/termshark
 
 # for development (VS Code)
 github.com/mdempsky/gocode
