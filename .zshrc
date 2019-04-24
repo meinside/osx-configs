@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.03.29.
+# updated on 2019.04.24.
 #
 # ... by meinside@gmail.com
 #
@@ -126,21 +126,15 @@ if [[ -z $TMUX ]]; then
 	# for rust
 	export PATH="$PATH:$HOME/.cargo/bin"
 
-	# for swift
-	if which swiftenv > /dev/null; then
-		eval "$(swiftenv init -)"
-	fi
-
-	# for java
-	export JAVA_JVM_VERSION="1.6"
-	export CLASSPATH=.
-
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
 
 	# for dart
 	export PATH="$PATH:$HOME/.pub-cache/bin"
+
+	# for Lein (Clojure)
+	export LEIN_JVM_OPTS=""
 
 	# additional paths
 	export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
