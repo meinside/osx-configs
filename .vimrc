@@ -170,12 +170,15 @@ if has('nvim')
     let g:deoplete#sources#jedi#show_docstring = 1
 endif
 
-" For JavaScript frameworks
+" For Clojure
+" $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
+if has('nvim')
+    Plug 'snoe/clojure-lsp', {'for': 'clojure'}
+    let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
+endif
+
+" For JavaScript
 Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'	" React
-let g:javascript_plugin_flow = 1
-let g:jsx_ext_required = 0
-Plug 'posva/vim-vue'	" Vue.js
 
 " For vim-codefmt (:FormatLines, :FormatCode)
 Plug 'google/vim-maktaba'

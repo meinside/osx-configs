@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.04.19.
+# last update: 2019.04.25.
 
 # binary files
 *.o
@@ -21,6 +21,7 @@
 .cache/
 .lldb/
 .local/
+.lsp/
 .rncache/
 default.profraw
 dive.log
