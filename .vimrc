@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.03.15.
+" last update: 2019.04.29.
 "
 " XXX - for neovim:
 "
@@ -135,9 +135,11 @@ endif
 " For Go
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 if has('nvim')
-    Plug 'zchee/deoplete-go', {'for': 'go', 'do': 'make'}	" For autocompletion
+    Plug 'deoplete-plugins/deoplete-go', {'for': 'go', 'do': 'make'}	" For autocompletion
     let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']	" Sort order
     "let g:deoplete#sources#go#source_importer = 1   " XXX too slow yet...
+
+    let g:LanguageClient_serverCommands.go = ['gopls']
 
     Plug 'sebdah/vim-delve', {'for': 'go'}	" :DlvAddBreakpoint / :DlvDebug / ... ($ brew install go-delve/delve/delve)
 endif
