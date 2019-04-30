@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.04.29.
+" last update: 2019.04.30.
 "
 " XXX - for neovim:
 "
@@ -67,6 +67,8 @@ let g:indentLine_enabled = 0	" :IndentLinesToggle
 Plug 'docunext/closetag.vim'
 Plug 'tpope/vim-sleuth'
 Plug 'johngrib/vim-f-hangul'	" can use f/t/;/, on Hangul characters
+Plug 'luochen1990/rainbow'	" rainbow-colored parentheses
+let g:rainbow_active = 1
 
 " For autocompletion
 if has('nvim')
