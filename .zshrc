@@ -149,5 +149,7 @@ if [ -f ~/.custom_paths ]; then
 fi
 
 # for zsh-syntax-highlighting
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if [ -d /usr/local/share/zsh-syntax-highlighting/ ]; then
+	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
 
