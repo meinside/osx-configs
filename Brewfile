@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.04.24.
+# last update: 2019.05.24.
 
 ######## formulas
 
@@ -28,6 +28,7 @@ brew 'tmux'
 brew 'tree'
 brew 'wget'
 brew 'zsh'
+brew 'zsh-syntax-highlighting'
 
 # programming languages
 tap 'dart-lang/dart'

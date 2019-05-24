@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.04.24.
+# updated on 2019.05.24.
 #
 # ... by meinside@gmail.com
 #
@@ -147,4 +147,7 @@ if [ -f ~/.custom_paths ]; then
 		export PATH=$PATH:"$p"
 	done < ~/.custom_paths
 fi
+
+# for zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
