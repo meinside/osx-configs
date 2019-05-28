@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.04.30..
+# last update: 2019.05.28.
 
 # binary files
 *.o
@@ -165,6 +165,7 @@ mbox
 .vim/
 .viminfo
 .vscode/
+.vscode-insiders/
 .RData
 .rnd
 .rstudio-desktop/
