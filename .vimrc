@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.04.30.
+" last update: 2019.05.28.
 "
 " XXX - for neovim:
 "
@@ -110,6 +110,10 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+" For vim-codefmt (:FormatLines, :FormatCode)
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+
 " For LanguageServer
 if has('nvim')
     Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': './install.sh'}
@@ -119,9 +123,12 @@ if has('nvim')
     nnoremap <silent> <F3> :call LanguageClient#textDocument_rename()<CR>
 endif
 
-" For Ruby
-Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
-Plug 'tpope/vim-endwise', {'for': 'ruby'}
+" For Clojure
+" $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
+if has('nvim')
+    Plug 'snoe/clojure-lsp', {'for': 'clojure'}
+    let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
+endif
 
 " For Dart
 Plug 'dart-lang/dart-vim-plugin', {'for': 'dart'}
@@ -137,10 +144,6 @@ endif
 " For Go
 Plug 'fatih/vim-go', {'for': 'go', 'do': ':GoInstallBinaries'}
 if has('nvim')
-    Plug 'deoplete-plugins/deoplete-go', {'for': 'go', 'do': 'make'}	" For autocompletion
-    let g:deoplete#sources#go#sort_class = ['package', 'func', 'type', 'var', 'const']	" Sort order
-    "let g:deoplete#sources#go#source_importer = 1   " XXX too slow yet...
-
     let g:LanguageClient_serverCommands.go = ['gopls']
 
     Plug 'sebdah/vim-delve', {'for': 'go'}	" :DlvAddBreakpoint / :DlvDebug / ... ($ brew install go-delve/delve/delve)
@@ -159,6 +162,19 @@ let g:go_auto_type_info = 1
 let g:syntastic_go_checkers = ['go', 'errcheck', 'golint']
 let g:syntastic_aggregate_errors = 1
 
+" For JavaScript
+Plug 'pangloss/vim-javascript'
+
+" For Python
+if has('nvim')
+    Plug 'zchee/deoplete-jedi', {'for': 'python'}	" For autocompletion
+    let g:deoplete#sources#jedi#show_docstring = 1
+endif
+
+" For Ruby
+Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
+Plug 'tpope/vim-endwise', {'for': 'ruby'}
+
 " For Rust
 " $ rustup component add rustfmt rls rust-analysis rust-src
 Plug 'rust-lang/rust.vim', {'for': 'rust'}
@@ -167,26 +183,6 @@ let g:rustfmt_autosave = 1
 if has('nvim')
     let g:LanguageClient_serverCommands.rust = ['~/.cargo/bin/rustup', 'run', 'stable', 'rls']
 endif
-
-" For Python
-if has('nvim')
-    Plug 'zchee/deoplete-jedi', {'for': 'python'}	" For autocompletion
-    let g:deoplete#sources#jedi#show_docstring = 1
-endif
-
-" For Clojure
-" $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
-if has('nvim')
-    Plug 'snoe/clojure-lsp', {'for': 'clojure'}
-    let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
-endif
-
-" For JavaScript
-Plug 'pangloss/vim-javascript'
-
-" For vim-codefmt (:FormatLines, :FormatCode)
-Plug 'google/vim-maktaba'
-Plug 'google/vim-codefmt'
 
 "
 """"""""
