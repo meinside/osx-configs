@@ -1,7 +1,7 @@
 # .bashrc
 #
 # created on 2007.04.01.
-# updated on 2019.04.24.
+# updated on 2019.05.28.
 #
 # ... by meinside@gmail.com
 
@@ -70,9 +70,6 @@ if [[ -z $TMUX ]]; then
 		export GOPATH=$HOME/srcs/go
 		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
-
-	# for rust
-	export PATH="$PATH:$HOME/.cargo/bin"
 
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
