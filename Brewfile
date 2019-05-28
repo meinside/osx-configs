@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.05.24.
+# last update: 2019.05.28.
 
 ######## formulas
 
@@ -36,7 +36,6 @@ brew 'dart'
 brew 'go'
 brew 'leiningen'
 brew 'node', args: ['--with-full-icu']
-brew 'rustup-init'	# $ rustup-init
 
 # development tools
 brew 'curl', args: ['--with-nghttp2']

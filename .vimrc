@@ -175,15 +175,6 @@ endif
 Plug 'vim-ruby/vim-ruby', {'for': 'ruby'}
 Plug 'tpope/vim-endwise', {'for': 'ruby'}
 
-" For Rust
-" $ rustup component add rustfmt rls rust-analysis rust-src
-Plug 'rust-lang/rust.vim', {'for': 'rust'}
-"let g:syntastic_rust_checkers = ['rustc']   " default is 'cargo' (cargo check)
-let g:rustfmt_autosave = 1
-if has('nvim')
-    let g:LanguageClient_serverCommands.rust = ['~/.cargo/bin/rustup', 'run', 'stable', 'rls']
-endif
-
 "
 """"""""
 
