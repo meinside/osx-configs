@@ -1,6 +1,6 @@
-;; My profiles.clj
+;; My .lein/profiles.clj
 ;;
-;; last update: 2019.04.25.
+;; last update: 2019.05.29.
 
 ;; Plugins and dependencies
 ;;
@@ -9,4 +9,5 @@
 ;; https://github.com/technomancy/slamhound
 
 {:user {:plugins [[lein-exec "0.3.7"], [lein-pprint "1.2.0"]]
-        :dependencies [[slamhound "1.5.5"]]}}
+        :dependencies [[slamhound "1.5.5"]]
+        :global-vars { *print-length* 20 }}}
