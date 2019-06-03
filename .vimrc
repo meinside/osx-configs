@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.05.28.
+" last update: 2019.06.03.
 "
 " XXX - for neovim:
 "
@@ -18,12 +18,10 @@ if !filereadable(expand('~/.config/nvim/init.vim'))
 endif
 if has('nvim')	" settings for nvim only
     set termguicolors
-    colo pablo
     set mouse-=a	" not to enter visual mode when dragging text
     let g:go_term_enabled = 1	" XXX - it needs to be set for 'delve' (2017.02.10.)
 else	" settings for vim only
     set t_Co=256
-    colo elflord
 endif
 
 """"""""""""""""""""""""""""""""""""
@@ -50,6 +48,9 @@ if has('nvim')
 else
     call plug#begin('~/.vim/plugged')
 endif
+
+" Set theme
+Plug 'flrnprz/plastic.vim'
 
 " Useful plugins
 Plug 'jiangmiao/auto-pairs'
