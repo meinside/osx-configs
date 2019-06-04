@@ -83,14 +83,6 @@ npm-debug.log
 .bundle
 .bundler
 
-# rust
-.cargo/
-.multirust
-.rustup/
-
-# swift
-.swiftenv/
-
 # xcode files
 .cocoapods/
 xcuserdata
@@ -159,7 +151,6 @@ mbox
 .oracle_jre_usage/
 .putty/
 .subversion/
-.swift-version
 .tooling/
 .vim/
 .viminfo

@@ -139,6 +139,9 @@ if [ -f ~/.custom_paths ]; then
 	done < ~/.custom_paths
 fi
 
+# remove redundant paths
+typeset -aU path
+
 # for zsh-syntax-highlighting
 if [ -d /usr/local/share/zsh-syntax-highlighting/ ]; then
 	source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
