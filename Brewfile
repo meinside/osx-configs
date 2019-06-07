@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.05.28.
+# last update: 2019.06.07.
 
 ######## formulas
 
@@ -27,7 +27,6 @@ brew 'reattach-to-user-namespace'	# for using pbcopy, pbpaste, or mas in tmux
 brew 'tmux'
 brew 'tree'
 brew 'wget'
-brew 'zsh'
 brew 'zsh-syntax-highlighting'
 
 # programming languages
