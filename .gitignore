@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.06.04.
+# last update: 2019.06.11.
 
 # binary files
 *.o
@@ -163,7 +163,7 @@ mbox
 .wireshark-etc/
 .wireshark/
 .htoprc
-BitTorrent Sync/
+Calibre Library/
 Dropbox/
 Google Drive/
 Limelight/
