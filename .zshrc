@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.06.04.
+# updated on 2019.07.10.
 #
 # ... by meinside@gmail.com
 #
@@ -107,8 +107,9 @@ export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
 
 if [[ -z $TMUX ]]; then
-	# for ruby
-	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+	# for dart
+	export PATH="$PATH:$HOME/.pub-cache/bin"
 
 	# for golang
 	if [ -x "`which go`" ] ; then
@@ -117,15 +118,18 @@ if [[ -z $TMUX ]]; then
 		export PATH="$PATH:$GOROOT/bin:$GOPATH/bin"
 	fi
 
+	# for Lein (Clojure)
+	export LEIN_JVM_OPTS=""
+
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
 
-	# for dart
-	export PATH="$PATH:$HOME/.pub-cache/bin"
+	# for ruby
+	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-	# for Lein (Clojure)
-	export LEIN_JVM_OPTS=""
+	# for rust
+	export PATH="$PATH:$HOME/.cargo/bin"
 
 	# additional paths
 	export PATH="$PATH:$HOME/bin:$HOME/.local/bin"
