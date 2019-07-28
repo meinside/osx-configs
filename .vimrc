@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.06.03.
+" last update: 2019.07.28.
 "
 " XXX - for neovim:
 "
@@ -118,17 +118,26 @@ Plug 'google/vim-codefmt'
 if has('nvim')
     Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': './install.sh'}
     let g:LanguageClient_serverCommands = {}
-    nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-    nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
     nnoremap <silent> <F3> :call LanguageClient#textDocument_rename()<CR>
 endif
 
 " For Clojure
 " $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
 if has('nvim')
-    Plug 'snoe/clojure-lsp', {'for': 'clojure'}
-    let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
+    if filereadable('/usr/local/bin/clojure-lsp')
+	Plug 'snoe/clojure-lsp', {'for': 'clojure'}
+	let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
+    endif
 endif
+Plug 'guns/vim-clojure-static', {'for': 'clojure'}
+Plug 'tpope/vim-salve', {'for': 'clojure'}
+Plug 'tpope/vim-projectionist', {'for': 'clojure'}
+Plug 'tpope/vim-dispatch', {'for': 'clojure'}
+" <C-X><C-O> for autocompletion,
+" <K> for documentation, (:Doc)
+" [+d for displaying source of a symbol, (:Source)
+" :Console, :Eval, ...
+Plug 'tpope/vim-fireplace', {'for': 'clojure'}
 
 " For Dart
 Plug 'dart-lang/dart-vim-plugin', {'for': 'dart'}
