@@ -1,7 +1,7 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.07.28.
+" last update: 2019.07.29.
 "
 " XXX - for neovim:
 "
@@ -122,8 +122,8 @@ if has('nvim')
 endif
 
 " For Clojure
-" $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
 if has('nvim')
+    " $ sudo wget "https://github.com/snoe/clojure-lsp/releases/download/`curl -s https://api.github.com/repos/snoe/clojure-lsp/tags | grep 'name' | head -n 1 | cut -d '"' -f 4`/clojure-lsp" -O /usr/local/bin/clojure-lsp && sudo chmod 755 /usr/local/bin/clojure-lsp
     if filereadable('/usr/local/bin/clojure-lsp')
 	Plug 'snoe/clojure-lsp', {'for': 'clojure'}
 	let g:LanguageClient_serverCommands.clojure = ['bash', '-c', '/usr/local/bin/clojure-lsp']
@@ -133,6 +133,8 @@ Plug 'guns/vim-clojure-static', {'for': 'clojure'}
 Plug 'tpope/vim-salve', {'for': 'clojure'}
 Plug 'tpope/vim-projectionist', {'for': 'clojure'}
 Plug 'tpope/vim-dispatch', {'for': 'clojure'}
+" $ go get github.com/cespare/goclj/cljfmt
+Plug 'dmac/vim-cljfmt', {'for': 'clojure'}
 " <C-X><C-O> for autocompletion,
 " <K> for documentation, (:Doc)
 " [+d for displaying source of a symbol, (:Source)
