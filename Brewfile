@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.06.07.
+# last update: 2019.08.05.
 
 ######## formulas
 
@@ -29,11 +29,18 @@ brew 'tree'
 brew 'wget'
 brew 'zsh-syntax-highlighting'
 
-# programming languages
+# programming language: dart/flutter
 tap 'dart-lang/dart'
 brew 'dart'
-brew 'go'
+
+# programming language: clojure
 brew 'leiningen'
+brew 'candid82/brew/joker'
+
+# programming language: go
+brew 'go'
+
+# programming language: node
 brew 'node', args: ['--with-full-icu']
 
 # development tools
@@ -41,8 +48,6 @@ brew 'curl', args: ['--with-nghttp2']
 brew 'git', args: ['--with-pcre']
 brew 'git-flow'
 brew 'gnupg'
-tap 'heroku/brew'
-brew 'heroku'
 brew 'imagemagick'
 brew 'jq'
 brew 'mkcert'
