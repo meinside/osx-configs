@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.07.10.
+# last update: 2019.08.07.
 
 # binary files
 *.o
@@ -156,6 +156,7 @@ mbox
 .oh-my-zsh/
 .oracle_jre_usage/
 .putty/
+.rest-client/
 .subversion/
 .tooling/
 .vim/
