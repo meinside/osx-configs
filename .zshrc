@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.07.10.
+# updated on 2019.08.30.
 #
 # ... by meinside@gmail.com
 #
@@ -84,11 +84,6 @@ alias httpserver="ruby -rwebrick -e's=WEBrick::HTTPServer.new(Port:8888,Document
 # load zsh functions
 . ~/.zshfunc
 
-# load additional aliases if exist
-if [ -f ~/.custom_aliases ]; then
-	. ~/.custom_aliases
-fi
-
 # for Xcode
 #defaults write com.apple.xcode PBXCustomTemplateMacroDefinitions '{ORGANIZATIONNAME = "some_organization_name" ; }'
 
@@ -136,11 +131,9 @@ if [[ -z $TMUX ]]; then
 
 fi
 
-# append additional paths if exist
-if [ -f ~/.custom_paths ]; then
-	while IFS='' read -r p; do
-		export PATH=$PATH:"$p"
-	done < ~/.custom_paths
+# load additional environment variables if exist
+if [ -f ~/.custom_env ]; then
+	. ~/.custom_env
 fi
 
 # remove redundant paths
