@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.08.30.
+# updated on 2019.09.03.
 #
 # ... by meinside@gmail.com
 #
@@ -131,7 +131,7 @@ if [[ -z $TMUX ]]; then
 
 fi
 
-# load additional environment variables if exist
+# load additional environment variables (like GOPRIVATE, PATH, alias, ...) if exist
 if [ -f ~/.custom_env ]; then
 	. ~/.custom_env
 fi
