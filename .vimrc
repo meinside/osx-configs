@@ -1,11 +1,11 @@
 " meinside's .vimrc file for vim and neovim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.07.30.
+" last update: 2019.10.09.
 "
 " XXX - for neovim:
 "
-" $ pip install --upgrade pynvim
+" $ pip3 install --upgrade pynvim
 
 """"""""""""""""""""""""""""""""""""
 " settings for nvim
