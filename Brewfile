@@ -5,7 +5,7 @@
 # $ brew tap Homebrew/bundle
 # $ brew bundle
 # 
-# last update: 2019.08.05.
+# last update: 2019.10.09.
 
 ######## formulas
 
@@ -13,7 +13,7 @@
 brew 'coreutils'
 
 # utilities
-brew 'ffmpeg', args: ['--with-libvpx', '--with-libvorbis', '--with-faac']
+brew 'ffmpeg'
 brew 'gnu-sed'
 brew 'htop'
 brew 'lnav'
@@ -41,17 +41,17 @@ brew 'candid82/brew/joker'
 brew 'go'
 
 # programming language: node
-brew 'node', args: ['--with-full-icu']
+brew 'node'
 
 # development tools
-brew 'curl', args: ['--with-nghttp2']
-brew 'git', args: ['--with-pcre']
+brew 'curl'
+brew 'git'
 brew 'git-flow'
 brew 'gnupg'
 brew 'imagemagick'
 brew 'jq'
 brew 'mkcert'
-brew 'opencv3', args: ['--HEAD', '--with-python3', '--with-ffmpeg', '--with-tbb', '--with-contrib']
+brew 'opencv'
 brew 'wireshark'
 brew 'wrk'
 
@@ -63,14 +63,11 @@ brew 'dive'
 
 ######## casks
 
-tap 'caskroom/cask'
-
 # utilities
 cask 'dropbox'
 cask 'google-chrome'
-cask 'licecap'
 cask 'osxfuse'
-cask 'steam'
+#cask 'virtualbox'
 cask 'visual-studio-code'
 cask 'xquartz'
 
@@ -78,8 +75,7 @@ cask 'xquartz'
 cask 'iterm2'
 cask 'java'
 #cask 'postico'
-cask 'sequel-pro'
-cask 'virtualbox'
+#cask 'sequel-pro'
 
 # fonts
 tap 'homebrew/cask-fonts'
