@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.09.03.
+# updated on 2019.10.10.
 #
 # ... by meinside@gmail.com
 #
@@ -91,6 +91,9 @@ alias httpserver="ruby -rwebrick -e's=WEBrick::HTTPServer.new(Port:8888,Document
 #####################
 #  for development  #
 #####################
+
+# brew sbin
+export PATH="/usr/local/sbin:$PATH"
 
 # for python (installed with brew)
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
