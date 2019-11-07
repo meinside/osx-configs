@@ -17,7 +17,7 @@ Run **bin/prep.sh** and it will clone files and install several things automatic
 
 ```bash
 $ cd ~
-$ wget -O - "https://raw.github.com/meinside/osx-configs/master/bin/prep.sh" | bash
+$ wget -O - "https://raw.githubusercontent.com/meinside/osx-configs/master/bin/prep.sh" | bash
 ```
 
 => will install **Homebrew**, **RVM** and **Ruby**
