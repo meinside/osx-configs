@@ -1,5 +1,5 @@
 # git ignore file of meinside@gmail.com on OSX
-# last update: 2019.10.14.
+# last update: 2019.11.07.
 
 # binary files
 *.o
@@ -85,6 +85,7 @@ npm-debug.log
 .rvm
 .bundle
 .bundler
+.solargraph/
 
 # rust
 .cargo/
@@ -175,9 +176,7 @@ mbox
 Calibre Library/
 Dropbox/
 Google Drive/
-Limelight/
 VirtualBox VMs/
-Blizzard/
 pprof/
 
 # personal data
