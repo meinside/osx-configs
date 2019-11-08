@@ -3,9 +3,9 @@
 # prep.sh
 # 
 # for setting up various things automatically in OSX
-# (https://raw.github.com/meinside/osx-configs/master/bin/prep.sh)
+# (https://raw.githubusercontent.com/meinside/osx-configs/master/bin/prep.sh)
 # 
-# last update: 2015.06.09.
+# last update: 2019.11.08.
 # 
 # by meinside@gmail.com
 
@@ -28,11 +28,7 @@ rm -rf $TMP_DIR
 
 # install Homebrew
 echo -e "\033[33m>>> installing Homebrew...\033[0m"
-ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
-# install RVM and Ruby for single user
-echo -e "\033[33m>>> installing RVM and Ruby...\033[0m"
-curl -L https://get.rvm.io | bash -s stable --autolibs=homebrew --ruby
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # re-login for loading configs
 echo

@@ -1,4 +1,5 @@
 # My dotfiles for OSX #
+
 by Sungjin Han <meinside@gmail.com>
 
 ----
@@ -20,7 +21,7 @@ $ cd ~
 $ wget -O - "https://raw.githubusercontent.com/meinside/osx-configs/master/bin/prep.sh" | bash
 ```
 
-=> will install **Homebrew**, **RVM** and **Ruby**
+=> will install **Homebrew**
 
 ### Setup paths
 

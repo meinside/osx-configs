@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.10.10.
+# updated on 2019.11.08.
 #
 # ... by meinside@gmail.com
 #
@@ -47,14 +47,8 @@ plugins=(osx brew history iterm2 mosh git git-flow docker kubectl copydir)
 if [ -f $ZSH/oh-my-zsh.sh ]; then
 	source $ZSH/oh-my-zsh.sh
 else
-	echo "> Install oh-my-zsh,"
+	echo "> Install oh-my-zsh:"
 	echo "$ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh"
-	echo
-	echo "> Append '`which zsh`' to /etc/shells,"
-	echo "$ sudo vi /etc/shells"
-	echo
-	echo "> And change shell:"
-	echo "$ chsh -s `which zsh`"
 	echo
 fi
 
@@ -101,9 +95,6 @@ export PYTHON_CONFIGURE_OPTS="--enable-framework"
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s "/usr/local/bin/virtualenvwrapper.sh" ]] && source "/usr/local/bin/virtualenvwrapper.sh"
 
-# for ruby
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"  # This loads RVM into a shell session.
-
 if [[ -z $TMUX ]]; then
 
 	# for dart
@@ -122,9 +113,6 @@ if [[ -z $TMUX ]]; then
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
 	export PATH="$PATH:/usr/local/share/npm/bin"
-
-	# for ruby
-	export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 	# for rust
 	export PATH="$PATH:$HOME/.cargo/bin"
