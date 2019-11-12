@@ -1,14 +1,14 @@
-" meinside's .vimrc file for vim and neovim,
+" meinside's .vimrc file for n/vim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.11.08
+" last update: 2019.11.12.
 "
-" XXX - for neovim:
+" NOTE: for neovim:
 "
 " $ pip3 install --upgrade pynvim
 "
 "
-" XXX - for coc.nvim:
+" NOTE: for coc.nvim:
 "
 " $ brew install node
 
@@ -23,12 +23,10 @@ if !filereadable(expand('~/.config/nvim/init.vim'))
 endif
 if has('nvim')	" settings for nvim only
     set termguicolors
-    colo industry
     set mouse-=a	" not to enter visual mode when dragging text
     let g:go_term_enabled = 1	" XXX - it needs to be set for 'delve' (2017.02.10.)
 else	" settings for vim only
     set t_Co=256
-    colo elflord
 endif
 
 """"""""""""""""""""""""""""""""""""
@@ -36,16 +34,16 @@ endif
 if has('nvim')
     " for nvim
     if empty(glob('~/.local/share/nvim/site/autoload/plug.vim'))
-	silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
-		    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+        silent !curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs
+                    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
 else
     " for vim
     if empty(glob('~/.vim/autoload/plug.vim'))
-	silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-		    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-	autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+        silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+                    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
     endif
 endif
 
@@ -55,6 +53,9 @@ if has('nvim')
 else
     call plug#begin('~/.vim/plugged')
 endif
+
+" colorschemes (https://github.com/rafi/awesome-vim-colorschemes)
+Plug 'kristijanhusak/vim-hybrid-material'
 
 " Useful plugins
 Plug 'jiangmiao/auto-pairs'
@@ -95,22 +96,22 @@ if has('nvim')
     " Use tab for trigger completion with characters ahead and navigate.
     " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
     inoremap <silent><expr> <TAB>
-	  \ pumvisible() ? "\<C-n>" :
-	  \ <SID>check_back_space() ? "\<TAB>" :
-	  \ coc#refresh()
+          \ pumvisible() ? "\<C-n>" :
+          \ <SID>check_back_space() ? "\<TAB>" :
+          \ coc#refresh()
     inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
     function! s:check_back_space() abort
-      let col = col('.') - 1
-      return !col || getline('.')[col - 1]  =~# '\s'
+        let col = col('.') - 1
+        return !col || getline('.')[col - 1]  =~# '\s'
     endfunction
 
     " Use <c-space> to trigger completion.
     inoremap <silent><expr> <c-space> coc#refresh()
 
-    " Use `[c` and `]c` to navigate diagnostics
-    nmap <silent> [c <Plug>(coc-diagnostic-prev)
-    nmap <silent> ]c <Plug>(coc-diagnostic-next)
+    " Use `[d` and `]d` to navigate diagnostics
+    nmap <silent> [d <Plug>(coc-diagnostic-prev)
+    nmap <silent> ]d <Plug>(coc-diagnostic-next)
 
     " Remap keys for gotos
     nmap <silent> gd <Plug>(coc-definition)
@@ -145,6 +146,8 @@ if has('nvim')
     "Plug 'ncm2/float-preview.nvim'
     "set completeopt-=preview
 
+    highlight link CocFloating markdown
+
     " To close preview window after selection
     autocmd CompleteDone * pclose
 
@@ -154,7 +157,7 @@ if has('nvim')
     " - go: coc-go
     " - ruby: coc-solargraph ($ gem install solargraph)
     let g:coc_global_extensions = ['coc-json',
-		\ 'coc-conjure', 'coc-go', 'coc-solargraph']
+                \ 'coc-conjure', 'coc-go', 'coc-solargraph']
 endif
 
 " For source file browsing, XXX: ctags is needed! ($ brew install ctags)
@@ -271,32 +274,37 @@ endif
 if has("autocmd")
     " Put these in an autocmd group, so that we can delete them easily.
     augroup vimrcEx
-	au!
+        au!
 
-	" For all text files set 'textwidth' to 78 characters.
-	autocmd FileType text setlocal textwidth=78
+        " For all text files set 'textwidth' to 78 characters.
+        autocmd FileType text setlocal textwidth=78
 
-	" For html/javascript/css
-	autocmd FileType htm,html,js set ai sw=2 ts=2 sts=2 et
-	autocmd FileType css,scss set ai sw=2 ts=2 sts=2 et
+        " For html/javascript/css
+        autocmd FileType htm,html,js set ai sw=2 ts=2 sts=2 et
+        autocmd FileType css,scss set ai sw=2 ts=2 sts=2 et
 
-	" For programming languages
-	" Golang
-	autocmd FileType go set ai sw=4 ts=4 sts=4 noet
-	" Ruby
-	autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et
-	" Python
-	autocmd FileType python set ai sw=2 ts=2 sts=2 et
+        " For programming languages
+        " Golang
+        autocmd FileType go set ai sw=4 ts=4 sts=4 noet
+        " Ruby
+        autocmd FileType ruby,eruby,yaml set ai sw=2 ts=2 sts=2 et
+        " Python
+        autocmd FileType python set ai sw=2 ts=2 sts=2 et
 
-	" When editing a file, always jump to the last known cursor position.
-	" Don't do it when the position is invalid or when inside an event handler
-	" (happens when dropping a file on gvim).
-	autocmd BufReadPost *
-		    \ if line("'\"") > 0 && line("'\"") <= line("$") |
-		    \   exe "normal g`\"" |
-		    \ endif
+        " When editing a file, always jump to the last known cursor position.
+        " Don't do it when the position is invalid or when inside an event handler
+        " (happens when dropping a file on gvim).
+        autocmd BufReadPost *
+                    \ if line("'\"") > 0 && line("'\"") <= line("$") |
+                    \   exe "normal g`\"" |
+                    \ endif
     augroup END
 else
     set autoindent		" always set autoindenting on
 endif " has("autocmd")
+
+" set colorscheme
+let g:hybrid_transparent_background = 1
+set background=dark
+colorscheme hybrid_material
 
