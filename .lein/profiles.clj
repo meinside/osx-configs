@@ -1,6 +1,6 @@
 ;; My .lein/profiles.clj
 ;;
-;; last update: 2019.07.29.
+;; last update: 2019.11.26.
 
 {:user {
         ;; plugins
@@ -18,7 +18,10 @@
                   ;;[venantius/ultra "0.6.0"]
 
                   ;; https://github.com/xsc/lein-ancient
-                  [lein-ancient "0.6.15"]]
+                  [lein-ancient "0.6.15"]
+
+                  ;; https://github.com/venantius/ultra
+                  [venantius/ultra "0.6.0"]]
 
         ;; dependencies
         :dependencies [

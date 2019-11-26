@@ -1,7 +1,7 @@
 # .zshrc
 #
 # created on 2014.06.30.
-# updated on 2019.11.08.
+# updated on 2019.11.26.
 #
 # ... by meinside@gmail.com
 #
@@ -109,6 +109,8 @@ if [[ -z $TMUX ]]; then
 
 	# for Lein (Clojure)
 	export LEIN_JVM_OPTS=""
+	# https://github.com/venantius/ultra/issues/108
+	export LEIN_USE_BOOTCLASSPATH=no
 
 	# for node
 	export NODE_PATH=/usr/local/lib/node_modules:/usr/local/share/npm/lib/node_modules
