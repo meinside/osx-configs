@@ -1,7 +1,7 @@
 " meinside's .vimrc file for n/vim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.12.11.
+" last update: 2019.12.17.
 "
 " NOTE: for neovim:
 "
@@ -187,6 +187,9 @@ let g:syntastic_check_on_wq = 0
 Plug 'google/vim-maktaba'
 Plug 'google/vim-codefmt'
 
+" Linter
+Plug 'dense-analysis/ale'
+
 " For Clojure
 if has('nvim')
     Plug 'Olical/conjure', { 'tag': 'v2.1.2', 'do': 'bin/compile'  }
@@ -241,6 +244,11 @@ Plug 'tpope/vim-endwise'
 call plug#end()
 "
 """"""""""""""""""""""""""""""""""""
+
+" Linter
+let g:ale_linters = {
+    \ 'clojure': ['clj-kondo', 'joker']
+    \}
 
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
