@@ -1,7 +1,7 @@
 " meinside's .vimrc file for n/vim,
 " created by meinside@gmail.com,
 "
-" last update: 2019.12.17.
+" last update: 2020.01.15.
 "
 " NOTE: for neovim:
 "
@@ -270,9 +270,6 @@ set termencoding=utf-8
 set wildmenu	" visual autocomplete for command menu
 set showbreak=↳
 set breakindent
-
-" for running correct rvm ruby (not osx's default ruby) in zsh
-set shell=/bin/bash
 
 " Don't use Ex mode, use Q for formatting
 map Q gq
