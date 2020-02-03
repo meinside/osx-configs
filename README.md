@@ -8,6 +8,8 @@ by Sungjin Han <meinside@gmail.com>
 
 My personal dotfiles for OSX, mostly for development.
 
+**NOTE: these files are being maintained [here](https://github.com/meinside/dotfiles) since _2020-02-03_.**
+
 ----
 
 ## How-to
